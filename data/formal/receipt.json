@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "cases": 30,
+  "valid_constant_baseline_cases": 25,
+  "constant_baseline_infeasible_cases_retained": 5,
+  "richer_admission_cases_among_valid_baselines": 17,
+  "profiles_enumerated": 14337,
+  "elapsed_seconds": 0.04012454199255444,
+  "source_sha256": "0c7f85ab89e1fa5c8b2df27dbdfb3db0b3fee5c90e7977c03f36c9ad9d18d97e",
+  "scope": "Exact local certificate-family reference; one request per snapshot, integer floors, immutable delayed prefix and bookings, identical sustained tail. Rich family requires an atomically preloaded multi-change executor; no global online or production-admission optimality claim.",
+  "sampling": "Six declared mathematical fixtures and24 fixed-seed synthetic snapshots; illustrative mechanism benchmark, not a population estimate."
+}

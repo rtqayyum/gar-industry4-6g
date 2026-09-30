@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "snapshots": 30,
+  "request_levels": 210,
+  "profiles_enumerated": 14337,
+  "interval_dominance_checks": 613974,
+  "maximal_vs_exhaustive_feasibility_disagreements": 0,
+  "original_minimum_cost_disagreements": 0,
+  "feasible_levels_where_maximal_is_not_minimum_cost": 75,
+  "scope": "Independent dense check of the same 30 constructed snapshots; no new traffic trial. Unrestricted per-slot floor family with immutable prefix/tail and no switch/cost budget. Exact only for the stated sufficient certificate, not arbitrary schedule feasibility.",
+  "release_availability_example": {
+    "bytes": 100,
+    "service_bytes_per_slot": 1,
+    "slots": 100,
+    "available_at_start_completed_bytes": 100,
+    "available_at_final_slot_completed_bytes": 1
+  },
+  "unchanged_original_files_sha256": {
+    "reports/guarded_release_confirmation_20260923/offline_reference/instances.json": "528db3f4dd588f924b8b3f26fb52b4bb157c0db6f973b014536316907c3a973b",
+    "reports/guarded_release_confirmation_20260923/offline_reference/results.json": "862d715ea75e79a2d6d5eee88279a478d1c0525b8f5d9403b70e67250ee7e42a",
+    "reports/guarded_release_confirmation_20260923/offline_reference/receipt.json": "ed29f31110c7a15ac5118c4d76c31d886355c47ffdeca788bf40266c69e45ca4",
+    "experiments/guarded_release_confirmation/offline_reference.py": "0c7f85ab89e1fa5c8b2df27dbdfb3db0b3fee5c90e7977c03f36c9ad9d18d97e"
+  },
+  "verification_source_sha256": "938a40e637c6e9f14a69492124bff2faf02a1946414ca53c6b9e791ab33c9400",
+  "rows_sha256": "858ed702c4e6cad1b862f86710ce4d5c46751440f8fe8a25bf87cec4c5171764"
+}

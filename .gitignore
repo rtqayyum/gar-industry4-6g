@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+/runs/
+.env
+.env.*
+kaggle.json
+*.pem
+*.key
+*.o
+*.so
+*.dylib
+*.exe

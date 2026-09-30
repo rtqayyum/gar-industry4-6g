@@ -1,0 +1,7588 @@
+{
+  "cells": [
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.921875,
+        "low": 7.234375,
+        "mean": 7.5625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 66.51692708333333,
+          "failures": 20434,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 76.25122669283611,
+          "failures": 3108,
+          "offered": 4076,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 111.09375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 18,
+        "monitor_units": 6,
+        "required_peak_units": 88,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.71875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.984375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.9921875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 155241.53125,
+        "low": 154977.5,
+        "mean": 155108.40625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6535970384615385,
+        "low": 0.6465879999999999,
+        "mean": 0.6500185865384616,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 11057.671875,
+        "low": 10761.0625,
+        "mean": 10911.578125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9852843803418804,
+        "low": 0.9848785042735043,
+        "mean": 0.9850781837606838,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.921875,
+        "low": 7.234375,
+        "mean": 7.5625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 94.03971354166667,
+          "failures": 28889,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9140625
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 76.25122669283611,
+          "failures": 3108,
+          "offered": 4076,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 111.1640625
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 18,
+        "monitor_units": 6,
+        "required_peak_units": 88,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.71875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7265625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.4976105769230769,
+        "low": 0.4943648269230769,
+        "mean": 0.4959798942307692,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 161226.6796875,
+        "low": 160899.6171875,
+        "mean": 161061.6015625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7799663461538462,
+        "low": 0.7795193482905983,
+        "mean": 0.7797448183760683,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 57.864583333333336,
+          "failures": 17776,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 4076,
+          "offered": 4076,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 18,
+        "monitor_units": 6,
+        "required_peak_units": 88,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.71875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.7109375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.546875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.671875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 155262.515625,
+        "low": 154998.0859375,
+        "mean": 155128.2265625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6717003942307692,
+        "low": 0.66629525,
+        "mean": 0.6690219134615385,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 11057.671875,
+        "low": 10761.0625,
+        "mean": 10911.578125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9852843803418804,
+        "low": 0.9848785042735043,
+        "mean": 0.9850781837606838,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 6.21875,
+        "low": 5.6015625,
+        "mean": 5.90625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 63.41796875,
+          "failures": 19482,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 81.45240431795878,
+          "failures": 3320,
+          "offered": 4076,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 107.9296875
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 9.0,
+          "p99_ms_mean": 9.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 15,
+        "monitor_units": 6,
+        "required_peak_units": 91,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 30
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.71875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.9765625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 8.9921875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 9.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155212.375,
+        "low": 154955.6328125,
+        "mean": 155083.859375,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6600990192307692,
+        "low": 0.6538328269230769,
+        "mean": 0.657060423076923,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 11125.28125,
+        "low": 10827.7890625,
+        "mean": 10978.640625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9851928098290599,
+        "low": 0.9847864636752137,
+        "mean": 0.9849864743589744,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 9.1328125,
+        "low": 8.390625,
+        "mean": 8.75,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 51.774088541666664,
+          "failures": 15905,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 72.52208047105005,
+          "failures": 2956,
+          "offered": 4076,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 109.8359375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 22,
+        "monitor_units": 6,
+        "required_peak_units": 84,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 26
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 2.9453125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 2.8046875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 7.5859375
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 153105.390625,
+        "low": 152777.6796875,
+        "mean": 152941.015625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.754086875,
+        "low": 0.74500225,
+        "mean": 0.7495005384615384,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13322.359375,
+        "low": 12975.0,
+        "mean": 13146.0234375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9831768841166937,
+        "low": 0.9827282009724473,
+        "mean": 0.9829549128849271,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 9.1328125,
+        "low": 8.390625,
+        "mean": 8.75,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 92.16796875,
+          "failures": 28314,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.8203125
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 72.52208047105005,
+          "failures": 2956,
+          "offered": 4076,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 110.359375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 22,
+        "monitor_units": 6,
+        "required_peak_units": 84,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 26
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5208147788461538,
+        "low": 0.516689076923077,
+        "mean": 0.5188063076923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 160608.8125,
+        "low": 160249.5625,
+        "mean": 160430.84375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7922222953808752,
+        "low": 0.7917553889789303,
+        "mean": 0.791985940032415,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 38.880208333333336,
+          "failures": 11944,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 4076,
+          "offered": 4076,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 22,
+        "monitor_units": 6,
+        "required_peak_units": 84,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 26
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.9921875
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 1.53125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 1.421875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.5546875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 155108.265625,
+        "low": 154751.7578125,
+        "mean": 154920.9921875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7875402211538461,
+        "low": 0.7802016538461538,
+        "mean": 0.7839342211538461,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13345.640625,
+        "low": 12992.1953125,
+        "mean": 13166.6796875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.983154801458671,
+        "low": 0.9826964546191248,
+        "mean": 0.9829281300648298,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.921875,
+        "low": 7.234375,
+        "mean": 7.5625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 48.245442708333336,
+          "failures": 14821,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 76.25122669283611,
+          "failures": 3108,
+          "offered": 4076,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 107.9453125
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 9.0,
+          "p99_ms_mean": 9.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 19,
+        "monitor_units": 6,
+        "required_peak_units": 87,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 29
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 2.34375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 2.6015625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 5.8671875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 9.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153459.9765625,
+        "low": 153068.2421875,
+        "mean": 153257.1640625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7629189711538462,
+        "low": 0.7553032596153846,
+        "mean": 0.7590473653846154,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13398.6015625,
+        "low": 13055.40625,
+        "mean": 13224.5703125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9830729234197731,
+        "low": 0.9826280895461913,
+        "mean": 0.982853069286872,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 15.0546875,
+        "low": 14.109375,
+        "mean": 14.59375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 46.009114583333336,
+          "failures": 14134,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9921875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 54.17075564278704,
+          "failures": 2208,
+          "offered": 4076,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 116.7734375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 28,
+        "monitor_units": 5,
+        "required_peak_units": 78,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 24
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 2.4921875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.2734375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 6.75
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 153624.09375,
+        "low": 153162.15625,
+        "mean": 153385.609375,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.82775025,
+        "low": 0.8178465576923077,
+        "mean": 0.8228777403846154,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 19928.375,
+        "low": 19053.8359375,
+        "mean": 19503.2109375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9765491442307692,
+        "low": 0.9754733365384616,
+        "mean": 0.9759960480769231,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 15.0546875,
+        "low": 14.109375,
+        "mean": 14.59375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 90.45247395833333,
+          "failures": 27787,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.75
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 54.17075564278704,
+          "failures": 2208,
+          "offered": 4076,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 117.1796875
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 28,
+        "monitor_units": 5,
+        "required_peak_units": 78,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 24
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5672189134615385,
+        "low": 0.5618394711538461,
+        "mean": 0.5645720961538462,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 164122.875,
+        "low": 163781.53125,
+        "mean": 163957.03125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7984232788461538,
+        "low": 0.7980030576923077,
+        "mean": 0.7982067307692308,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 24.176432291666668,
+          "failures": 7427,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.6328125
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.09375
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 4076,
+          "offered": 4076,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 28,
+        "monitor_units": 5,
+        "required_peak_units": 78,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 24
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.828125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.6875
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 1.078125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 1.3984375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.1015625
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 155302.0390625,
+        "low": 154692.640625,
+        "mean": 155002.1015625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.8787573653846154,
+        "low": 0.8759570673076923,
+        "mean": 0.8774029326923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 28489.484375,
+        "low": 27274.5546875,
+        "mean": 27910.390625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9664329326923077,
+        "low": 0.9649378750000001,
+        "mean": 0.9656487500000001,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 13.625,
+        "low": 12.7890625,
+        "mean": 13.203125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 43.108723958333336,
+          "failures": 13243,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9921875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1015625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 58.53778213935231,
+          "failures": 2386,
+          "offered": 4076,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 115.734375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 9.0,
+          "p99_ms_mean": 9.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 25,
+        "monitor_units": 5,
+        "required_peak_units": 81,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 2.1640625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 2.984375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 5.5625
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1015625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 9.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.6,
+      "offered_tenants": 4076,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153888.265625,
+        "low": 153409.5703125,
+        "mean": 153647.953125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.8347880576923077,
+        "low": 0.8256716826923077,
+        "mean": 0.830261375,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 19981.6484375,
+        "low": 19103.4140625,
+        "mean": 19556.8203125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9764886538461538,
+        "low": 0.975408375,
+        "mean": 0.9759300673076923,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 5.3359375,
+        "low": 4.8046875,
+        "mean": 5.0625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 81.53645833333333,
+          "failures": 25048,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 87.85607196401799,
+          "failures": 4688,
+          "offered": 5336,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 105.328125
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 9,
+        "monitor_units": 6,
+        "required_peak_units": 97,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 36
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6796875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.8125
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.8984375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 155312.6875,
+        "low": 155058.1171875,
+        "mean": 155179.8125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6172142403846154,
+        "low": 0.6139384519230769,
+        "mean": 0.6155287307692308,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10745.2890625,
+        "low": 10417.3359375,
+        "mean": 10578.0625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9857542735042735,
+        "low": 0.9853055982905983,
+        "mean": 0.9855342735042735,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 5.3359375,
+        "low": 4.8046875,
+        "mean": 5.0625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 95.32552083333333,
+          "failures": 29284,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9375
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 87.85607196401799,
+          "failures": 4688,
+          "offered": 5336,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 105.328125
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 9,
+        "monitor_units": 6,
+        "required_peak_units": 97,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 36
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6796875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.8125
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.8984375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5378273846153846,
+        "low": 0.5357216057692308,
+        "mean": 0.5368017596153846,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 161150.78125,
+        "low": 160795.640625,
+        "mean": 160969.140625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7801099786324787,
+        "low": 0.7796231089743589,
+        "mean": 0.7798712606837607,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 80.341796875,
+          "failures": 24681,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 5336,
+          "offered": 5336,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 9,
+        "monitor_units": 6,
+        "required_peak_units": 97,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 36
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6796875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.8125
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.8984375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 155320.3828125,
+        "low": 155062.640625,
+        "mean": 155186.4296875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6103516826923077,
+        "low": 0.6071433942307692,
+        "mean": 0.6086727019230769,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10745.2890625,
+        "low": 10417.3359375,
+        "mean": 10578.0625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9857542735042735,
+        "low": 0.9853055982905983,
+        "mean": 0.9855342735042735,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.328125,
+        "low": 6.7421875,
+        "mean": 7.0390625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 82.56510416666667,
+          "failures": 25364,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 83.11469265367316,
+          "failures": 4435,
+          "offered": 5336,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 111.7109375
+        },
+        "video": {
+          "failure_percent": 3.7890625,
+          "failures": 582,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.2109375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 15,
+        "monitor_units": 6,
+        "required_peak_units": 91,
+        "reserve_units": 31,
+        "video_certificate": false,
+        "video_units": 30
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6796875
+          },
+          "video": {
+            "failures": 10,
+            "offered": 2560,
+            "p99_ms_mean": 13.328125
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.8125
+          },
+          "video": {
+            "failures": 16,
+            "offered": 2560,
+            "p99_ms_mean": 13.359375
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.8984375
+          },
+          "video": {
+            "failures": 539,
+            "offered": 4992,
+            "p99_ms_mean": 14.296875
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155473.734375,
+        "low": 155231.0625,
+        "mean": 155344.5234375,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6137324423076923,
+        "low": 0.6066417115384616,
+        "mean": 0.6102989326923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10117.390625,
+        "low": 9789.109375,
+        "mean": 9949.609375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9866135897435897,
+        "low": 0.9861644017094017,
+        "mean": 0.9863936965811966,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.328125,
+        "low": 6.7421875,
+        "mean": 7.0390625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 71.17513020833333,
+          "failures": 21865,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 83.11469265367316,
+          "failures": 4435,
+          "offered": 5336,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 109.328125
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 14,
+        "monitor_units": 6,
+        "required_peak_units": 92,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 34
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 153023.46875,
+        "low": 152774.875,
+        "mean": 152895.4375,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6855623461538461,
+        "low": 0.6805116923076923,
+        "mean": 0.6830175288461539,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12458.5703125,
+        "low": 12123.9765625,
+        "mean": 12285.8828125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9842804902755268,
+        "low": 0.9838473460291735,
+        "mean": 0.98407016815235,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 7.328125,
+        "low": 6.7421875,
+        "mean": 7.0390625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 93.91276041666667,
+          "failures": 28850,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.7578125
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 83.11469265367316,
+          "failures": 4435,
+          "offered": 5336,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 109.3359375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 14,
+        "monitor_units": 6,
+        "required_peak_units": 92,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 34
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.557238125,
+        "low": 0.5549376634615385,
+        "mean": 0.5560728269230769,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 160508.09375,
+        "low": 160112.71875,
+        "mean": 160308.8046875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7923993111831442,
+        "low": 0.7918859602917342,
+        "mean": 0.792144175445705,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 65.99283854166667,
+          "failures": 20273,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 5336,
+          "offered": 5336,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 14,
+        "monitor_units": 6,
+        "required_peak_units": 92,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 34
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.9921875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 153029.9453125,
+        "low": 152778.0390625,
+        "mean": 152900.1484375,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6903485192307692,
+        "low": 0.6854832692307692,
+        "mean": 0.6878351826923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12458.5703125,
+        "low": 12123.9765625,
+        "mean": 12285.8828125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9842804902755268,
+        "low": 0.9838473460291735,
+        "mean": 0.98407016815235,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 9.0703125,
+        "low": 8.421875,
+        "mean": 8.75,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 73.60677083333333,
+          "failures": 22612,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 79.01049475262369,
+          "failures": 4216,
+          "offered": 5336,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 110.1796875
+        },
+        "video": {
+          "failure_percent": 1.9856770833333333,
+          "failures": 305,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 13.9140625
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 19,
+        "monitor_units": 6,
+        "required_peak_units": 87,
+        "reserve_units": 29,
+        "video_certificate": false,
+        "video_units": 29
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 4,
+            "offered": 2560,
+            "p99_ms_mean": 13.0859375
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 6,
+            "offered": 2560,
+            "p99_ms_mean": 13.15625
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 291,
+            "offered": 4992,
+            "p99_ms_mean": 14.0546875
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153169.4140625,
+        "low": 152931.8828125,
+        "mean": 153045.1015625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6784342596153846,
+        "low": 0.6724528846153847,
+        "mean": 0.6755798942307693,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 11825.6328125,
+        "low": 11484.9296875,
+        "mean": 11651.3515625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9851130773905997,
+        "low": 0.9846673824959481,
+        "mean": 0.9848928991085899,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 13.7734375,
+        "low": 12.9609375,
+        "mean": 13.359375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 64.6484375,
+          "failures": 19860,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 67.95352323838081,
+          "failures": 3626,
+          "offered": 5336,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 116.75
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 20,
+        "monitor_units": 5,
+        "required_peak_units": 86,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 32
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.921875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 9.90625
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 154766.0625,
+        "low": 154512.109375,
+        "mean": 154636.7890625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7672043365384615,
+        "low": 0.7605125961538461,
+        "mean": 0.7637702307692308,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 14455.2421875,
+        "low": 14078.6640625,
+        "mean": 14260.7734375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9826739711538461,
+        "low": 0.9822102692307693,
+        "mean": 0.9824482788461538,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 13.7734375,
+        "low": 12.9609375,
+        "mean": 13.359375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 92.71484375,
+          "failures": 28482,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.765625
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 67.95352323838081,
+          "failures": 3626,
+          "offered": 5336,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 116.953125
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 20,
+        "monitor_units": 5,
+        "required_peak_units": 86,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 32
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6076362403846154,
+        "low": 0.6036215961538461,
+        "mean": 0.605549451923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 164065.0703125,
+        "low": 163658.3671875,
+        "mean": 163865.9140625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7985749711538461,
+        "low": 0.7980743173076923,
+        "mean": 0.798318875,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 46.666666666666664,
+          "failures": 14336,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 5336,
+          "offered": 5336,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 20,
+        "monitor_units": 5,
+        "required_peak_units": 86,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 32
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 1.6875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 2.8359375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.1796875
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 156184.6171875,
+        "low": 155823.703125,
+        "mean": 156004.9453125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.80479225,
+        "low": 0.7991434615384615,
+        "mean": 0.8019899423076923,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 14455.8046875,
+        "low": 14079.546875,
+        "mean": 14261.3359375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9826718942307693,
+        "low": 0.9822091923076923,
+        "mean": 0.9824475865384615,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 15.8515625,
+        "low": 15.03125,
+        "mean": 15.453125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 66.92057291666667,
+          "failures": 20558,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.265625
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 62.93103448275862,
+          "failures": 3358,
+          "offered": 5336,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 117.171875
+        },
+        "video": {
+          "failure_percent": 3.1380208333333335,
+          "failures": 482,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.234375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 25,
+        "monitor_units": 5,
+        "required_peak_units": 81,
+        "reserve_units": 28,
+        "video_certificate": false,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 16,
+            "offered": 2560,
+            "p99_ms_mean": 13.296875
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 3.9921875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 8,
+            "offered": 2560,
+            "p99_ms_mean": 13.28125
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.265625
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 445,
+            "offered": 4992,
+            "p99_ms_mean": 14.3046875
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 0.8,
+      "offered_tenants": 5336,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 154893.2890625,
+        "low": 154655.8046875,
+        "mean": 154773.2578125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7574133749999999,
+        "low": 0.7491553173076922,
+        "mean": 0.7533605865384615,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13832.7578125,
+        "low": 13447.2421875,
+        "mean": 13632.671875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9834501730769231,
+        "low": 0.9829755192307692,
+        "mean": 0.983221326923077,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 88.62955729166667,
+          "failures": 27227,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.8046875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 6807,
+          "offered": 6807,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 106,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 45
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7421875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7109375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 155425.21875,
+        "low": 155192.3125,
+        "mean": 155307.6953125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6298245192307692,
+        "low": 0.6281236057692308,
+        "mean": 0.628957125,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10700.234375,
+        "low": 10371.5859375,
+        "mean": 10531.0,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.98581672008547,
+        "low": 0.9853675106837607,
+        "mean": 0.9855986324786324,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 96.06770833333333,
+          "failures": 29512,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.921875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 6807,
+          "offered": 6807,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 106,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 45
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7421875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7109375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5858131923076924,
+        "low": 0.5842666442307692,
+        "mean": 0.5850224615384615,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 161230.8828125,
+        "low": 160871.453125,
+        "mean": 161051.546875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7800056837606838,
+        "low": 0.7795173717948718,
+        "mean": 0.7797585683760684,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 88.62955729166667,
+          "failures": 27227,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.8046875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 6807,
+          "offered": 6807,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 106,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 45
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7421875
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7109375
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 155425.21875,
+        "low": 155192.3125,
+        "mean": 155307.6953125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6298245192307692,
+        "low": 0.6281236057692308,
+        "mean": 0.628957125,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10700.234375,
+        "low": 10371.5859375,
+        "mean": 10531.0,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.98581672008547,
+        "low": 0.9853675106837607,
+        "mean": 0.9855986324786324,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 8.859375,
+        "low": 8.109375,
+        "mean": 8.4765625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 87.37955729166667,
+          "failures": 26843,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 84.06052592919053,
+          "failures": 5722,
+          "offered": 6807,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 110.9140625
+        },
+        "video": {
+          "failure_percent": 43.997395833333336,
+          "failures": 6758,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.9140625
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 15,
+        "monitor_units": 6,
+        "required_peak_units": 91,
+        "reserve_units": 31,
+        "video_certificate": false,
+        "video_units": 30
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7421875
+          },
+          "video": {
+            "failures": 834,
+            "offered": 2560,
+            "p99_ms_mean": 14.363636363636363
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7109375
+          },
+          "video": {
+            "failures": 868,
+            "offered": 2560,
+            "p99_ms_mean": 14.363636363636363
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.9140625
+          },
+          "video": {
+            "failures": 3924,
+            "offered": 4992,
+            "p99_ms_mean": 14.955056179775282
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155735.6875,
+        "low": 155510.0625,
+        "mean": 155622.1640625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5326127596153846,
+        "low": 0.49933560576923075,
+        "mean": 0.5161205096153846,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 9597.328125,
+        "low": 9270.3828125,
+        "mean": 9432.546875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9873226068376069,
+        "low": 0.9868768269230769,
+        "mean": 0.9871007905982906,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 3.703125,
+        "low": 3.21875,
+        "mean": 3.4609375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 83.31705729166667,
+          "failures": 25595,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.984375
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 93.49199353606582,
+          "failures": 6364,
+          "offered": 6807,
+          "p99_ms_max": 116.0,
+          "p99_ms_mean": 93.515625
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 5,
+        "monitor_units": 6,
+        "required_peak_units": 101,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 43
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 153157.3359375,
+        "low": 152933.0078125,
+        "mean": 153045.71875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6654969711538461,
+        "low": 0.6624681826923077,
+        "mean": 0.6639766153846154,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12350.7578125,
+        "low": 12027.3046875,
+        "mean": 12185.2890625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9844067868719611,
+        "low": 0.9839861122366289,
+        "mean": 0.984200597649919,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 3.703125,
+        "low": 3.21875,
+        "mean": 3.4609375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 94.95768229166667,
+          "failures": 29171,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.6953125
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 93.49199353606582,
+          "failures": 6364,
+          "offered": 6807,
+          "p99_ms_max": 116.0,
+          "p99_ms_mean": 93.515625
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 5,
+        "monitor_units": 6,
+        "required_peak_units": 101,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 43
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5988282980769231,
+        "low": 0.5974111153846153,
+        "mean": 0.5981254711538462,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 160625.9765625,
+        "low": 160217.6875,
+        "mean": 160422.3984375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7922624898703403,
+        "low": 0.7917330632090762,
+        "mean": 0.7919968901944895,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 82.83528645833333,
+          "failures": 25447,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.984375
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 6807,
+          "offered": 6807,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 5,
+        "monitor_units": 6,
+        "required_peak_units": 101,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 43
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 153161.125,
+        "low": 152936.0625,
+        "mean": 153049.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6617842211538462,
+        "low": 0.658798423076923,
+        "mean": 0.660262326923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12350.7578125,
+        "low": 12027.3046875,
+        "mean": 12185.2890625,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9844067868719611,
+        "low": 0.9839861122366289,
+        "mean": 0.984200597649919,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 10.84375,
+        "low": 10.0625,
+        "mean": 10.4375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 82.31770833333333,
+          "failures": 25288,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 80.37314529161158,
+          "failures": 5471,
+          "offered": 6807,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 109.53125
+        },
+        "video": {
+          "failure_percent": 37.233072916666664,
+          "failures": 5719,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.984375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 19,
+        "monitor_units": 6,
+        "required_peak_units": 87,
+        "reserve_units": 29,
+        "video_certificate": false,
+        "video_units": 29
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 734,
+            "offered": 2560,
+            "p99_ms_mean": 14.281818181818181
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 741,
+            "offered": 2560,
+            "p99_ms_mean": 14.327272727272728
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 3416,
+            "offered": 4992,
+            "p99_ms_mean": 14.979166666666666
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153452.4453125,
+        "low": 153236.7109375,
+        "mean": 153344.03125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5954123365384616,
+        "low": 0.5625780961538461,
+        "mean": 0.5791269615384615,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 11178.28125,
+        "low": 10845.1015625,
+        "mean": 11009.3046875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.985938381280389,
+        "low": 0.9855077998379255,
+        "mean": 0.9857253747974069,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 11.4453125,
+        "low": 10.5625,
+        "mean": 10.9921875,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 77.685546875,
+          "failures": 23865,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 79.33010136624064,
+          "failures": 5400,
+          "offered": 6807,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 116.3515625
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 12,
+        "monitor_units": 5,
+        "required_peak_units": 94,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 40
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 154939.3515625,
+        "low": 154738.2890625,
+        "mean": 154837.9296875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7277893076923077,
+        "low": 0.7236855480769231,
+        "mean": 0.7257097403846153,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 14078.8671875,
+        "low": 13753.6328125,
+        "mean": 13912.1484375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9830756057692308,
+        "low": 0.9826733461538462,
+        "mean": 0.9828773557692307,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 11.4453125,
+        "low": 10.5625,
+        "mean": 10.9921875,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 94.11458333333333,
+          "failures": 28912,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.6328125
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 79.33010136624064,
+          "failures": 5400,
+          "offered": 6807,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 116.4609375
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 12,
+        "monitor_units": 5,
+        "required_peak_units": 94,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 40
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6349906923076923,
+        "low": 0.6323353653846154,
+        "mean": 0.6336530961538461,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 164154.7109375,
+        "low": 163750.8828125,
+        "mean": 163952.0859375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7984607596153847,
+        "low": 0.7979646634615385,
+        "mean": 0.7982128173076923,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 71.56901041666667,
+          "failures": 21986,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 6807,
+          "offered": 6807,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 12,
+        "monitor_units": 5,
+        "required_peak_units": 94,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 40
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 154969.390625,
+        "low": 154747.5703125,
+        "mean": 154857.421875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7244142403846154,
+        "low": 0.7195698846153846,
+        "mean": 0.7219512115384615,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 14078.8671875,
+        "low": 13753.6328125,
+        "mean": 13912.1484375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9830756057692308,
+        "low": 0.9826733461538462,
+        "mean": 0.9828773557692307,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 18.0703125,
+        "low": 17.09375,
+        "mean": 17.5625,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 78.53515625,
+          "failures": 24126,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.203125
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 66.97517261642427,
+          "failures": 4559,
+          "offered": 6807,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 118.8125
+        },
+        "video": {
+          "failure_percent": 37.884114583333336,
+          "failures": 5819,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 15.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 25,
+        "monitor_units": 5,
+        "required_peak_units": 81,
+        "reserve_units": 28,
+        "video_certificate": false,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 759,
+            "offered": 2560,
+            "p99_ms_mean": 14.457627118644067
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 746,
+            "offered": 2560,
+            "p99_ms_mean": 14.442622950819672
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.203125
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 3592,
+            "offered": 4992,
+            "p99_ms_mean": 15.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.0,
+      "offered_tenants": 6807,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155215.2265625,
+        "low": 155032.9921875,
+        "mean": 155123.078125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.6575542403846154,
+        "low": 0.6290240576923077,
+        "mean": 0.6434238653846154,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12893.59375,
+        "low": 12560.1796875,
+        "mean": 12723.6171875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9845416442307692,
+        "low": 0.9841309615384616,
+        "mean": 0.9843401634615384,
+        "n": 128
+      }
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 115,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 54
+      },
+      "factor": 0.9,
+      "load": 1.2,
+      "policy": "borrowable",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 115,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 54
+      },
+      "factor": 0.9,
+      "load": 1.2,
+      "policy": "dedicated_idle",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 115,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 54
+      },
+      "factor": 0.9,
+      "load": 1.2,
+      "policy": "no_tenant_control",
+      "runs": 128
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 9.7109375,
+        "low": 9.03125,
+        "mean": 9.3671875,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 90.18229166666667,
+          "failures": 27704,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9609375
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 85.02373220084937,
+          "failures": 6807,
+          "offered": 8006,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 113.6953125
+        },
+        "video": {
+          "failure_percent": 65.12369791666667,
+          "failures": 10003,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.734375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 15,
+        "monitor_units": 6,
+        "required_peak_units": 91,
+        "reserve_units": 31,
+        "video_certificate": false,
+        "video_units": 30
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6953125
+          },
+          "video": {
+            "failures": 1447,
+            "offered": 2560,
+            "p99_ms_mean": 14.921052631578947
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.6796875
+          },
+          "video": {
+            "failures": 1477,
+            "offered": 2560,
+            "p99_ms_mean": 14.933333333333334
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.90625
+          },
+          "video": {
+            "failures": 4925,
+            "offered": 4992,
+            "p99_ms_mean": 14.68421052631579
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155754.6328125,
+        "low": 155484.9765625,
+        "mean": 155610.0546875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.4743632019230769,
+        "low": 0.43960728846153846,
+        "mean": 0.45680164423076924,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 9564.828125,
+        "low": 9235.0078125,
+        "mean": 9403.421875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9873711217948717,
+        "low": 0.9869213247863248,
+        "mean": 0.9871406196581196,
+        "n": 128
+      }
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 109,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 51
+      },
+      "factor": 0.95,
+      "load": 1.2,
+      "policy": "borrowable",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 109,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 51
+      },
+      "factor": 0.95,
+      "load": 1.2,
+      "policy": "dedicated_idle",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 109,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 51
+      },
+      "factor": 0.95,
+      "load": 1.2,
+      "policy": "no_tenant_control",
+      "runs": 128
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 11.9296875,
+        "low": 11.1328125,
+        "mean": 11.53125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 86.01236979166667,
+          "failures": 26423,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 81.56382712965276,
+          "failures": 6530,
+          "offered": 8006,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 112.6484375
+        },
+        "video": {
+          "failure_percent": 60.188802083333336,
+          "failures": 9245,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.734375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 19,
+        "monitor_units": 6,
+        "required_peak_units": 87,
+        "reserve_units": 29,
+        "video_certificate": false,
+        "video_units": 29
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 1317,
+            "offered": 2560,
+            "p99_ms_mean": 14.83529411764706
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 1328,
+            "offered": 2560,
+            "p99_ms_mean": 14.929411764705883
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 4839,
+            "offered": 4992,
+            "p99_ms_mean": 14.909090909090908
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153513.3359375,
+        "low": 153258.890625,
+        "mean": 153377.1015625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5296670576923077,
+        "low": 0.4952664423076923,
+        "mean": 0.5125627403846154,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10984.40625,
+        "low": 10646.4453125,
+        "mean": 10819.09375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9861993010534846,
+        "low": 0.9857580328200972,
+        "mean": 0.9859720016207455,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 5.2421875,
+        "low": 4.828125,
+        "mean": 5.03125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 85.68359375,
+          "failures": 26322,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9921875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 91.95603297526854,
+          "failures": 7362,
+          "offered": 8006,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 106.0390625
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 4,
+        "monitor_units": 5,
+        "required_peak_units": 102,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 48
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "borrowable",
+      "reserve_lent_bytes": {
+        "high": 154940.5703125,
+        "low": 154726.9140625,
+        "mean": 154830.6640625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7220578461538462,
+        "low": 0.7193833461538461,
+        "mean": 0.7206857884615384,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13996.890625,
+        "low": 13657.6875,
+        "mean": 13833.671875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9831949903846154,
+        "low": 0.9827738557692308,
+        "mean": 0.9829739423076923,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 5.2421875,
+        "low": 4.828125,
+        "mean": 5.03125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 95.12044270833333,
+          "failures": 29221,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.671875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 91.95603297526854,
+          "failures": 7362,
+          "offered": 8006,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 106.1171875
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 4,
+        "monitor_units": 5,
+        "required_peak_units": 102,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 48
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "dedicated_idle",
+      "reserve_lent_bytes": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.667461576923077,
+        "low": 0.6662109807692308,
+        "mean": 0.6668373365384616,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 164158.7265625,
+        "low": 163815.109375,
+        "mean": 163985.296875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.7983820769230769,
+        "low": 0.7979624423076923,
+        "mean": 0.7981719423076923,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 85.107421875,
+          "failures": 26145,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.9765625
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 100.0,
+          "failures": 8006,
+          "offered": 8006,
+          "p99_ms_max": null,
+          "p99_ms_mean": null
+        },
+        "video": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 10.0,
+          "p99_ms_mean": 10.0
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 4,
+        "monitor_units": 5,
+        "required_peak_units": 102,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 48
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 10.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 10.0
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "no_tenant_control",
+      "reserve_lent_bytes": {
+        "high": 154945.984375,
+        "low": 154728.453125,
+        "mean": 154834.1953125,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.7149277403846154,
+        "low": 0.7121550769230769,
+        "mean": 0.713580451923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 13996.890625,
+        "low": 13657.6875,
+        "mean": 13833.671875,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9831949903846154,
+        "low": 0.9827738557692308,
+        "mean": 0.9829739423076923,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 19.8046875,
+        "low": 18.84375,
+        "mean": 19.3125,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 83.09895833333333,
+          "failures": 25528,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.1796875
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 69.12315763177617,
+          "failures": 5534,
+          "offered": 8006,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 118.7265625
+        },
+        "video": {
+          "failure_percent": 59.140625,
+          "failures": 9084,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.8671875
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 25,
+        "monitor_units": 5,
+        "required_peak_units": 81,
+        "reserve_units": 28,
+        "video_certificate": false,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 1384,
+            "offered": 2560,
+            "p99_ms_mean": 14.943181818181818
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 1363,
+            "offered": 2560,
+            "p99_ms_mean": 14.967391304347826
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.1796875
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 4764,
+            "offered": 4992,
+            "p99_ms_mean": 14.983870967741936
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.2,
+      "offered_tenants": 8006,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155320.9765625,
+        "low": 155108.7265625,
+        "mean": 155211.21875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.5946494807692307,
+        "low": 0.5625237884615385,
+        "mean": 0.578644375,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12521.6171875,
+        "low": 12177.046875,
+        "mean": 12352.609375,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9850129615384615,
+        "low": 0.9845889326923077,
+        "mean": 0.9847967884615385,
+        "n": 128
+      }
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 124,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 63
+      },
+      "factor": 0.9,
+      "load": 1.4,
+      "policy": "borrowable",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 124,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 63
+      },
+      "factor": 0.9,
+      "load": 1.4,
+      "policy": "dedicated_idle",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 124,
+        "reserve_units": 31,
+        "video_certificate": true,
+        "video_units": 63
+      },
+      "factor": 0.9,
+      "load": 1.4,
+      "policy": "no_tenant_control",
+      "runs": 128
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 10.6953125,
+        "low": 9.984375,
+        "mean": 10.3359375,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 91.8359375,
+          "failures": 28212,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 49.96875
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.234375
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 3.9921875
+        },
+        "tenant": {
+          "failure_percent": 85.91054313099042,
+          "failures": 8067,
+          "offered": 9390,
+          "p99_ms_max": 118.0,
+          "p99_ms_mean": 114.5390625
+        },
+        "video": {
+          "failure_percent": 84.26432291666667,
+          "failures": 12943,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.2734375
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 55,
+        "base_units": 24,
+        "delivered_bytes_per_slot": 585,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 15,
+        "monitor_units": 6,
+        "required_peak_units": 91,
+        "reserve_units": 31,
+        "video_certificate": false,
+        "video_units": 30
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.75
+          },
+          "video": {
+            "failures": 2251,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.7421875
+          },
+          "video": {
+            "failures": 2236,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.234375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.8984375
+          },
+          "video": {
+            "failures": 4980,
+            "offered": 4992,
+            "p99_ms_mean": 15.0
+          }
+        }
+      },
+      "factor": 0.9,
+      "load": 1.4,
+      "offered_tenants": 9390,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155791.203125,
+        "low": 155566.609375,
+        "mean": 155674.0390625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.3962550480769231,
+        "low": 0.3730125192307692,
+        "mean": 0.3841341057692308,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 9450.8046875,
+        "low": 9142.8828125,
+        "mean": 9294.328125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9874971581196581,
+        "low": 0.9870761858974358,
+        "mean": 0.9872898076923077,
+        "n": 128
+      }
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 117,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 59
+      },
+      "factor": 0.95,
+      "load": 1.4,
+      "policy": "borrowable",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 117,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 59
+      },
+      "factor": 0.95,
+      "load": 1.4,
+      "policy": "dedicated_idle",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 6,
+        "required_peak_units": 117,
+        "reserve_units": 29,
+        "video_certificate": true,
+        "video_units": 59
+      },
+      "factor": 0.95,
+      "load": 1.4,
+      "policy": "no_tenant_control",
+      "runs": 128
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 12.875,
+        "low": 12.1171875,
+        "mean": 12.4921875,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 88.18684895833333,
+          "failures": 27091,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.234375
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 3.0,
+          "p99_ms_mean": 3.0
+        },
+        "tenant": {
+          "failure_percent": 82.97124600638978,
+          "failures": 7791,
+          "offered": 9390,
+          "p99_ms_max": 117.0,
+          "p99_ms_mean": 113.328125
+        },
+        "video": {
+          "failure_percent": 79.28385416666667,
+          "failures": 12178,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.46875
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 52,
+        "base_units": 23,
+        "delivered_bytes_per_slot": 617,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 19,
+        "monitor_units": 6,
+        "required_peak_units": 87,
+        "reserve_units": 29,
+        "video_certificate": false,
+        "video_units": 29
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 2092,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 2078,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.234375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 3.0
+          },
+          "video": {
+            "failures": 4970,
+            "offered": 4992,
+            "p99_ms_mean": 14.909090909090908
+          }
+        }
+      },
+      "factor": 0.95,
+      "load": 1.4,
+      "offered_tenants": 9390,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 153568.109375,
+        "low": 153354.0234375,
+        "mean": 153457.1640625,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.45535200961538463,
+        "low": 0.4267023173076923,
+        "mean": 0.4405851826923077,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 10829.3671875,
+        "low": 10521.4296875,
+        "mean": 10672.0703125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9863580328200973,
+        "low": 0.9859596434359805,
+        "mean": 0.9861626316855754,
+        "n": 128
+      }
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 5,
+        "required_peak_units": 110,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 56
+      },
+      "factor": 1.0,
+      "load": 1.4,
+      "policy": "borrowable",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 5,
+        "required_peak_units": 110,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 56
+      },
+      "factor": 1.0,
+      "load": 1.4,
+      "policy": "dedicated_idle",
+      "runs": 128
+    },
+    {
+      "completed_runs": 0,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": false,
+        "incumbent_certificate": true,
+        "irrevocable_tenant_budget_units": 0,
+        "monitor_units": 5,
+        "required_peak_units": 110,
+        "reserve_units": 28,
+        "video_certificate": true,
+        "video_units": 56
+      },
+      "factor": 1.0,
+      "load": 1.4,
+      "policy": "no_tenant_control",
+      "runs": 128
+    },
+    {
+      "accepted_tenant_failures": 0,
+      "accepted_tenants": {
+        "high": 21.1796875,
+        "low": 20.1484375,
+        "mean": 20.671875,
+        "n": 128
+      },
+      "classes": {
+        "best_effort": {
+          "failure_percent": 85.85611979166667,
+          "failures": 26375,
+          "offered": 30720,
+          "p99_ms_max": 50.0,
+          "p99_ms_mean": 50.0
+        },
+        "critical": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 40704,
+          "p99_ms_max": 5.0,
+          "p99_ms_mean": 4.234375
+        },
+        "monitor": {
+          "failure_percent": 0.0,
+          "failures": 0,
+          "offered": 15360,
+          "p99_ms_max": 4.0,
+          "p99_ms_mean": 4.0
+        },
+        "tenant": {
+          "failure_percent": 71.82108626198082,
+          "failures": 6744,
+          "offered": 9390,
+          "p99_ms_max": 120.0,
+          "p99_ms_mean": 119.03125
+        },
+        "video": {
+          "failure_percent": 78.40494791666667,
+          "failures": 12043,
+          "offered": 15360,
+          "p99_ms_max": 15.0,
+          "p99_ms_mean": 14.5703125
+        }
+      },
+      "completed_runs": 128,
+      "configuration": {
+        "active_units": 49,
+        "base_units": 21,
+        "delivered_bytes_per_slot": 650,
+        "feasible": true,
+        "incumbent_certificate": false,
+        "irrevocable_tenant_budget_units": 25,
+        "monitor_units": 5,
+        "required_peak_units": 81,
+        "reserve_units": 28,
+        "video_certificate": false,
+        "video_units": 27
+      },
+      "epochs": {
+        "after": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 2132,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "before": {
+          "critical": {
+            "failures": 0,
+            "offered": 5120,
+            "p99_ms_mean": 4.0
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 2560,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 2155,
+            "offered": 2560,
+            "p99_ms_mean": 15.0
+          }
+        },
+        "during": {
+          "critical": {
+            "failures": 0,
+            "offered": 19968,
+            "p99_ms_mean": 4.234375
+          },
+          "monitor": {
+            "failures": 0,
+            "offered": 4992,
+            "p99_ms_mean": 4.0
+          },
+          "video": {
+            "failures": 4969,
+            "offered": 4992,
+            "p99_ms_mean": 14.954545454545455
+          }
+        }
+      },
+      "factor": 1.0,
+      "load": 1.4,
+      "offered_tenants": 9390,
+      "policy": "no_video_contract",
+      "reserve_lent_bytes": {
+        "high": 155394.1953125,
+        "low": 155209.2890625,
+        "mean": 155300.6171875,
+        "n": 128
+      },
+      "runs": 128,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.520947875,
+        "low": 0.49692267307692306,
+        "mean": 0.5086189423076923,
+        "n": 128
+      },
+      "unused_bytes": {
+        "high": 12272.546875,
+        "low": 11959.9921875,
+        "mean": 12111.2578125,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.9852802211538462,
+        "low": 0.9848959134615385,
+        "mean": 0.9850938365384615,
+        "n": 128
+      }
+    }
+  ],
+  "interpretation": "Percentile intervals use independent seed-level paired differences, not individual packets. Zero failures is finite-model evidence under declared contracts.",
+  "paired_comparisons": [
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.9,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.15828596153846153,
+        "low": 0.15004006730769232,
+        "mean": 0.15403869230769232,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.20553915598290598,
+        "low": 0.20512724358974357,
+        "mean": 0.20533336538461539,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 7.921875,
+        "low": 7.234375,
+        "mean": 7.5625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.9,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.016411000000000002,
+        "low": -0.021639057692307697,
+        "mean": -0.01900332692307693,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 1.8671875,
+        "low": 1.453125,
+        "mean": 1.65625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.9,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.0048079711538461505,
+        "low": -0.009290817307692312,
+        "mean": -0.0070418365384615385,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.00010197649572649473,
+        "low": 8.142094017094242e-05,
+        "mean": 9.170940170939983e-05,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.95,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.23637347115384616,
+        "low": 0.22520274038461538,
+        "mean": 0.23069423076923076,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.19120122568881687,
+        "low": 0.1907390397082658,
+        "mean": 0.19096897285251216,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 9.1328125,
+        "low": 8.390625,
+        "mean": 8.75,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.95,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.030375798076923068,
+        "low": -0.03817105769230769,
+        "mean": -0.03443368269230769,
+        "n": 128
+      },
+      "utilization": {
+        "high": 5.2106969205833326e-05,
+        "low": 6.715964343598918e-06,
+        "mean": 2.6782820097244822e-05,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 1.3828125,
+        "low": 0.984375,
+        "mean": 1.1875,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.95,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.006798615384615392,
+        "low": -0.012234153846153846,
+        "mean": -0.009546826923076925,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.00012308549432740214,
+        "low": 8.667949756888376e-05,
+        "mean": 0.00010184359805510447,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 1.0,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.26492217307692306,
+        "low": 0.2517094326923077,
+        "mean": 0.25830564423076924,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.17829553846153845,
+        "low": 0.1772972307692308,
+        "mean": 0.17778931730769232,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 15.0546875,
+        "low": 14.109375,
+        "mean": 14.59375,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 1.0,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0234375,
+          "low": 0.0,
+          "mean": 0.0078125,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.049564961538461544,
+        "low": -0.05960267307692308,
+        "mean": -0.05452519230769231,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.010930403846153847,
+        "low": 0.00975114423076923,
+        "mean": 0.010347298076923073,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 1.5859375,
+        "low": 1.1875,
+        "mean": 1.390625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 1.0,
+      "load": 0.6,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.004820653846153847,
+        "low": -0.009922769230769221,
+        "mean": -0.007383634615384612,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.00012949999999999507,
+        "low": -7.500000000033522e-07,
+        "mean": 6.598076923076523e-05,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.9,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.08035305769230769,
+        "low": 0.07709370192307692,
+        "mean": 0.07872697115384615,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.20587318376068375,
+        "low": 0.20546444444444445,
+        "mean": 0.20566301282051283,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 5.3359375,
+        "low": 4.8046875,
+        "mean": 5.0625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.9,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.007764211538461537,
+        "low": 0.005935778846153847,
+        "mean": 0.006856028846153843,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -1.765625,
+        "low": -2.1796875,
+        "mean": -1.9765625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.9,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.00889236538461538,
+        "low": 0.0019032115384615376,
+        "mean": 0.0052297980769230755,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0008010790598290615,
+        "low": -0.0009207585470085503,
+        "mean": -0.0008594230769230797,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.95,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.1297628076923077,
+        "low": 0.12434818269230768,
+        "mean": 0.1269447019230769,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.19211680510534845,
+        "low": 0.1917457556726094,
+        "mean": 0.19192599270664507,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 7.328125,
+        "low": 6.7421875,
+        "mean": 7.0390625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.95,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.002828057692307693,
+        "low": -0.0067803750000000025,
+        "mean": -0.004817653846153847,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -1.4921875,
+        "low": -1.9453125,
+        "mean": -1.7109375,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.95,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.010370528846153852,
+        "low": 0.00466602884615384,
+        "mean": 0.007437634615384617,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0007654781199351703,
+        "low": -0.0008842382495948256,
+        "mean": -0.0008227309562398779,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 1.0,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.16252302884615386,
+        "low": 0.15426446153846154,
+        "mean": 0.15822077884615385,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.18431650961538462,
+        "low": 0.1839459326923077,
+        "mean": 0.18412940384615384,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 13.7734375,
+        "low": 12.9609375,
+        "mean": 13.359375,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 1.0,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": -0.03497568269230769,
+        "low": -0.041239230769230764,
+        "mean": -0.038219711538461536,
+        "n": 128
+      },
+      "utilization": {
+        "high": 2.0769230769223518e-06,
+        "low": 0.0,
+        "mean": 6.923076923074506e-07,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -1.8515625,
+        "low": -2.3359375,
+        "mean": -2.09375,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 1.0,
+      "load": 0.8,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.014110125,
+        "low": 0.0068670096153846255,
+        "mean": 0.010409644230769236,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0007226826923076865,
+        "low": -0.000828692307692315,
+        "mean": -0.0007730480769230757,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.9,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.04508045192307693,
+        "low": 0.042751951923076924,
+        "mean": 0.043934663461538466,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.20601326923076924,
+        "low": 0.20567045940170942,
+        "mean": 0.2058400641025641,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.9,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -8.1015625,
+        "low": -8.859375,
+        "mean": -8.4765625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.9,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.12928176923076923,
+        "low": 0.09672929807692307,
+        "mean": 0.11283661538461538,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0014316666666666662,
+        "low": -0.0015744337606837591,
+        "mean": -0.001502158119658121,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 0.95,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.06735007692307692,
+        "low": 0.06433177884615383,
+        "mean": 0.06585114423076922,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.1923582354132901,
+        "low": 0.1920575364667747,
+        "mean": 0.1922037074554295,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 3.703125,
+        "low": 3.21875,
+        "mean": 3.4609375,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 0.95,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.004154769230769227,
+        "low": 0.003272096153846149,
+        "mean": 0.00371428846153846,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -6.6640625,
+        "low": -7.2890625,
+        "mean": -6.9765625,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 0.95,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.10100590384615385,
+        "low": 0.06914074038461539,
+        "mean": 0.08484965384615384,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0014606462722852398,
+        "low": -0.0015903261750405137,
+        "mean": -0.0015247771474878394,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 1.0,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.094556375,
+        "low": 0.0896630673076923,
+        "mean": 0.09205664423076923,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.1848024423076923,
+        "low": 0.18452782692307693,
+        "mean": 0.18466453846153846,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 11.4453125,
+        "low": 10.5625,
+        "mean": 10.9921875,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 1.0,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.005426355769230767,
+        "low": 0.0019674711538461478,
+        "mean": 0.0037585288461538403,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -6.265625,
+        "low": -6.8984375,
+        "mean": -6.5703125,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 1.0,
+      "load": 1.0,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.09682600961538461,
+        "low": 0.0679176826923077,
+        "mean": 0.082285875,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0013991538461538364,
+        "low": -0.0015267115384615367,
+        "mean": -0.0014628076923076877,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_dedicated_idle",
+      "factor": 1.0,
+      "load": 1.2,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.055120567307692304,
+        "low": 0.05252975,
+        "mean": 0.05384845192307691,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.1849377596153846,
+        "low": 0.18467296153846155,
+        "mean": 0.184802,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": 5.2421875,
+        "low": 4.828125,
+        "mean": 5.03125,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_tenant_control",
+      "factor": 1.0,
+      "incumbent_p99_delta_ms": {
+        "critical": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "monitor": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        },
+        "video": {
+          "high": 0.0,
+          "low": 0.0,
+          "mean": 0.0,
+          "n": 128
+        }
+      },
+      "load": 1.2,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.007737749999999991,
+        "low": 0.006490817307692299,
+        "mean": 0.007105336538461531,
+        "n": 128
+      },
+      "utilization": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0,
+        "n": 128
+      }
+    },
+    {
+      "accepted_tenants": {
+        "high": -13.890625,
+        "low": -14.6796875,
+        "mean": -14.28125,
+        "n": 128
+      },
+      "contrast": "borrowable_minus_no_video_contract",
+      "factor": 1.0,
+      "load": 1.2,
+      "timely_payload_efficiency_nominal": {
+        "high": 0.15828074038461537,
+        "low": 0.12607642307692307,
+        "mean": 0.14204141346153845,
+        "n": 128
+      },
+      "utilization": {
+        "high": -0.0017569615384615414,
+        "low": -0.0018893653846153834,
+        "mean": -0.0018228461538461558,
+        "n": 128
+      }
+    }
+  ],
+  "protocol_sha256": "c881bb6f3a06a2dc43b51fb538bbf36f9b6763705301e9a9383852a44f0abc88"
+}

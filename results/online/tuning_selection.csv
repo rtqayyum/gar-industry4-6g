@@ -1,0 +1,5 @@
+all_tuning_runs_safe,config_id,gate_eta,mean_background_failure_pct,mean_command_count,mean_timely_payload_efficiency_pct,n_runs,policy_id,policy_label,selected,selection_reason,step_ms,term_ms
+True,s5_t40_g1,1.0,0.47223553881902824,1201.0,37.633636559148975,36,gar_h,GAR-H (study method),True,fixed_common_configuration_safety_confirmation,5,40
+True,s5_t40_g1,1.0,0.47223553881902824,1201.0,37.633636559148975,36,luu_joint_adapter,Luu-J adapter,True,fixed_common_configuration_safety_confirmation,5,40
+True,s5_t40_g1,1.0,0.47223553881902824,1201.0,37.633636559148975,36,luu_sequential_adapter,Luu-S adapter,True,fixed_common_configuration_safety_confirmation,5,40
+True,s5_t40_g1,1.0,0.7065763169053301,27.5,39.50215348723931,36,yu_gateway_adapter,Yu-inspired event-driven floor adapter (Y-E),True,fixed_common_configuration_safety_confirmation,5,40

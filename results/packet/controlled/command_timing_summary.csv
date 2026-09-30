@@ -1,0 +1,5 @@
+policy,command_arrivals,commands_accepted,commands_rejected,admissions_accepted,admissions_rejected,accepted_plan_commit_after_activation,transmit_to_actual_application_observations,transmit_to_actual_application_us_p99,transmit_to_actual_application_us_max,rejection_reasons
+fixed_h,0,0,0,24,12,0,0,,,"{""controller_heartbeat_stale"": 12}"
+predictive_h,2995,2301,694,24,12,0,2298,19551.184270000005,25870.167,"{""state_changed"": 694, ""controller_heartbeat_stale"": 12}"
+gar_h,2303,2302,1,24,12,0,2297,19512.348359999996,25358.959,"{""controller_heartbeat_stale"": 12, ""ledger_changed"": 1}"
+residual_priority_h,0,0,0,24,12,0,0,,,"{""controller_heartbeat_stale"": 12}"

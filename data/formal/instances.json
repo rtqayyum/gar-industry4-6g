@@ -1,0 +1,1018 @@
+[
+  {
+    "name": "booking_valley",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      0
+    ],
+    "pending": [
+      [
+        4,
+        6
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "flat_calendar",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pending": [
+      [
+        4,
+        6
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "early_urgent_pending",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      0
+    ],
+    "pending": [
+      [
+        2,
+        5
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "immutable_prefix_failure",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      0
+    ],
+    "pending": [
+      [
+        1,
+        2
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "booking_after_request",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      0,
+      6
+    ],
+    "pending": [
+      [
+        4,
+        6
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "integer_service_rounding",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "pending": [
+      [
+        5,
+        8
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_00",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      2,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        6
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_01",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      0,
+      3,
+      2
+    ],
+    "pending": [
+      [
+        5,
+        3
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_02",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      3,
+      3,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        10
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_03",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      1
+    ],
+    "bookings": [
+      0,
+      2,
+      1
+    ],
+    "pending": [
+      [
+        3,
+        10
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_04",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      3,
+      1,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        8
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_05",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "pending": [
+      [
+        5,
+        3
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_06",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      3,
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pending": [
+      [
+        4,
+        4
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_07",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      2,
+      1
+    ],
+    "pending": [
+      [
+        3,
+        8
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_08",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      2,
+      0,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        3
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_09",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      1,
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      2,
+      2,
+      0
+    ],
+    "pending": [
+      [
+        5,
+        8
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_10",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      1,
+      3,
+      0
+    ],
+    "pending": [
+      [
+        4,
+        9
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_11",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      1,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      1,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        5
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_12",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      2,
+      3
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        2
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_13",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      1,
+      0,
+      1,
+      2
+    ],
+    "pending": [
+      [
+        5,
+        7
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_14",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      2,
+      3,
+      3
+    ],
+    "pending": [
+      [
+        4,
+        2
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_15",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      1,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      2
+    ],
+    "pending": [
+      [
+        4,
+        10
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_16",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      1
+    ],
+    "bookings": [
+      0,
+      0,
+      1,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        5,
+        6
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_17",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      1,
+      2,
+      0,
+      3
+    ],
+    "pending": [
+      [
+        5,
+        4
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_18",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3,
+      2
+    ],
+    "bookings": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "pending": [
+      [
+        5,
+        9
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_19",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      1
+    ],
+    "bookings": [
+      0,
+      1,
+      1,
+      2,
+      3
+    ],
+    "pending": [
+      [
+        5,
+        5
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_20",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      2,
+      1
+    ],
+    "pending": [
+      [
+        3,
+        9
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_21",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 3,
+    "tail": 1,
+    "prefix": [
+      3
+    ],
+    "bookings": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "pending": [
+      [
+        4,
+        7
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_22",
+    "capacity": 8,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 2,
+    "term": 2,
+    "tail": 1,
+    "prefix": [
+      1,
+      3
+    ],
+    "bookings": [
+      0,
+      0,
+      3,
+      1
+    ],
+    "pending": [
+      [
+        4,
+        3
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  },
+  {
+    "name": "declared_random_snapshot_23",
+    "capacity": 11,
+    "units": 8,
+    "base": 0,
+    "maximum": 6,
+    "background": 2,
+    "delay": 1,
+    "term": 4,
+    "tail": 1,
+    "prefix": [
+      2
+    ],
+    "bookings": [
+      0,
+      2,
+      3,
+      1,
+      2
+    ],
+    "pending": [
+      [
+        5,
+        5
+      ]
+    ],
+    "envelopes": [
+      {
+        "deadline": 3,
+        "sigma": 2,
+        "rho": 1
+      }
+    ]
+  }
+]

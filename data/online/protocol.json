@@ -1,0 +1,394 @@
+{
+  "study_id": "GAR-online-planning",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scope": "Generated one-gateway packet-slot workloads with four traffic families, fixed arrivals and deadline rules, and policy-independent tenant offers. Context scale traces are generated; they are not recorded packet arrivals or a causal replay of network measurements.",
+  "common_conditions": {
+    "capacity_bytes_per_ms": 650,
+    "resource_units": 106,
+    "command_delay_ms": 2,
+    "batch_size": 3,
+    "tenant_offer_rate_per_s": 10,
+    "high_pressure_tenant_offer_rate_per_s": 100,
+    "tenant_offer_rate_semantics": "Individual tenant requests per second, not batches. At each fixed 5-ms offer epoch, P(batch)=min(1, lease_rate_per_s * family_request_multiplier * 5 / (1000 * batch_size)); each accepted epoch emits batch_size requests.",
+    "offer_epoch_ms": 5,
+    "offer_trace_control": "Offer generation uses its own seeded RNG and fixed epoch, preserves the synchronized/regime-shift family multiplier, and is independent of policy, gate, planner, and controller cadence. Every run exports a lease-offer trace; the runner records its content hash and actual individual offer count/rate.",
+    "duration_ms": 5000,
+    "burst_factor": 2.5,
+    "expire_background_main": true,
+    "admissibility_guard": "Every adapter uses the same frozen gateway calendar, critical-demand certificate, existing bookings, command lead, and observed request fields. The guard has no access to future realized arrivals."
+  },
+  "method_labels": {
+    "gar_h": {
+      "simulator_policy": "joint_guarded",
+      "role": "study method and local control",
+      "description": "Guarded admission and release with the common optional deadline-headroom screen."
+    },
+    "luu_joint_adapter": {
+      "simulator_policy": "luu_joint_style",
+      "source": "Luu et al., IEEE Transactions on Network and Service Management, 2022, DOI 10.1109/TNSM.2022.3160352",
+      "mapping": "J-PR principle only: jointly select a feasible subset of same-epoch finite one-hop tenant bookings, using declared deadline-derived priority and the common gateway certificate.",
+      "common_wrapper": "The adapter retains GAR-H's frozen periodic safe-maintenance controller beneath the common gateway interface; it changes the same-epoch request-set selection only. It is not a standalone Luu et al. system.",
+      "priority_mapping": "A study-specific deterministic gateway priority is used: shorter requested window first, then lower resource-time, then arrival order. It is not claimed to reproduce Luu et al.'s priority semantics.",
+      "not_reproduced": [
+        "infrastructure and VNF allocation",
+        "demand-uncertainty robustness",
+        "optimization and cost model",
+        "priority response-delay policy",
+        "the paper's SLA guarantee or proof"
+      ]
+    },
+    "luu_sequential_adapter": {
+      "simulator_policy": "luu_sequential_style",
+      "source": "Luu et al., IEEE Transactions on Network and Service Management, 2022, DOI 10.1109/TNSM.2022.3160352",
+      "mapping": "S-PR principle only: process the same-epoch finite one-hop bookings sequentially in declared deadline-derived priority order, using the common gateway certificate.",
+      "common_wrapper": "The adapter retains GAR-H's frozen periodic safe-maintenance controller beneath the common gateway interface; it changes same-epoch request ordering only. It is not a standalone Luu et al. system.",
+      "priority_mapping": "A study-specific deterministic gateway priority is used: shorter requested window first, then lower resource-time, then arrival order. It is not claimed to reproduce Luu et al.'s priority semantics.",
+      "not_reproduced": [
+        "infrastructure and VNF allocation",
+        "demand-uncertainty robustness",
+        "optimization and cost model",
+        "priority response-delay policy",
+        "the paper's SLA guarantee or proof"
+      ]
+    },
+    "yu_gateway_adapter": {
+      "simulator_policy": "yu_gateway_style",
+      "source": "Yu et al., Journal of Systems Architecture, 2025, DOI 10.1016/j.sysarc.2025.103539",
+      "mapping": "Yu-inspired event-driven floor reservation/reclamation pattern only: map a tenant request to one one-hop finite deadline-constrained demand; on an arrival or booking expiry, recompute the minimum legal one-gateway floor over the full BASE-to-MAXIMUM range around the fixed active booking calendar; and independently reject proposals failing the common gateway calendar guard. Unlike GAR-H, this adapter does not run a periodic guarded-release optimizer between events.",
+      "event_window": "The recomputation window is the remaining span of active fixed bookings (or one slot when none remain), not the common 40-ms periodic wrapper term.",
+      "not_reproduced": [
+        "ATS or CBS implementation",
+        "multiple egress paths",
+        "local-deadline allocation across hops",
+        "TSN frame and credit behavior",
+        "redistribution of bandwidth among active tenant flows (the simulator uses irrevocable per-booking quotas)",
+        "the source proof or performance guarantees"
+      ]
+    }
+  },
+  "families": [
+    "deadline_mix",
+    "heavy_tenants",
+    "regime_shift",
+    "synchronized"
+  ],
+  "contexts": {
+    "tuning_suffixes": [
+      0,
+      1,
+      2
+    ],
+    "evaluation_suffixes": [
+      3,
+      4,
+      5
+    ],
+    "evaluation_qualification": "Evaluation contexts are separate from the calibration subset used here. They may have appeared during earlier method development and are not globally untouched prospective evidence."
+  },
+  "seeds": [
+    2101,
+    2102,
+    2103
+  ],
+  "loads": [
+    0.4,
+    0.8,
+    1.4
+  ],
+  "traffic_blocks": [
+    {
+      "name": "nominal_low",
+      "load": 0.4,
+      "tenant_offer_rate_per_s": 10
+    },
+    {
+      "name": "nominal_mid",
+      "load": 0.8,
+      "tenant_offer_rate_per_s": 10
+    },
+    {
+      "name": "nominal_stress",
+      "load": 1.4,
+      "tenant_offer_rate_per_s": 10
+    },
+    {
+      "name": "high_request_pressure_low",
+      "load": 0.4,
+      "tenant_offer_rate_per_s": 100
+    },
+    {
+      "name": "high_request_pressure_mid",
+      "load": 0.8,
+      "tenant_offer_rate_per_s": 100
+    },
+    {
+      "name": "high_request_pressure_stress",
+      "load": 1.4,
+      "tenant_offer_rate_per_s": 100
+    }
+  ],
+  "tuning_grid": {
+    "step_ms": [
+      5
+    ],
+    "term_ms": [
+      40
+    ],
+    "gate_eta": [
+      1.0
+    ],
+    "traffic_block": {
+      "load": 0.8,
+      "tenant_offer_rate_per_s": 10,
+      "rationale": "One fixed ordinary-pressure calibration setting is used for all policies. Stress settings are prespecified evaluation blocks, not selected best cases."
+    },
+    "selection_rule": "A common 5-ms control/offer decision cadence, 40-ms wrapper term (the frozen simulator default), and enabled deadline-headroom gate (eta=1.0) are fixed for every policy. The tuning contexts therefore provide a safety/calibration confirmation only; they do not select policy-specific settings. All main rows use this one fixed configuration and differ only in the studied proposal/release rule layered under the same wrapper."
+  },
+  "main_evaluation": {
+    "policies": [
+      "gar_h",
+      "luu_joint_adapter",
+      "luu_sequential_adapter",
+      "yu_gateway_adapter"
+    ],
+    "common_wrapper": "All main policies include the same enabled GAR-H deadline-headroom gate (eta=1.0) and the same independent calendar/certificate guard. The external rows compare composite one-gateway adapters under this wrapper, not standalone source methods.",
+    "unit_of_inference": "family x evaluation-context cluster after averaging three seed runs and, for the overall primary contrast, all six traffic blocks; n=12 paired context clusters overall and n=3 within each workload family. A per-traffic-block contrast also has n=12. Traffic settings from the same context are never treated as independent replicates.",
+    "primary_endpoint": "timely_payload_efficiency_pct",
+    "safety_conditions": [
+      "critical_failures == 0",
+      "capacity_ledger_violations == 0",
+      "envelope_violation_endpoints == 0"
+    ],
+    "secondary_endpoints": [
+      "tenant_acceptance_pct",
+      "tenant_timely_pct",
+      "background_failure_pct",
+      "active_utilization_pct",
+      "reserve_fraction_pct",
+      "command_count",
+      "planning_time_us_p95",
+      "gate_time_us_p95",
+      "controller_compute_us_per_control_tick"
+    ],
+    "inference": "Two-sided paired sign-flip permutation p-values for the three prespecified GAR-versus-adapter primary contrasts, Holm adjusted. Pointwise family-stratified paired bootstrap intervals resample the three context clusters within each fixed workload family and are descriptive. No packet, seed, or traffic-cell pseudo-replication is used."
+  },
+  "factorial_diagnostic": {
+    "purpose": "Mechanism diagnostic, not tuning or a new source-method reproduction.",
+    "factors": {
+      "gate_eta": [
+        -1.0,
+        1.0
+      ],
+      "expire_background": [
+        0,
+        1
+      ],
+      "command_delay_ms": [
+        2,
+        10
+      ]
+    },
+    "load": 1.4,
+    "tenant_offer_rate_per_s": 100,
+    "policy": "gar_h",
+    "uses_selected_configuration": true
+  },
+  "oracle": {
+    "scope": "A small finite deterministic booking fixture is exhaustively enumerated only as a correctness diagnostic for joint subset selection. It is non-deployable and not a production opportunity bound."
+  },
+  "simulator_sha256": "96ea273be12d7d5b847a7c81083ecf5cbe90f297cf191fbda84ac5134fe14179",
+  "timing_jobs": [
+    {
+      "family": "deadline_mix",
+      "load": 0.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 0.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 0.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 0.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 1.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 1.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 1.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "deadline_mix",
+      "load": 1.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 0.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 0.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 0.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 0.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 1.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 1.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 1.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "heavy_tenants",
+      "load": 1.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "regime_shift",
+      "load": 0.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "regime_shift",
+      "load": 0.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "regime_shift",
+      "load": 0.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "regime_shift",
+      "load": 0.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "regime_shift",
+      "load": 1.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "regime_shift",
+      "load": 1.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "regime_shift",
+      "load": 1.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "regime_shift",
+      "load": 1.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "synchronized",
+      "load": 0.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "synchronized",
+      "load": 0.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "synchronized",
+      "load": 0.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "synchronized",
+      "load": 0.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_low"
+    },
+    {
+      "family": "synchronized",
+      "load": 1.4,
+      "policy": "gar_h",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "synchronized",
+      "load": 1.4,
+      "policy": "luu_joint_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "synchronized",
+      "load": 1.4,
+      "policy": "luu_sequential_adapter",
+      "traffic": "high_request_pressure_stress"
+    },
+    {
+      "family": "synchronized",
+      "load": 1.4,
+      "policy": "yu_gateway_adapter",
+      "traffic": "high_request_pressure_stress"
+    }
+  ]
+}

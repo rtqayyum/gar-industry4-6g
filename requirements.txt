@@ -1,0 +1,4 @@
+# Python 3.12; a C++17 compiler is required separately.
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.0

@@ -1,0 +1,31 @@
+{
+  "protocol_version": "reserve-v13-2",
+  "status": "metric correction frozen before v2 development and held-out rerun",
+  "metric_revision": "V1 incorrectly credited partial on-time service of incomplete original items. V2 primary efficiency credits total bytes only when the entire original job/burst completes by its original deadline, for every class. Partial service remains a separate utilization diagnostic. No policy, workload, seed, admission, or scheduler change; preserved v1 is superseded for primary efficiency. V2 also rejects edits to unsupported hardcoded protocol semantics.",
+  "claim_scope": "Deterministic preemptive byte-service model; not host, packet-radio, or 6G validation.",
+  "resources": {"units": 106, "nominal_bytes_per_ms": 650, "slot_ms": 1},
+  "duration_ms": 1250,
+  "offer_until_ms": 1200,
+  "protection": {"request_ms": 390, "activation_ms": 400, "event_start_ms": 410, "event_end_ms": 800, "release_ms": 810, "installation_lead_ms": 10},
+  "epochs": {"before": [200, 400], "during": [410, 800], "after": [810, 1010]},
+  "contracts": {
+    "critical": {"period_ms": 5, "base_max_bytes": 500, "event_extra_max_bytes": 950, "deadline_ms": 8, "nominal_base_units": 21, "nominal_active_units": 49},
+    "video": {"period_ms": 10, "max_bytes_at_load_one": 2400, "deadline_ms": 15, "nominal_units_at_load_one": 40},
+    "monitor": {"period_ms": 10, "max_bytes": 100, "deadline_ms": 20, "nominal_units": 5},
+    "best_effort": {"period_ms": 5, "min_bytes": 1500, "max_bytes": 2500, "deadline_ms": 50, "protected": false}
+  },
+  "load_levels": [0.6, 0.8, 1.0, 1.2, 1.4],
+  "delivered_service_factors": [1.0, 0.95, 0.9],
+  "floor_rule": "ceil(nominal_units / delivered_service_factor), with video nominal units ceil(40*load); every service quota uses floor(650*factor*units/106)",
+  "tenant": {"offer_start_ms": 100, "offer_end_ms": 1050, "offer_probability_per_ms": "load/18", "lead_ms": 10, "units": [4, 8, 12, 16, 20], "lengths_ms": [40, 80, 120], "payload_fractions": [0.65, 0.85, 1.0], "release_modes": ["all_at_start", "thirds", "late_half"], "payload_basis": "fraction of nominal, not factor-adjusted, service; release certificate decides feasibility"},
+  "policies": ["borrowable", "dedicated_idle", "no_tenant_control", "no_video_contract"],
+  "development_seeds": {"first": 1, "count": 8},
+  "heldout_seeds": {"first": 10001, "count": 128},
+  "infeasible_cells": "Record provisioning rejection for protected policies; do not execute an impossible incumbent contract. Run the no-video-contract diagnostic with its explicitly weaker contract.",
+  "accounting": "Keep all offered jobs, including rejected tenant requests and expired bytes; primary credit for EVERY class requires full item completion by original deadline. Partial service is charged as consumed capacity but never credited as complete timely payload.",
+  "expiry": "All policies discard unsent bytes at the original deadline and count failure; no deadline resets.",
+  "statistics": {"unit": "independently generated workload seed, paired across policies within a cell", "interval": "paired percentile bootstrap", "confidence": 0.95, "replicates": 2000, "bootstrap_seed": 77713},
+  "prespecified_example_seed": 10001,
+  "non_disruption_definition": "Preserve admitted critical/video/monitor deadlines and reserved service. Opportunistic throughput and identical latency are not promised.",
+  "changes_after_evaluation": "Any change to workload, model, protocol, or seeds requires a new version and new output directory."
+}

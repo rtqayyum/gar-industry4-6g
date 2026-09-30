@@ -1,0 +1,229 @@
+{
+  "command_timing": {
+    "cohort": "48 controlled targeted trials; accepted installation commands only",
+    "delay_definition": "(actual_application_ns - transmit_ns) / 1000000",
+    "event": "Recorded command application, not first packet service",
+    "lateness_definition": "(actual_application_ns - scheduled_ns) / 1000000",
+    "matched_fraction_pct": 99.82620030414947,
+    "no_unconditional_p999_claim": true,
+    "policies": {
+      "gar_h": {
+        "accepted": 2302,
+        "matched": 2297,
+        "maximum_application_lateness_ms": 8.250084,
+        "p99_application_lateness_ms": 0.6972649999999997,
+        "p99_transmit_to_application_ms": 19.512348359999997,
+        "rejected": 1,
+        "unmatched": 5
+      },
+      "predictive_h": {
+        "accepted": 2301,
+        "matched": 2298,
+        "maximum_application_lateness_ms": 7.684083,
+        "p99_application_lateness_ms": 0.6176194700000014,
+        "p99_transmit_to_application_ms": 19.551184270000007,
+        "rejected": 694,
+        "unmatched": 3
+      }
+    },
+    "statistic": "Pooled matched-installation 99th percentile, linear interpolation"
+  },
+  "floor49_probe": {
+    "audit_scope": "Reaggregates frozen window records; original raw-residence reconstruction is covered by the preserved independent follow-up audit",
+    "departure_interval": "(start, end]",
+    "execution_mean_max_bytes_per_ms": 212.78606451612904,
+    "execution_mean_min_bytes_per_ms": 175.34702412868631,
+    "executions": [
+      {
+        "covered_windows": 1492,
+        "first_start_ms": 9,
+        "floor_units": 49,
+        "input_trace_sha256": "9a81b0a50aed19a31631b8fda75445154fbc6c39dd5a1e40a48e995970df5f16",
+        "last_start_ms": 1500,
+        "mean_critical_departure_bytes_per_ms": 181.93801608579088,
+        "minimum_critical_departure_bytes_per_ms": 161.76,
+        "name": "probe_1801_240_49",
+        "packet_bytes": 240,
+        "seed": 1801
+      },
+      {
+        "covered_windows": 1488,
+        "first_start_ms": 13,
+        "floor_units": 49,
+        "input_trace_sha256": "174fc9d4c007bae58abd6762247cb27d43184af8e2d622d1ea89141661ddd7ff",
+        "last_start_ms": 1500,
+        "mean_critical_departure_bytes_per_ms": 212.78606451612904,
+        "minimum_critical_departure_bytes_per_ms": 208.896,
+        "name": "probe_1801_96_49",
+        "packet_bytes": 96,
+        "seed": 1801
+      },
+      {
+        "covered_windows": 1492,
+        "first_start_ms": 9,
+        "floor_units": 49,
+        "input_trace_sha256": "9a81b0a50aed19a31631b8fda75445154fbc6c39dd5a1e40a48e995970df5f16",
+        "last_start_ms": 1500,
+        "mean_critical_departure_bytes_per_ms": 175.34702412868631,
+        "minimum_critical_departure_bytes_per_ms": 168.0,
+        "name": "probe_1802_240_49",
+        "packet_bytes": 240,
+        "seed": 1802
+      },
+      {
+        "covered_windows": 1487,
+        "first_start_ms": 14,
+        "floor_units": 49,
+        "input_trace_sha256": "174fc9d4c007bae58abd6762247cb27d43184af8e2d622d1ea89141661ddd7ff",
+        "last_start_ms": 1500,
+        "mean_critical_departure_bytes_per_ms": 207.4257215870881,
+        "minimum_critical_departure_bytes_per_ms": 194.496,
+        "name": "probe_1802_96_49",
+        "packet_bytes": 96,
+        "seed": 1802
+      }
+    ],
+    "nominal_integer_floor_bytes_per_ms": 300,
+    "not_established": [
+      "continuously runnable kernel queue",
+      "deterministic lower service curve"
+    ],
+    "scope": "Four executions; two packet sizes with two repetitions of identical input bytes per size; overlapping windows are not independent trials",
+    "selection": "Windows wholly covered by the union of observed critical ingress-to-egress/expiry residence, including serialization",
+    "start_grid_ms": 1,
+    "window_ms": 500
+  },
+  "historical_complete_case": {
+    "ci95_high_pp": -0.1966361139963876,
+    "ci95_low_pp": -11.9374888238116,
+    "comparator": "Predictive",
+    "contexts": [
+      {
+        "comparator_useful_bytes": 12115711,
+        "denominator": 19553950,
+        "family": "deadline_mix",
+        "focal_useful_bytes": 11889054,
+        "pooled_weight": 0.09904553071981931,
+        "seed": 905
+      },
+      {
+        "comparator_useful_bytes": 5356400,
+        "denominator": 19563700,
+        "family": "deadline_mix",
+        "focal_useful_bytes": 5343992,
+        "pooled_weight": 0.09909491685021846,
+        "seed": 906
+      },
+      {
+        "comparator_useful_bytes": 5344612,
+        "denominator": 19821750,
+        "family": "heavy_tenants",
+        "focal_useful_bytes": 5350405,
+        "pooled_weight": 0.10040200310144899,
+        "seed": 907
+      },
+      {
+        "comparator_useful_bytes": 5276656,
+        "denominator": 19818500,
+        "family": "heavy_tenants",
+        "focal_useful_bytes": 5264878,
+        "pooled_weight": 0.10038554105798261,
+        "seed": 909
+      },
+      {
+        "comparator_useful_bytes": 11970432,
+        "denominator": 19820450,
+        "family": "regime_shift",
+        "focal_useful_bytes": 4199141,
+        "pooled_weight": 0.10039541828406244,
+        "seed": 910
+      },
+      {
+        "comparator_useful_bytes": 5319374,
+        "denominator": 19813300,
+        "family": "regime_shift",
+        "focal_useful_bytes": 5318123,
+        "pooled_weight": 0.10035920178843641,
+        "seed": 911
+      },
+      {
+        "comparator_useful_bytes": 6337088,
+        "denominator": 19813300,
+        "family": "regime_shift",
+        "focal_useful_bytes": 5918369,
+        "pooled_weight": 0.10035920178843641,
+        "seed": 912
+      },
+      {
+        "comparator_useful_bytes": 6049900,
+        "denominator": 19657300,
+        "family": "synchronized",
+        "focal_useful_bytes": 6108005,
+        "pooled_weight": 0.09956902370205019,
+        "seed": 901
+      },
+      {
+        "comparator_useful_bytes": 5485309,
+        "denominator": 19798350,
+        "family": "synchronized",
+        "focal_useful_bytes": 5351611,
+        "pooled_weight": 0.10028347638849106,
+        "seed": 902
+      },
+      {
+        "comparator_useful_bytes": 5431011,
+        "denominator": 19763250,
+        "family": "synchronized",
+        "focal_useful_bytes": 5389957,
+        "pooled_weight": 0.10010568631905416,
+        "seed": 903
+      }
+    ],
+    "difference_pp": -4.332282041911349,
+    "equal_context_complete_case_mean_pp_for_distinction_only": -4.316828749634328,
+    "focal": "GAR-H",
+    "uncertainty": "10000 paired context-bootstrap draws within four fixed families; seed 20260928; percentile interval",
+    "weighting": "Denominator-weighted context contrasts, equal to the difference of pooled timely-byte/capacity ratios"
+  },
+  "historical_missing_bounds": {
+    "comparisons": [
+      {
+        "all_intended_contexts_lower_bound_pp": -3.9464251736521283,
+        "all_intended_contexts_upper_bound_pp": 4.386908159681205,
+        "comparison_policy": "fixed_h",
+        "intended_primary_contexts": 12,
+        "pairwise_complete_case_mean_gar_minus_comparator_pp": -1.950782950660866,
+        "pairwise_observed_contexts": 11
+      },
+      {
+        "all_intended_contexts_lower_bound_pp": -5.774573960752658,
+        "all_intended_contexts_upper_bound_pp": 2.5587593725806754,
+        "comparison_policy": "predictive_h",
+        "intended_primary_contexts": 12,
+        "pairwise_complete_case_mean_gar_minus_comparator_pp": -3.9087499819649163,
+        "pairwise_observed_contexts": 11
+      },
+      {
+        "all_intended_contexts_lower_bound_pp": -10.251417173445041,
+        "all_intended_contexts_upper_bound_pp": 6.4152494932216255,
+        "comparison_policy": "residual_priority_h",
+        "intended_primary_contexts": 12,
+        "pairwise_complete_case_mean_gar_minus_comparator_pp": -2.4318670669522566,
+        "pairwise_observed_contexts": 10
+      }
+    ],
+    "different_estimand_from_complete_case": true,
+    "missing_efficiency_range_pct": [
+      0,
+      100
+    ],
+    "missing_primary_attempts": [
+      "heavy_tenants_908_primary_residual_priority_h",
+      "deadline_mix_904_primary_gar_h"
+    ],
+    "not_confidence_intervals": true,
+    "weighting": "Equal weight 1/12 for every intended primary context"
+  },
+  "new_experiments": false,
+  "status": "PASS"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "Constructed finite slotted byte-service cases; not gateway measurements or a radio trial",
+  "exhaustive_horizon_slots": 5,
+  "per_slot_arrival_and_service_values": [
+    0,
+    1,
+    2
+  ],
+  "exhaustive_cases": 59049,
+  "certificate_acceptances": 21626,
+  "forward_backward_disagreements": 0,
+  "earlier_release_checks": 7909,
+  "earlier_release_failures": 0,
+  "script_sha256": "69d8f8a2e0d4c1a79787343a21fe2e407293b309b3506a7ce9edff44ae8d7185",
+  "examples": [
+    {
+      "case": "available_at_start",
+      "payload_bytes": 100,
+      "reserved_bytes": 100,
+      "delivered_service_bytes": 100,
+      "certificate_pass": true,
+      "unfinished_bytes": 0
+    },
+    {
+      "case": "two_equal_releases",
+      "payload_bytes": 100,
+      "reserved_bytes": 100,
+      "delivered_service_bytes": 100,
+      "certificate_pass": true,
+      "unfinished_bytes": 0
+    },
+    {
+      "case": "all_payload_in_last_slot",
+      "payload_bytes": 100,
+      "reserved_bytes": 100,
+      "delivered_service_bytes": 100,
+      "certificate_pass": false,
+      "unfinished_bytes": 99
+    },
+    {
+      "case": "insufficient_delivered_service",
+      "payload_bytes": 100,
+      "reserved_bytes": 100,
+      "delivered_service_bytes": 50,
+      "certificate_pass": false,
+      "unfinished_bytes": 50
+    }
+  ]
+}

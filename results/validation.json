@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "Final-code relocation and numerical equivalence to the reported experiments; no new efficacy measurements.",
+  "matched": {
+    "replayed_requests": 2048,
+    "gar_accepted": 2029,
+    "calendar_preserving_accepted": 845,
+    "non_timing_outcomes_match": true
+  },
+  "online": {
+    "replayed_runs": 1300,
+    "main_runs": 864,
+    "calibration_runs": 144,
+    "factorial_runs": 288,
+    "smoke_runs": 4,
+    "serial_timing_runs": 32,
+    "non_timing_outcomes_match": true,
+    "per_offer_and_offer_trace_files_byte_identical": 2600,
+    "context_input_hashes_match": 24
+  },
+  "reserve": {
+    "replayed_configurations": 7680,
+    "non_timing_outcomes_match": true,
+    "provisioning_calculations_match": true
+  },
+  "formal_and_gateway": {
+    "calendar_profile_results_match": true,
+    "staged_payload_results_match": true,
+    "guard_component_counterexamples_match": true
+  },
+  "packet": {
+    "raw_files_hash_verified": 1505,
+    "historical_primary_ledgers_reaggregated": 40,
+    "historical_attempt_registry_rows": 66,
+    "historical_timeouts_retained": 2,
+    "controlled_trials": 48,
+    "service_probes": 12,
+    "numeric_analysis_outputs_byte_identical": 21,
+    "numeric_report_outputs_byte_identical": 7,
+    "precision_analysis_byte_identical": true,
+    "instrumentation_fault_checks": 4,
+    "live_engine_build": "PASS; prepare-only",
+    "new_live_trials": 0
+  },
+  "allowed_replay_differences": [
+    "Host runtime measurements",
+    "Run timestamps",
+    "Relocated input paths and source-file hashes"
+  ]
+}

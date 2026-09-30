@@ -1,0 +1,712 @@
+{
+  "cohort": {
+    "blocks": [
+      [
+        "deadline_mix",
+        905
+      ],
+      [
+        "deadline_mix",
+        906
+      ],
+      [
+        "heavy_tenants",
+        907
+      ],
+      [
+        "heavy_tenants",
+        909
+      ],
+      [
+        "regime_shift",
+        910
+      ],
+      [
+        "regime_shift",
+        911
+      ],
+      [
+        "regime_shift",
+        912
+      ],
+      [
+        "synchronized",
+        901
+      ],
+      [
+        "synchronized",
+        902
+      ],
+      [
+        "synchronized",
+        903
+      ]
+    ],
+    "blocks_per_policy": 10,
+    "excluded_primary_timeout_blocks": [
+      [
+        "deadline_mix",
+        904
+      ],
+      [
+        "heavy_tenants",
+        908
+      ]
+    ],
+    "exclusion_note": "One GAR-H and one residual attempt timed out; the two affected blocks are not in the common complete cohort. No retries substituted.",
+    "name": "Historical UDP packet-execution cohort",
+    "replicate_note": "Packets are pooled descriptive observations, not independent trial replicates.",
+    "selection": "Common complete primary original blocks for all four policies",
+    "trial_count": 40
+  },
+  "definitions": {
+    "absent": "No sink receipt in the completed trial packet ledger; does not imply all such packets were dropped",
+    "aggregation": "Counts pooled over the ten common complete blocks; not an average of trial percentages",
+    "deadline_failure_pct": "100 * (late + absent) / all_offered",
+    "delay_tail": "100 * (N_offered - count(sink_receive_ns - intended_release_ns <= delay_budget_ms * 1e6)) / N_offered",
+    "delay_tail_caveat": "The x axis is a common delay budget, not each packet's original deadline. Missing packets remain in the numerator for every finite budget. Critical deadlines vary.",
+    "late": "Sink receipt exists and sink_receive_ns > original_deadline_ns",
+    "on_time": "Sink receipt exists and sink_receive_ns <= original_deadline_ns"
+  },
+  "outcomes": [
+    {
+      "absent": 22,
+      "absent_gateway_status": {
+        "expired": 22
+      },
+      "absent_pct": 0.008620284312649875,
+      "failures": 26,
+      "failures_pct": 0.01018760873313167,
+      "label": "Fixed + gate",
+      "late": 4,
+      "late_pct": 0.0015673244204817956,
+      "offered": 255212,
+      "on_time": 255186,
+      "on_time_pct": 99.98981239126687,
+      "policy": "fixed_h",
+      "traffic_group": "critical"
+    },
+    {
+      "absent": 30,
+      "absent_gateway_status": {
+        "expired": 30
+      },
+      "absent_pct": 0.011754933153613466,
+      "failures": 34,
+      "failures_pct": 0.013322257574095261,
+      "label": "Predictive + gate",
+      "late": 4,
+      "late_pct": 0.0015673244204817956,
+      "offered": 255212,
+      "on_time": 255178,
+      "on_time_pct": 99.98667774242591,
+      "policy": "predictive_h",
+      "traffic_group": "critical"
+    },
+    {
+      "absent": 66,
+      "absent_gateway_status": {
+        "expired": 66
+      },
+      "absent_pct": 0.025860852937949628,
+      "failures": 69,
+      "failures_pct": 0.027036346253310972,
+      "label": "GAR-H",
+      "late": 3,
+      "late_pct": 0.0011754933153613467,
+      "offered": 255212,
+      "on_time": 255143,
+      "on_time_pct": 99.97296365374669,
+      "policy": "gar_h",
+      "traffic_group": "critical"
+    },
+    {
+      "absent": 36,
+      "absent_gateway_status": {
+        "expired": 36
+      },
+      "absent_pct": 0.01410591978433616,
+      "failures": 40,
+      "failures_pct": 0.015673244204817954,
+      "label": "Residual priority + gate",
+      "late": 4,
+      "late_pct": 0.0015673244204817956,
+      "offered": 255212,
+      "on_time": 255172,
+      "on_time_pct": 99.98432675579518,
+      "policy": "residual_priority_h",
+      "traffic_group": "critical"
+    },
+    {
+      "absent": 9398,
+      "absent_gateway_status": {
+        "forwarded": 3,
+        "queued": 9395
+      },
+      "absent_pct": 11.76043648012814,
+      "failures": 64496,
+      "failures_pct": 80.70877965762338,
+      "label": "Fixed + gate",
+      "late": 55098,
+      "late_pct": 68.94834317749525,
+      "offered": 79912,
+      "on_time": 15416,
+      "on_time_pct": 19.291220342376615,
+      "policy": "fixed_h",
+      "traffic_group": "video"
+    },
+    {
+      "absent": 7461,
+      "absent_gateway_status": {
+        "forwarded": 5,
+        "queued": 7456
+      },
+      "absent_pct": 9.336520172189408,
+      "failures": 62039,
+      "failures_pct": 77.63414756231855,
+      "label": "Predictive + gate",
+      "late": 54578,
+      "late_pct": 68.29762739012914,
+      "offered": 79912,
+      "on_time": 17873,
+      "on_time_pct": 22.36585243768145,
+      "policy": "predictive_h",
+      "traffic_group": "video"
+    },
+    {
+      "absent": 9058,
+      "absent_gateway_status": {
+        "forwarded": 5,
+        "queued": 9053
+      },
+      "absent_pct": 11.334968465311842,
+      "failures": 69025,
+      "failures_pct": 86.3762638902793,
+      "label": "GAR-H",
+      "late": 59967,
+      "late_pct": 75.04129542496746,
+      "offered": 79912,
+      "on_time": 10887,
+      "on_time_pct": 13.623736109720692,
+      "policy": "gar_h",
+      "traffic_group": "video"
+    },
+    {
+      "absent": 9939,
+      "absent_gateway_status": {
+        "forwarded": 4,
+        "queued": 9935
+      },
+      "absent_pct": 12.43743117429172,
+      "failures": 66393,
+      "failures_pct": 83.0826409049955,
+      "label": "Residual priority + gate",
+      "late": 56454,
+      "late_pct": 70.64520973070377,
+      "offered": 79912,
+      "on_time": 13519,
+      "on_time_pct": 16.917359095004503,
+      "policy": "residual_priority_h",
+      "traffic_group": "video"
+    },
+    {
+      "absent": 0,
+      "absent_gateway_status": {},
+      "absent_pct": 0.0,
+      "failures": 338,
+      "failures_pct": 0.6836293030217224,
+      "label": "Fixed + gate",
+      "late": 338,
+      "late_pct": 0.6836293030217224,
+      "offered": 49442,
+      "on_time": 49104,
+      "on_time_pct": 99.31637069697828,
+      "policy": "fixed_h",
+      "traffic_group": "meter_monitor"
+    },
+    {
+      "absent": 0,
+      "absent_gateway_status": {},
+      "absent_pct": 0.0,
+      "failures": 75,
+      "failures_pct": 0.15169289268233485,
+      "label": "Predictive + gate",
+      "late": 75,
+      "late_pct": 0.15169289268233485,
+      "offered": 49442,
+      "on_time": 49367,
+      "on_time_pct": 99.84830710731767,
+      "policy": "predictive_h",
+      "traffic_group": "meter_monitor"
+    },
+    {
+      "absent": 0,
+      "absent_gateway_status": {},
+      "absent_pct": 0.0,
+      "failures": 197,
+      "failures_pct": 0.39844666477893287,
+      "label": "GAR-H",
+      "late": 197,
+      "late_pct": 0.39844666477893287,
+      "offered": 49442,
+      "on_time": 49245,
+      "on_time_pct": 99.60155333522107,
+      "policy": "gar_h",
+      "traffic_group": "meter_monitor"
+    },
+    {
+      "absent": 0,
+      "absent_gateway_status": {},
+      "absent_pct": 0.0,
+      "failures": 339,
+      "failures_pct": 0.6856518749241536,
+      "label": "Residual priority + gate",
+      "late": 339,
+      "late_pct": 0.6856518749241536,
+      "offered": 49442,
+      "on_time": 49103,
+      "on_time_pct": 99.31434812507585,
+      "policy": "residual_priority_h",
+      "traffic_group": "meter_monitor"
+    }
+  ],
+  "per_type": [
+    {
+      "absent": 21,
+      "absent_pct": 0.018295551567318918,
+      "failures": 24,
+      "failures_pct": 0.02090920179122162,
+      "label": "Fixed + gate",
+      "late": 3,
+      "late_pct": 0.0026136502239027027,
+      "offered": 114782,
+      "on_time": 114758,
+      "on_time_pct": 99.97909079820877,
+      "policy": "fixed_h",
+      "traffic_type": "Robot",
+      "type_id": 0
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Fixed + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 91475,
+      "on_time": 91475,
+      "on_time_pct": 100.0,
+      "policy": "fixed_h",
+      "traffic_type": "PLC",
+      "type_id": 1
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Fixed + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 45419,
+      "on_time": 45419,
+      "on_time_pct": 100.0,
+      "policy": "fixed_h",
+      "traffic_type": "AGV",
+      "type_id": 2
+    },
+    {
+      "absent": 1,
+      "absent_pct": 0.02828054298642534,
+      "failures": 2,
+      "failures_pct": 0.05656108597285068,
+      "label": "Fixed + gate",
+      "late": 1,
+      "late_pct": 0.02828054298642534,
+      "offered": 3536,
+      "on_time": 3534,
+      "on_time_pct": 99.94343891402715,
+      "policy": "fixed_h",
+      "traffic_type": "Alarm",
+      "type_id": 5
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 135,
+      "failures_pct": 0.7072876827159847,
+      "label": "Fixed + gate",
+      "late": 135,
+      "late_pct": 0.7072876827159847,
+      "offered": 19087,
+      "on_time": 18952,
+      "on_time_pct": 99.29271231728401,
+      "policy": "fixed_h",
+      "traffic_type": "Meter",
+      "type_id": 3
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 203,
+      "failures_pct": 0.6687530884533026,
+      "label": "Fixed + gate",
+      "late": 203,
+      "late_pct": 0.6687530884533026,
+      "offered": 30355,
+      "on_time": 30152,
+      "on_time_pct": 99.3312469115467,
+      "policy": "fixed_h",
+      "traffic_type": "Monitor",
+      "type_id": 4
+    },
+    {
+      "absent": 9398,
+      "absent_pct": 11.76043648012814,
+      "failures": 64496,
+      "failures_pct": 80.70877965762338,
+      "label": "Fixed + gate",
+      "late": 55098,
+      "late_pct": 68.94834317749525,
+      "offered": 79912,
+      "on_time": 15416,
+      "on_time_pct": 19.291220342376615,
+      "policy": "fixed_h",
+      "traffic_type": "Video",
+      "type_id": 6
+    },
+    {
+      "absent": 28,
+      "absent_pct": 0.024394068756425222,
+      "failures": 31,
+      "failures_pct": 0.027007718980327926,
+      "label": "Predictive + gate",
+      "late": 3,
+      "late_pct": 0.0026136502239027027,
+      "offered": 114782,
+      "on_time": 114751,
+      "on_time_pct": 99.97299228101967,
+      "policy": "predictive_h",
+      "traffic_type": "Robot",
+      "type_id": 0
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Predictive + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 91475,
+      "on_time": 91475,
+      "on_time_pct": 100.0,
+      "policy": "predictive_h",
+      "traffic_type": "PLC",
+      "type_id": 1
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Predictive + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 45419,
+      "on_time": 45419,
+      "on_time_pct": 100.0,
+      "policy": "predictive_h",
+      "traffic_type": "AGV",
+      "type_id": 2
+    },
+    {
+      "absent": 2,
+      "absent_pct": 0.05656108597285068,
+      "failures": 3,
+      "failures_pct": 0.08484162895927602,
+      "label": "Predictive + gate",
+      "late": 1,
+      "late_pct": 0.02828054298642534,
+      "offered": 3536,
+      "on_time": 3533,
+      "on_time_pct": 99.91515837104072,
+      "policy": "predictive_h",
+      "traffic_type": "Alarm",
+      "type_id": 5
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 26,
+      "failures_pct": 0.13621836852307853,
+      "label": "Predictive + gate",
+      "late": 26,
+      "late_pct": 0.13621836852307853,
+      "offered": 19087,
+      "on_time": 19061,
+      "on_time_pct": 99.86378163147693,
+      "policy": "predictive_h",
+      "traffic_type": "Meter",
+      "type_id": 3
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 49,
+      "failures_pct": 0.16142315928183165,
+      "label": "Predictive + gate",
+      "late": 49,
+      "late_pct": 0.16142315928183165,
+      "offered": 30355,
+      "on_time": 30306,
+      "on_time_pct": 99.83857684071816,
+      "policy": "predictive_h",
+      "traffic_type": "Monitor",
+      "type_id": 4
+    },
+    {
+      "absent": 7461,
+      "absent_pct": 9.336520172189408,
+      "failures": 62039,
+      "failures_pct": 77.63414756231855,
+      "label": "Predictive + gate",
+      "late": 54578,
+      "late_pct": 68.29762739012914,
+      "offered": 79912,
+      "on_time": 17873,
+      "on_time_pct": 22.36585243768145,
+      "policy": "predictive_h",
+      "traffic_type": "Video",
+      "type_id": 6
+    },
+    {
+      "absent": 50,
+      "absent_pct": 0.043560837065045044,
+      "failures": 51,
+      "failures_pct": 0.04443205380634594,
+      "label": "GAR-H",
+      "late": 1,
+      "late_pct": 0.0008712167413009008,
+      "offered": 114782,
+      "on_time": 114731,
+      "on_time_pct": 99.95556794619365,
+      "policy": "gar_h",
+      "traffic_type": "Robot",
+      "type_id": 0
+    },
+    {
+      "absent": 12,
+      "absent_pct": 0.013118338343809785,
+      "failures": 12,
+      "failures_pct": 0.013118338343809785,
+      "label": "GAR-H",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 91475,
+      "on_time": 91463,
+      "on_time_pct": 99.98688166165618,
+      "policy": "gar_h",
+      "traffic_type": "PLC",
+      "type_id": 1
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "GAR-H",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 45419,
+      "on_time": 45419,
+      "on_time_pct": 100.0,
+      "policy": "gar_h",
+      "traffic_type": "AGV",
+      "type_id": 2
+    },
+    {
+      "absent": 4,
+      "absent_pct": 0.11312217194570136,
+      "failures": 6,
+      "failures_pct": 0.16968325791855204,
+      "label": "GAR-H",
+      "late": 2,
+      "late_pct": 0.05656108597285068,
+      "offered": 3536,
+      "on_time": 3530,
+      "on_time_pct": 99.83031674208145,
+      "policy": "gar_h",
+      "traffic_type": "Alarm",
+      "type_id": 5
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 77,
+      "failures_pct": 0.4034159375491172,
+      "label": "GAR-H",
+      "late": 77,
+      "late_pct": 0.4034159375491172,
+      "offered": 19087,
+      "on_time": 19010,
+      "on_time_pct": 99.59658406245089,
+      "policy": "gar_h",
+      "traffic_type": "Meter",
+      "type_id": 3
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 120,
+      "failures_pct": 0.3953220227310163,
+      "label": "GAR-H",
+      "late": 120,
+      "late_pct": 0.3953220227310163,
+      "offered": 30355,
+      "on_time": 30235,
+      "on_time_pct": 99.60467797726898,
+      "policy": "gar_h",
+      "traffic_type": "Monitor",
+      "type_id": 4
+    },
+    {
+      "absent": 9058,
+      "absent_pct": 11.334968465311842,
+      "failures": 69025,
+      "failures_pct": 86.3762638902793,
+      "label": "GAR-H",
+      "late": 59967,
+      "late_pct": 75.04129542496746,
+      "offered": 79912,
+      "on_time": 10887,
+      "on_time_pct": 13.623736109720692,
+      "policy": "gar_h",
+      "traffic_type": "Video",
+      "type_id": 6
+    },
+    {
+      "absent": 20,
+      "absent_pct": 0.017424334826018018,
+      "failures": 24,
+      "failures_pct": 0.02090920179122162,
+      "label": "Residual priority + gate",
+      "late": 4,
+      "late_pct": 0.0034848669652036033,
+      "offered": 114782,
+      "on_time": 114758,
+      "on_time_pct": 99.97909079820877,
+      "policy": "residual_priority_h",
+      "traffic_type": "Robot",
+      "type_id": 0
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Residual priority + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 91475,
+      "on_time": 91475,
+      "on_time_pct": 100.0,
+      "policy": "residual_priority_h",
+      "traffic_type": "PLC",
+      "type_id": 1
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 0,
+      "failures_pct": 0.0,
+      "label": "Residual priority + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 45419,
+      "on_time": 45419,
+      "on_time_pct": 100.0,
+      "policy": "residual_priority_h",
+      "traffic_type": "AGV",
+      "type_id": 2
+    },
+    {
+      "absent": 16,
+      "absent_pct": 0.45248868778280543,
+      "failures": 16,
+      "failures_pct": 0.45248868778280543,
+      "label": "Residual priority + gate",
+      "late": 0,
+      "late_pct": 0.0,
+      "offered": 3536,
+      "on_time": 3520,
+      "on_time_pct": 99.5475113122172,
+      "policy": "residual_priority_h",
+      "traffic_type": "Alarm",
+      "type_id": 5
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 137,
+      "failures_pct": 0.7177660187562215,
+      "label": "Residual priority + gate",
+      "late": 137,
+      "late_pct": 0.7177660187562215,
+      "offered": 19087,
+      "on_time": 18950,
+      "on_time_pct": 99.28223398124378,
+      "policy": "residual_priority_h",
+      "traffic_type": "Meter",
+      "type_id": 3
+    },
+    {
+      "absent": 0,
+      "absent_pct": 0.0,
+      "failures": 202,
+      "failures_pct": 0.6654587382638775,
+      "label": "Residual priority + gate",
+      "late": 202,
+      "late_pct": 0.6654587382638775,
+      "offered": 30355,
+      "on_time": 30153,
+      "on_time_pct": 99.33454126173612,
+      "policy": "residual_priority_h",
+      "traffic_type": "Monitor",
+      "type_id": 4
+    },
+    {
+      "absent": 9939,
+      "absent_pct": 12.43743117429172,
+      "failures": 66393,
+      "failures_pct": 83.0826409049955,
+      "label": "Residual priority + gate",
+      "late": 56454,
+      "late_pct": 70.64520973070377,
+      "offered": 79912,
+      "on_time": 13519,
+      "on_time_pct": 16.917359095004503,
+      "policy": "residual_priority_h",
+      "traffic_type": "Video",
+      "type_id": 6
+    }
+  ],
+  "relative_original_deadlines_ms": {
+    "critical": [
+      20.0,
+      50.0,
+      100.0
+    ],
+    "meter_monitor": [
+      80.0,
+      150.0,
+      200.0,
+      500.0
+    ],
+    "video": [
+      50.0,
+      100.0
+    ]
+  }
+}

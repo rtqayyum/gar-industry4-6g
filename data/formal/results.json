@@ -1,0 +1,4419 @@
+[
+  {
+    "case": {
+      "name": "booking_valley",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "pending": [
+        [
+          4,
+          6
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 0,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          6
+        ],
+        "profiles_enumerated": 196,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2,
+          5
+        ],
+        "profiles_enumerated": 108,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          2,
+          1,
+          4
+        ],
+        "profiles_enumerated": 50,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 16
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 370
+  },
+  {
+    "case": {
+      "name": "flat_calendar",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pending": [
+        [
+          4,
+          6
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 3,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 9,
+    "calendar_max_work": 9,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          6
+        ],
+        "profiles_enumerated": 343,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          5
+        ],
+        "profiles_enumerated": 216,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          4
+        ],
+        "profiles_enumerated": 125,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          1,
+          3,
+          3
+        ],
+        "profiles_enumerated": 64,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 27
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 8
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 1
+      }
+    ],
+    "profiles_enumerated": 784
+  },
+  {
+    "case": {
+      "name": "early_urgent_pending",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "pending": [
+        [
+          2,
+          5
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 0,
+    "calendar_max_work": 9,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          3,
+          0,
+          3
+        ],
+        "profiles_enumerated": 196,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 8,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          0,
+          3
+        ],
+        "profiles_enumerated": 108,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 8,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          0,
+          3
+        ],
+        "profiles_enumerated": 50,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 8,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          0,
+          3
+        ],
+        "profiles_enumerated": 16,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 370
+  },
+  {
+    "case": {
+      "name": "immutable_prefix_failure",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "pending": [
+        [
+          1,
+          2
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": -1,
+    "calendar_max_request_units": -1,
+    "constant_max_work": null,
+    "calendar_max_work": null,
+    "constant_zero_request_feasible": false,
+    "calendar_zero_request_feasible": false,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 196
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 108
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 50
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 16
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 370
+  },
+  {
+    "case": {
+      "name": "booking_after_request",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        0,
+        6
+      ],
+      "pending": [
+        [
+          4,
+          6
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": -1,
+    "calendar_max_request_units": -1,
+    "constant_max_work": null,
+    "calendar_max_work": null,
+    "constant_zero_request_feasible": false,
+    "calendar_zero_request_feasible": false,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 0
+  },
+  {
+    "case": {
+      "name": "integer_service_rounding",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "pending": [
+        [
+          5,
+          8
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 0,
+    "calendar_max_work": 12,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 13,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          4
+        ],
+        "profiles_enumerated": 196,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2,
+          4
+        ],
+        "profiles_enumerated": 108,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          1,
+          4
+        ],
+        "profiles_enumerated": 50,
+        "calendar_changes": 2
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          0,
+          3
+        ],
+        "profiles_enumerated": 16,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 4,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 370
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_00",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        2,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          6
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 3,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 120,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 60,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2,
+          3
+        ],
+        "profiles_enumerated": 24,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 6
+      },
+      {
+        "request_units": 4,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 210
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_01",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        0,
+        3,
+        2
+      ],
+      "pending": [
+        [
+          5,
+          3
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 2,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 6,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 140,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 72,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          1,
+          1,
+          1
+        ],
+        "profiles_enumerated": 30,
+        "constant_changes": 0,
+        "calendar_changes": 0
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 8
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 250
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_02",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        3,
+        3,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          10
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 1,
+    "constant_max_work": 0,
+    "calendar_max_work": 4,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 15,
+        "calendar_min_cost": 11,
+        "constant_witness": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          5
+        ],
+        "profiles_enumerated": 384,
+        "constant_changes": 1,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 12,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          2,
+          2,
+          4
+        ],
+        "profiles_enumerated": 135,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 32
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 554
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_03",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        1
+      ],
+      "bookings": [
+        0,
+        2,
+        1
+      ],
+      "pending": [
+        [
+          3,
+          10
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 7,
+    "tail_feasible": true,
+    "constant_max_request_units": -1,
+    "calendar_max_request_units": -1,
+    "constant_max_work": null,
+    "calendar_max_work": null,
+    "constant_zero_request_feasible": false,
+    "calendar_zero_request_feasible": false,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 30
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 20
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 3,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 6
+      },
+      {
+        "request_units": 4,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 2
+      },
+      {
+        "request_units": 5,
+        "request_work": 10,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 70
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_04",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        3,
+        1,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          8
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 1,
+    "constant_max_work": 0,
+    "calendar_max_work": 4,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 15,
+        "calendar_min_cost": 12,
+        "constant_witness": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "profiles_enumerated": 576,
+        "constant_changes": 1,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 12,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          3,
+          2,
+          4
+        ],
+        "profiles_enumerated": 225,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 64
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 9
+      },
+      {
+        "request_units": 4,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 874
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_05",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "pending": [
+        [
+          5,
+          3
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 3,
+    "calendar_max_request_units": 4,
+    "constant_max_work": 9,
+    "calendar_max_work": 12,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 245,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 144,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 75,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 32,
+        "constant_changes": 0,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 7,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2,
+          1
+        ],
+        "profiles_enumerated": 9,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 505
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_06",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        3,
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pending": [
+        [
+          4,
+          4
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 5,
+    "calendar_max_request_units": 5,
+    "constant_max_work": 12,
+    "calendar_max_work": 12,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 49,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 36,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 25,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 8,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 16,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 10,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 9,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 5,
+        "request_work": 12,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          1,
+          1
+        ],
+        "profiles_enumerated": 4,
+        "constant_changes": 1,
+        "calendar_changes": 1
+      },
+      {
+        "request_units": 6,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 1
+      }
+    ],
+    "profiles_enumerated": 140
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_07",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        2,
+        1
+      ],
+      "pending": [
+        [
+          3,
+          8
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 7,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 0,
+    "constant_max_work": 0,
+    "calendar_max_work": 0,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          4,
+          4
+        ],
+        "calendar_witness": [
+          3,
+          5
+        ],
+        "profiles_enumerated": 30,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 20
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 3,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 6
+      },
+      {
+        "request_units": 4,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 2
+      },
+      {
+        "request_units": 5,
+        "request_work": 10,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 70
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_08",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        2,
+        0,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          3
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 4,
+    "calendar_max_work": 16,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 840,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          2,
+          2
+        ],
+        "profiles_enumerated": 360,
+        "constant_changes": 1,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 7,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "profiles_enumerated": 120,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 7,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "profiles_enumerated": 24,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 1344
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_09",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        1,
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "pending": [
+        [
+          5,
+          8
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 3,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 12,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          6
+        ],
+        "profiles_enumerated": 175,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 12,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          4
+        ],
+        "profiles_enumerated": 96,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 11,
+        "constant_witness": null,
+        "calendar_witness": [
+          2,
+          2,
+          4
+        ],
+        "profiles_enumerated": 45,
+        "calendar_changes": 2
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 16
+      },
+      {
+        "request_units": 4,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 3
+      },
+      {
+        "request_units": 5,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 335
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_10",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        1,
+        3,
+        0
+      ],
+      "pending": [
+        [
+          4,
+          9
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": -1,
+    "calendar_max_request_units": 1,
+    "constant_max_work": null,
+    "calendar_max_work": 3,
+    "constant_zero_request_feasible": false,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 12,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          3,
+          6
+        ],
+        "profiles_enumerated": 168,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 12,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          2,
+          5
+        ],
+        "profiles_enumerated": 90,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 40
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 310
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_11",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        1,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        1,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          5
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 0,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          5
+        ],
+        "profiles_enumerated": 144,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          3,
+          4
+        ],
+        "profiles_enumerated": 75,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          3,
+          3
+        ],
+        "profiles_enumerated": 32,
+        "calendar_changes": 2
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 9
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 260
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_12",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        2,
+        3
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          2
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 2,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 6,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 8,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3
+        ],
+        "profiles_enumerated": 96,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 8,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3
+        ],
+        "profiles_enumerated": 45,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 8,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3
+        ],
+        "profiles_enumerated": 16,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 160
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_13",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "pending": [
+        [
+          5,
+          7
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 4,
+    "calendar_max_work": 16,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 14,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          4
+        ],
+        "profiles_enumerated": 1260,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 14,
+        "calendar_min_cost": 9,
+        "constant_witness": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          4,
+          3
+        ],
+        "profiles_enumerated": 600,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 9,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          3,
+          3,
+          1
+        ],
+        "profiles_enumerated": 240,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "profiles_enumerated": 72,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 2184
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_14",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "pending": [
+        [
+          4,
+          2
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 2,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 6,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3
+        ],
+        "profiles_enumerated": 80,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          1,
+          2
+        ],
+        "profiles_enumerated": 36,
+        "constant_changes": 1,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          1,
+          1,
+          1
+        ],
+        "profiles_enumerated": 12,
+        "constant_changes": 1,
+        "calendar_changes": 1
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 2
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 130
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_15",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        1,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        2
+      ],
+      "pending": [
+        [
+          4,
+          10
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": -1,
+    "calendar_max_request_units": -1,
+    "constant_max_work": null,
+    "calendar_max_work": null,
+    "constant_zero_request_feasible": false,
+    "calendar_zero_request_feasible": false,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 20
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 6
+      },
+      {
+        "request_units": 3,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 2
+      },
+      {
+        "request_units": 4,
+        "request_work": 10,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 40
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_16",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        1
+      ],
+      "bookings": [
+        0,
+        0,
+        1,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          5,
+          6
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 3,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          4
+        ],
+        "profiles_enumerated": 144,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          4
+        ],
+        "profiles_enumerated": 75,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          2,
+          1,
+          3
+        ],
+        "profiles_enumerated": 32,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 9
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 260
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_17",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        1,
+        2,
+        0,
+        3
+      ],
+      "pending": [
+        [
+          5,
+          4
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 2,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 8,
+    "calendar_max_work": 8,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 840,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 360,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 7,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          1
+        ],
+        "profiles_enumerated": 120,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 24
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 1344
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_18",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3,
+        2
+      ],
+      "bookings": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "pending": [
+        [
+          5,
+          9
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 3,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 14,
+        "calendar_min_cost": 11,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          4
+        ],
+        "profiles_enumerated": 180,
+        "constant_changes": 2,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 14,
+        "calendar_min_cost": 11,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          3
+        ],
+        "profiles_enumerated": 100,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 11,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          3,
+          2
+        ],
+        "profiles_enumerated": 48,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 18
+      },
+      {
+        "request_units": 4,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 4
+      },
+      {
+        "request_units": 5,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 350
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_19",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        1
+      ],
+      "bookings": [
+        0,
+        1,
+        1,
+        2,
+        3
+      ],
+      "pending": [
+        [
+          5,
+          5
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 4,
+    "calendar_max_work": 8,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 9,
+        "calendar_min_cost": 7,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          3
+        ],
+        "profiles_enumerated": 720,
+        "constant_changes": 2,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 9,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          2,
+          3,
+          2
+        ],
+        "profiles_enumerated": 300,
+        "constant_changes": 2,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 8,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          3,
+          2,
+          1
+        ],
+        "profiles_enumerated": 96,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 18
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 1134
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_20",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        2,
+        1
+      ],
+      "pending": [
+        [
+          3,
+          9
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 7,
+    "tail_feasible": true,
+    "constant_max_request_units": 0,
+    "calendar_max_request_units": 0,
+    "constant_max_work": 0,
+    "calendar_max_work": 0,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 11,
+        "calendar_min_cost": 11,
+        "constant_witness": [
+          4,
+          4
+        ],
+        "calendar_witness": [
+          3,
+          5
+        ],
+        "profiles_enumerated": 30,
+        "constant_changes": 2,
+        "calendar_changes": 2
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 20
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 3,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 6
+      },
+      {
+        "request_units": 4,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 2
+      },
+      {
+        "request_units": 5,
+        "request_work": 10,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 70
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_21",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 3,
+      "tail": 1,
+      "prefix": [
+        3
+      ],
+      "bookings": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "pending": [
+        [
+          4,
+          7
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 3,
+    "calendar_max_work": 9,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 12,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          3,
+          4
+        ],
+        "profiles_enumerated": 245,
+        "constant_changes": 1,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 1,
+        "request_work": 3,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 12,
+        "calendar_min_cost": 10,
+        "constant_witness": [
+          3,
+          3,
+          3
+        ],
+        "calendar_witness": [
+          0,
+          4,
+          3
+        ],
+        "profiles_enumerated": 144,
+        "constant_changes": 1,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 2,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          1,
+          4,
+          2
+        ],
+        "profiles_enumerated": 75,
+        "calendar_changes": 4
+      },
+      {
+        "request_units": 3,
+        "request_work": 9,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 10,
+        "constant_witness": null,
+        "calendar_witness": [
+          3,
+          3,
+          1
+        ],
+        "profiles_enumerated": 32,
+        "calendar_changes": 1
+      },
+      {
+        "request_units": 4,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 9
+      },
+      {
+        "request_units": 5,
+        "request_work": 15,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 18,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 505
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_22",
+      "capacity": 8,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 2,
+      "term": 2,
+      "tail": 1,
+      "prefix": [
+        1,
+        3
+      ],
+      "bookings": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "pending": [
+        [
+          4,
+          3
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 8,
+    "tail_feasible": true,
+    "constant_max_request_units": 2,
+    "calendar_max_request_units": 3,
+    "constant_max_work": 4,
+    "calendar_max_work": 6,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 24,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 2,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 15,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 6,
+        "calendar_min_cost": 6,
+        "constant_witness": [
+          1,
+          1
+        ],
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 8,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 3,
+        "request_work": 6,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 6,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          2
+        ],
+        "profiles_enumerated": 3,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 4,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 10,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 12,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 50
+  },
+  {
+    "case": {
+      "name": "declared_random_snapshot_23",
+      "capacity": 11,
+      "units": 8,
+      "base": 0,
+      "maximum": 6,
+      "background": 2,
+      "delay": 1,
+      "term": 4,
+      "tail": 1,
+      "prefix": [
+        2
+      ],
+      "bookings": [
+        0,
+        2,
+        3,
+        1,
+        2
+      ],
+      "pending": [
+        [
+          5,
+          5
+        ]
+      ],
+      "envelopes": [
+        {
+          "deadline": 3,
+          "sigma": 2,
+          "rho": 1
+        }
+      ]
+    },
+    "horizon": 9,
+    "tail_feasible": true,
+    "constant_max_request_units": 1,
+    "calendar_max_request_units": 2,
+    "constant_max_work": 4,
+    "calendar_max_work": 8,
+    "constant_zero_request_feasible": true,
+    "calendar_zero_request_feasible": true,
+    "request_levels": [
+      {
+        "request_units": 0,
+        "request_work": 0,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          3
+        ],
+        "profiles_enumerated": 600,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 1,
+        "request_work": 4,
+        "constant_feasible": true,
+        "calendar_feasible": true,
+        "constant_min_cost": 10,
+        "calendar_min_cost": 8,
+        "constant_witness": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "calendar_witness": [
+          0,
+          0,
+          3,
+          3
+        ],
+        "profiles_enumerated": 240,
+        "constant_changes": 1,
+        "calendar_changes": 3
+      },
+      {
+        "request_units": 2,
+        "request_work": 8,
+        "constant_feasible": false,
+        "calendar_feasible": true,
+        "constant_min_cost": null,
+        "calendar_min_cost": 8,
+        "constant_witness": null,
+        "calendar_witness": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "profiles_enumerated": 72,
+        "calendar_changes": 5
+      },
+      {
+        "request_units": 3,
+        "request_work": 16,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 12
+      },
+      {
+        "request_units": 4,
+        "request_work": 20,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 5,
+        "request_work": 24,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      },
+      {
+        "request_units": 6,
+        "request_work": 32,
+        "constant_feasible": false,
+        "calendar_feasible": false,
+        "constant_min_cost": null,
+        "calendar_min_cost": null,
+        "constant_witness": null,
+        "calendar_witness": null,
+        "profiles_enumerated": 0
+      }
+    ],
+    "profiles_enumerated": 924
+  }
+]

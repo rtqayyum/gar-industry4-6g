@@ -1,0 +1,52 @@
+{
+  "attempts": 60,
+  "targeted_trials": 48,
+  "service_probes": 12,
+  "critical_packets": 103104,
+  "critical_misses": 1,
+  "background_packets": 23040,
+  "background_misses": 0,
+  "offered_jobs": 144,
+  "accepted_jobs": 96,
+  "timely_jobs": 96,
+  "critical_ingress_allowance_violations": 70,
+  "clock_discrepancy_flags": 0,
+  "measurement_sampling_gap_flags": 0,
+  "final_sampling_gap_flags": 12,
+  "maximum_witness_gap_ms": 321.525042,
+  "max_abs_continuous_minus_monotonic_ms": 0.010626000000002,
+  "max_abs_wall_minus_continuous_ms": 0.0219999999999984,
+  "arrival_envelopes_targeted": {
+    "gateway_ingress": {
+      "groups": 144,
+      "conforming_groups": 143
+    },
+    "offered": {
+      "groups": 144,
+      "conforming_groups": 144
+    },
+    "source_send": {
+      "groups": 144,
+      "conforming_groups": 143
+    }
+  },
+  "service_probes_500ms_execution_mean_ranges": {
+    "21": {
+      "minimum": 119.33694369973192,
+      "maximum": 125.9682471457354,
+      "nominal_fractional_rate": 128.7735849056604
+    },
+    "49": {
+      "minimum": 175.34702412868634,
+      "maximum": 212.78606451612904,
+      "nominal_fractional_rate": 300.47169811320754
+    },
+    "68": {
+      "minimum": 198.14670241286865,
+      "maximum": 267.0177139019477,
+      "nominal_fractional_rate": 416.9811320754717
+    }
+  },
+  "probe_replication_scope": "Two executions of identical input bytes at each packet-size/floor combination; overlapping windows are not independent repetitions.",
+  "ack_observation_scope": "Gateway timestamp follows state/status/lateness journal writes, so send-to-observed includes transport, scheduling, processing and journal time; not pure transport delay."
+}

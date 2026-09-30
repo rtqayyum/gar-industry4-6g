@@ -1,0 +1,10 @@
+{
+  "accepted_tenant_failures_all_policies": 0,
+  "capacity_invariant_errors": 0,
+  "completed_cells": 5760,
+  "elapsed_seconds": 92.47748974998831,
+  "protected_incumbent_failures": 0,
+  "protected_runs": 3840,
+  "protocol_cells": 7680,
+  "provisioning_rejected_cells": 1920
+}

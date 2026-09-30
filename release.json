@@ -1,0 +1,12 @@
+{
+  "package": "GAR-Final-Code",
+  "updated_date": "2026-09-30",
+  "scope": "Final experiment implementations, generated inputs, recorded outcomes, tests, analysis and Python figure generators.",
+  "data_revision": "Recorded experimental inputs and outcomes unchanged during the 2026-09-30 documentation and plotting refresh.",
+  "figure_reproduction": "Quantitative plots generated from recorded experimental data using Python, with PNG and SVG output.",
+  "remote_repository": {
+    "url": "https://github.com/rtqayyum/gar-industry4-6g",
+    "visibility": "public",
+    "default_branch": "main"
+  }
+}

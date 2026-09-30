@@ -1,0 +1,42 @@
+[
+  {
+    "complete_batch_decisions": 1354,
+    "complete_control_decisions": 9608,
+    "max_batch_decision_us": 78.917,
+    "mean_batch_decision_p95_us": 38.312625,
+    "mean_periodic_decision_p95_us": 5.99475,
+    "mean_total_decision_ms_per_run": 10.788944749999999,
+    "policy": "gar_h",
+    "runs": 8
+  },
+  {
+    "complete_batch_decisions": 1354,
+    "complete_control_decisions": 9608,
+    "max_batch_decision_us": 276.625,
+    "mean_batch_decision_p95_us": 148.86975,
+    "mean_periodic_decision_p95_us": 11.083124999999999,
+    "mean_total_decision_ms_per_run": 29.31419,
+    "policy": "luu_joint_adapter",
+    "runs": 8
+  },
+  {
+    "complete_batch_decisions": 1354,
+    "complete_control_decisions": 9608,
+    "max_batch_decision_us": 135.959,
+    "mean_batch_decision_p95_us": 37.942625,
+    "mean_periodic_decision_p95_us": 5.864375000000001,
+    "mean_total_decision_ms_per_run": 10.634288874999992,
+    "policy": "luu_sequential_adapter",
+    "runs": 8
+  },
+  {
+    "complete_batch_decisions": 1354,
+    "complete_control_decisions": 9608,
+    "max_batch_decision_us": 142.208,
+    "mean_batch_decision_p95_us": 61.588499999999996,
+    "mean_periodic_decision_p95_us": 4.28125,
+    "mean_total_decision_ms_per_run": 8.144572750000002,
+    "policy": "yu_gateway_adapter",
+    "runs": 8
+  }
+]

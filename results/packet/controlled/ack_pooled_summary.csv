@@ -1,0 +1,13 @@
+kind,component,count,median_us,p99_us,max_us,negative_values,over_5ms,over_10ms,over_50ms
+targeted,ack_send_end_to_observed_us,145343,114.208,540.3644999999984,28095.583,0,3,1,0
+targeted,ack_send_syscall_us,145343,13.459,25.708,635.459,0,0,0,0
+targeted,dispatch_to_pacer_receive_us,145343,45.709,86.5,3331.75,0,0,0,0
+targeted,egress_to_ack_observed_us,145343,132.209,553.2323599999994,28105.75,0,3,1,0
+targeted,egress_to_ack_send_begin_us,145343,2.542,5.583,462.75,0,0,0,0
+targeted,serialization_lateness_us,145343,25.243,661.996,1034.246,0,0,0,0
+service_probe,ack_send_end_to_observed_us,47281,34.667,361.22459999999916,5718.75,0,3,0,0
+service_probe,ack_send_syscall_us,47281,3.334,11.791,129.708,0,0,0,0
+service_probe,dispatch_to_pacer_receive_us,47281,13.542,38.291,1484.833,0,0,0,0
+service_probe,egress_to_ack_observed_us,47281,38.917,370.47479999999797,5722.541,0,3,0,0
+service_probe,egress_to_ack_send_begin_us,47281,0.5,2.292,33.458,0,0,0,0
+service_probe,serialization_lateness_us,47281,9.576,641.579,5328.019,0,1,0,0

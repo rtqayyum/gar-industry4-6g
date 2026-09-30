@@ -1,0 +1,141 @@
+{
+  "capacity_units_per_slot": 12,
+  "expected_optimum": {
+    "priority_sum": 180,
+    "selected": [
+      "A",
+      "C"
+    ]
+  },
+  "feasible_subsets": [
+    {
+      "priority_sum": 0,
+      "selected": [],
+      "slot_use": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "priority_sum": 100,
+      "selected": [
+        "A"
+      ],
+      "slot_use": [
+        3,
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "priority_sum": 60,
+      "selected": [
+        "B"
+      ],
+      "slot_use": [
+        3,
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "priority_sum": 160,
+      "selected": [
+        "A",
+        "B"
+      ],
+      "slot_use": [
+        6,
+        6,
+        3,
+        0
+      ]
+    },
+    {
+      "priority_sum": 80,
+      "selected": [
+        "C"
+      ],
+      "slot_use": [
+        0,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "priority_sum": 180,
+      "selected": [
+        "A",
+        "C"
+      ],
+      "slot_use": [
+        3,
+        6,
+        6,
+        3
+      ]
+    },
+    {
+      "priority_sum": 140,
+      "selected": [
+        "B",
+        "C"
+      ],
+      "slot_use": [
+        3,
+        6,
+        3,
+        3
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "end": 3,
+      "id": "A",
+      "priority": 100,
+      "start": 0,
+      "units": 3
+    },
+    {
+      "end": 2,
+      "id": "B",
+      "priority": 60,
+      "start": 0,
+      "units": 3
+    },
+    {
+      "end": 4,
+      "id": "C",
+      "priority": 80,
+      "start": 1,
+      "units": 3
+    }
+  ],
+  "pass": true,
+  "protected_units_per_slot": [
+    6,
+    6,
+    6,
+    6
+  ],
+  "purpose": "Finite static correctness diagnostic only; it is not an online or production oracle.",
+  "selected_optimum": {
+    "priority_sum": 180,
+    "selected": [
+      "A",
+      "C"
+    ],
+    "slot_use": [
+      3,
+      6,
+      6,
+      3
+    ]
+  }
+}

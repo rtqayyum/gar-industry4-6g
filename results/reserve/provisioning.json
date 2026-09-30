@@ -1,0 +1,440 @@
+{
+  "all_unit_minima_exhaustively_verified": true,
+  "audit_version": "v14-provisioning-arithmetic-1",
+  "capacity_units": 106,
+  "condition": "W <= floor(650*factor*q/106)*min(T,D)",
+  "formula": "q_min = ceil(106*ceil(W/min(T,D))/(650*factor))",
+  "frozen_protocol_sha256": "430b79794ef95f8cc016b1f4d1077b803be9ead0a49e768be778327c89a70175",
+  "frozen_v13_feasible_cells": 10,
+  "generator_sha256": "4b9d0e2466f3d7162b6ff1deb4e3ddda70b877b143c4df954703a931f49b5a7b",
+  "interpretation": [
+    "Minimum refers only to the stated per-stream constant-rate sufficient condition, not global schedule optimality.",
+    "A lower prospective floor does not preserve an already contracted larger unit entitlement.",
+    "No tenant counts, latency, efficiency, or execution reliability are inferred for the alternative provisioning.",
+    "The frozen event begins after activation and ends before its last possible deadline plus return; arbitrary unannounced events are outside this audit."
+  ],
+  "minimum_feasible_cells": 12,
+  "rows": [
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 78,
+      "frozen_v13_units": {
+        "critical_base": 21,
+        "critical_peak": 49,
+        "monitor": 5,
+        "video": 24
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 74,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 294,
+        "monitor": 12,
+        "video": 147
+      },
+      "minimum_units": {
+        "critical_base": 17,
+        "critical_peak": 48,
+        "monitor": 2,
+        "video": 24
+      },
+      "service_factor": 1.0,
+      "units_above_minimum": 4,
+      "video_load": 0.6,
+      "video_max_bytes": 1440
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 86,
+      "frozen_v13_units": {
+        "critical_base": 21,
+        "critical_peak": 49,
+        "monitor": 5,
+        "video": 32
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 82,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 294,
+        "monitor": 12,
+        "video": 196
+      },
+      "minimum_units": {
+        "critical_base": 17,
+        "critical_peak": 48,
+        "monitor": 2,
+        "video": 32
+      },
+      "service_factor": 1.0,
+      "units_above_minimum": 4,
+      "video_load": 0.8,
+      "video_max_bytes": 1920
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 94,
+      "frozen_v13_units": {
+        "critical_base": 21,
+        "critical_peak": 49,
+        "monitor": 5,
+        "video": 40
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 90,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 294,
+        "monitor": 12,
+        "video": 245
+      },
+      "minimum_units": {
+        "critical_base": 17,
+        "critical_peak": 48,
+        "monitor": 2,
+        "video": 40
+      },
+      "service_factor": 1.0,
+      "units_above_minimum": 4,
+      "video_load": 1.0,
+      "video_max_bytes": 2400
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 102,
+      "frozen_v13_units": {
+        "critical_base": 21,
+        "critical_peak": 49,
+        "monitor": 5,
+        "video": 48
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 97,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 294,
+        "monitor": 12,
+        "video": 288
+      },
+      "minimum_units": {
+        "critical_base": 17,
+        "critical_peak": 48,
+        "monitor": 2,
+        "video": 47
+      },
+      "service_factor": 1.0,
+      "units_above_minimum": 5,
+      "video_load": 1.2,
+      "video_max_bytes": 2880
+    },
+    {
+      "frozen_v13_feasible": false,
+      "frozen_v13_peak_total": 110,
+      "frozen_v13_units": {
+        "critical_base": 21,
+        "critical_peak": 49,
+        "monitor": 5,
+        "video": 56
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 105,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 294,
+        "monitor": 12,
+        "video": 337
+      },
+      "minimum_units": {
+        "critical_base": 17,
+        "critical_peak": 48,
+        "monitor": 2,
+        "video": 55
+      },
+      "service_factor": 1.0,
+      "units_above_minimum": 5,
+      "video_load": 1.4,
+      "video_max_bytes": 3360
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 84,
+      "frozen_v13_units": {
+        "critical_base": 23,
+        "critical_peak": 52,
+        "monitor": 6,
+        "video": 26
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 77,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 291,
+        "monitor": 11,
+        "video": 145
+      },
+      "minimum_units": {
+        "critical_base": 18,
+        "critical_peak": 50,
+        "monitor": 2,
+        "video": 25
+      },
+      "service_factor": 0.95,
+      "units_above_minimum": 7,
+      "video_load": 0.6,
+      "video_max_bytes": 1440
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 92,
+      "frozen_v13_units": {
+        "critical_base": 23,
+        "critical_peak": 52,
+        "monitor": 6,
+        "video": 34
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 85,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 291,
+        "monitor": 11,
+        "video": 192
+      },
+      "minimum_units": {
+        "critical_base": 18,
+        "critical_peak": 50,
+        "monitor": 2,
+        "video": 33
+      },
+      "service_factor": 0.95,
+      "units_above_minimum": 7,
+      "video_load": 0.8,
+      "video_max_bytes": 1920
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 101,
+      "frozen_v13_units": {
+        "critical_base": 23,
+        "critical_peak": 52,
+        "monitor": 6,
+        "video": 43
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 94,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 291,
+        "monitor": 11,
+        "video": 244
+      },
+      "minimum_units": {
+        "critical_base": 18,
+        "critical_peak": 50,
+        "monitor": 2,
+        "video": 42
+      },
+      "service_factor": 0.95,
+      "units_above_minimum": 7,
+      "video_load": 1.0,
+      "video_max_bytes": 2400
+    },
+    {
+      "frozen_v13_feasible": false,
+      "frozen_v13_peak_total": 109,
+      "frozen_v13_units": {
+        "critical_base": 23,
+        "critical_peak": 52,
+        "monitor": 6,
+        "video": 51
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 102,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 291,
+        "monitor": 11,
+        "video": 291
+      },
+      "minimum_units": {
+        "critical_base": 18,
+        "critical_peak": 50,
+        "monitor": 2,
+        "video": 50
+      },
+      "service_factor": 0.95,
+      "units_above_minimum": 7,
+      "video_load": 1.2,
+      "video_max_bytes": 2880
+    },
+    {
+      "frozen_v13_feasible": false,
+      "frozen_v13_peak_total": 117,
+      "frozen_v13_units": {
+        "critical_base": 23,
+        "critical_peak": 52,
+        "monitor": 6,
+        "video": 59
+      },
+      "minimum_feasible": false,
+      "minimum_peak_total": 110,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 291,
+        "monitor": 11,
+        "video": 337
+      },
+      "minimum_units": {
+        "critical_base": 18,
+        "critical_peak": 50,
+        "monitor": 2,
+        "video": 58
+      },
+      "service_factor": 0.95,
+      "units_above_minimum": 7,
+      "video_load": 1.4,
+      "video_max_bytes": 3360
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 88,
+      "frozen_v13_units": {
+        "critical_base": 24,
+        "critical_peak": 55,
+        "monitor": 6,
+        "video": 27
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 82,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 292,
+        "monitor": 11,
+        "video": 149
+      },
+      "minimum_units": {
+        "critical_base": 19,
+        "critical_peak": 53,
+        "monitor": 2,
+        "video": 27
+      },
+      "service_factor": 0.9,
+      "units_above_minimum": 6,
+      "video_load": 0.6,
+      "video_max_bytes": 1440
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 97,
+      "frozen_v13_units": {
+        "critical_base": 24,
+        "critical_peak": 55,
+        "monitor": 6,
+        "video": 36
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 90,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 292,
+        "monitor": 11,
+        "video": 193
+      },
+      "minimum_units": {
+        "critical_base": 19,
+        "critical_peak": 53,
+        "monitor": 2,
+        "video": 35
+      },
+      "service_factor": 0.9,
+      "units_above_minimum": 7,
+      "video_load": 0.8,
+      "video_max_bytes": 1920
+    },
+    {
+      "frozen_v13_feasible": true,
+      "frozen_v13_peak_total": 106,
+      "frozen_v13_units": {
+        "critical_base": 24,
+        "critical_peak": 55,
+        "monitor": 6,
+        "video": 45
+      },
+      "minimum_feasible": true,
+      "minimum_peak_total": 99,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 292,
+        "monitor": 11,
+        "video": 242
+      },
+      "minimum_units": {
+        "critical_base": 19,
+        "critical_peak": 53,
+        "monitor": 2,
+        "video": 44
+      },
+      "service_factor": 0.9,
+      "units_above_minimum": 7,
+      "video_load": 1.0,
+      "video_max_bytes": 2400
+    },
+    {
+      "frozen_v13_feasible": false,
+      "frozen_v13_peak_total": 115,
+      "frozen_v13_units": {
+        "critical_base": 24,
+        "critical_peak": 55,
+        "monitor": 6,
+        "video": 54
+      },
+      "minimum_feasible": false,
+      "minimum_peak_total": 108,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 292,
+        "monitor": 11,
+        "video": 292
+      },
+      "minimum_units": {
+        "critical_base": 19,
+        "critical_peak": 53,
+        "monitor": 2,
+        "video": 53
+      },
+      "service_factor": 0.9,
+      "units_above_minimum": 7,
+      "video_load": 1.2,
+      "video_max_bytes": 2880
+    },
+    {
+      "frozen_v13_feasible": false,
+      "frozen_v13_peak_total": 124,
+      "frozen_v13_units": {
+        "critical_base": 24,
+        "critical_peak": 55,
+        "monitor": 6,
+        "video": 63
+      },
+      "minimum_feasible": false,
+      "minimum_peak_total": 116,
+      "minimum_rates_bytes_per_ms": {
+        "critical_base": 104,
+        "critical_peak": 292,
+        "monitor": 11,
+        "video": 336
+      },
+      "minimum_units": {
+        "critical_base": 19,
+        "critical_peak": 53,
+        "monitor": 2,
+        "video": 61
+      },
+      "service_factor": 0.9,
+      "units_above_minimum": 8,
+      "video_load": 1.4,
+      "video_max_bytes": 3360
+    }
+  ],
+  "scope": "Prospective independent minimum floor per declared stream; no simulation or policy retuning."
+}

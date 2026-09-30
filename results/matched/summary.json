@@ -1,0 +1,381 @@
+{
+  "attempted_snapshots": 2048,
+  "eligible_snapshots": 2048,
+  "initial_state_rejections": [],
+  "audit_errors": [],
+  "policies": {
+    "peak_reservation": {
+      "offered": 2048,
+      "eligible": 2048,
+      "accepted": 743,
+      "replaced": 0,
+      "timely_tenant_bytes": 870115,
+      "offered_tenant_bytes": 4419140,
+      "incumbent_failures": 0,
+      "incumbent_items": 978429,
+      "old_tenant_failures": 0,
+      "new_tenant_failures": 0,
+      "mean_decision_us": 0.14396630859375,
+      "decision_seed_mean_ci_us": [
+        0.1357578857421875,
+        0.15303079833984373
+      ],
+      "maximum_decision_us": 4.958,
+      "p95_decision_us": 0.25,
+      "original_timely_bytes": 149077543,
+      "original_offered_bytes": 149077543
+    },
+    "keep_calendar": {
+      "offered": 2048,
+      "eligible": 2048,
+      "accepted": 845,
+      "replaced": 0,
+      "timely_tenant_bytes": 1044855,
+      "offered_tenant_bytes": 4419140,
+      "incumbent_failures": 0,
+      "incumbent_items": 978429,
+      "old_tenant_failures": 0,
+      "new_tenant_failures": 0,
+      "mean_decision_us": 0.0860771484375,
+      "decision_seed_mean_ci_us": [
+        0.08421817626953126,
+        0.0879423583984375
+      ],
+      "maximum_decision_us": 0.958,
+      "p95_decision_us": 0.125,
+      "original_timely_bytes": 149077543,
+      "original_offered_bytes": 149077543
+    },
+    "full_guard": {
+      "offered": 2048,
+      "eligible": 2048,
+      "accepted": 2029,
+      "replaced": 1184,
+      "timely_tenant_bytes": 4280060,
+      "offered_tenant_bytes": 4419140,
+      "incumbent_failures": 0,
+      "incumbent_items": 978429,
+      "old_tenant_failures": 0,
+      "new_tenant_failures": 0,
+      "mean_decision_us": 4.28985986328125,
+      "decision_seed_mean_ci_us": [
+        4.189110864257812,
+        4.390820617675781
+      ],
+      "maximum_decision_us": 18.583,
+      "p95_decision_us": 10.292,
+      "original_timely_bytes": 149077543,
+      "original_offered_bytes": 149077543
+    }
+  },
+  "strata": {
+    "fallback_in_prefix": {
+      "peak_reservation": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 170,
+        "replaced": 0,
+        "timely_tenant_bytes": 183860,
+        "offered_tenant_bytes": 1051970,
+        "incumbent_failures": 0,
+        "incumbent_items": 244669,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.15023046875,
+        "decision_seed_mean_ci_us": [
+          0.13778481445312502,
+          0.165128955078125
+        ],
+        "maximum_decision_us": 2.458,
+        "p95_decision_us": 0.25,
+        "original_timely_bytes": 37283079,
+        "original_offered_bytes": 37283079
+      },
+      "keep_calendar": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 272,
+        "replaced": 0,
+        "timely_tenant_bytes": 358600,
+        "offered_tenant_bytes": 1051970,
+        "incumbent_failures": 0,
+        "incumbent_items": 244669,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.0883828125,
+        "decision_seed_mean_ci_us": [
+          0.085358984375,
+          0.09162919921875
+        ],
+        "maximum_decision_us": 0.334,
+        "p95_decision_us": 0.125,
+        "original_timely_bytes": 37283079,
+        "original_offered_bytes": 37283079
+      },
+      "full_guard": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 509,
+        "replaced": 237,
+        "timely_tenant_bytes": 1029450,
+        "offered_tenant_bytes": 1051970,
+        "incumbent_failures": 0,
+        "incumbent_items": 244669,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 3.92340234375,
+        "decision_seed_mean_ci_us": [
+          3.7347841796875,
+          4.1274495117187495
+        ],
+        "maximum_decision_us": 14,
+        "p95_decision_us": 9.667,
+        "original_timely_bytes": 37283079,
+        "original_offered_bytes": 37283079
+      }
+    },
+    "fallback_in_window": {
+      "peak_reservation": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 148,
+        "replaced": 0,
+        "timely_tenant_bytes": 156320,
+        "offered_tenant_bytes": 1071305,
+        "incumbent_failures": 0,
+        "incumbent_items": 244633,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.1319453125,
+        "decision_seed_mean_ci_us": [
+          0.1223265625,
+          0.14468408203125
+        ],
+        "maximum_decision_us": 2.625,
+        "p95_decision_us": 0.25,
+        "original_timely_bytes": 37247251,
+        "original_offered_bytes": 37247251
+      },
+      "keep_calendar": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 148,
+        "replaced": 0,
+        "timely_tenant_bytes": 156320,
+        "offered_tenant_bytes": 1071305,
+        "incumbent_failures": 0,
+        "incumbent_items": 244633,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.084890625,
+        "decision_seed_mean_ci_us": [
+          0.08073818359375001,
+          0.089758203125
+        ],
+        "maximum_decision_us": 0.958,
+        "p95_decision_us": 0.125,
+        "original_timely_bytes": 37247251,
+        "original_offered_bytes": 37247251
+      },
+      "full_guard": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 508,
+        "replaced": 360,
+        "timely_tenant_bytes": 1040945,
+        "offered_tenant_bytes": 1071305,
+        "incumbent_failures": 0,
+        "incumbent_items": 244633,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 4.5924375,
+        "decision_seed_mean_ci_us": [
+          4.3941558105468745,
+          4.78564140625
+        ],
+        "maximum_decision_us": 16.333,
+        "p95_decision_us": 10.666,
+        "original_timely_bytes": 37247251,
+        "original_offered_bytes": 37247251
+      }
+    },
+    "booking_boundary": {
+      "peak_reservation": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 137,
+        "replaced": 0,
+        "timely_tenant_bytes": 155750,
+        "offered_tenant_bytes": 1201710,
+        "incumbent_failures": 0,
+        "incumbent_items": 244529,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.145447265625,
+        "decision_seed_mean_ci_us": [
+          0.12792978515625,
+          0.17087094726562496
+        ],
+        "maximum_decision_us": 4.958,
+        "p95_decision_us": 0.25,
+        "original_timely_bytes": 37248165,
+        "original_offered_bytes": 37248165
+      },
+      "keep_calendar": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 137,
+        "replaced": 0,
+        "timely_tenant_bytes": 155750,
+        "offered_tenant_bytes": 1201710,
+        "incumbent_failures": 0,
+        "incumbent_items": 244529,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.085103515625,
+        "decision_seed_mean_ci_us": [
+          0.08207021484375,
+          0.08826801757812501
+        ],
+        "maximum_decision_us": 0.417,
+        "p95_decision_us": 0.125,
+        "original_timely_bytes": 37248165,
+        "original_offered_bytes": 37248165
+      },
+      "full_guard": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 506,
+        "replaced": 369,
+        "timely_tenant_bytes": 1156630,
+        "offered_tenant_bytes": 1201710,
+        "incumbent_failures": 0,
+        "incumbent_items": 244529,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 4.762431640625,
+        "decision_seed_mean_ci_us": [
+          4.5019111328125,
+          5.042593457031249
+        ],
+        "maximum_decision_us": 18.583,
+        "p95_decision_us": 11.12135,
+        "original_timely_bytes": 37248165,
+        "original_offered_bytes": 37248165
+      }
+    },
+    "noncrossing": {
+      "peak_reservation": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 288,
+        "replaced": 0,
+        "timely_tenant_bytes": 374185,
+        "offered_tenant_bytes": 1094155,
+        "incumbent_failures": 0,
+        "incumbent_items": 244598,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.1482421875,
+        "decision_seed_mean_ci_us": [
+          0.132947021484375,
+          0.17008227539062498
+        ],
+        "maximum_decision_us": 4.417,
+        "p95_decision_us": 0.25,
+        "original_timely_bytes": 37299048,
+        "original_offered_bytes": 37299048
+      },
+      "keep_calendar": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 288,
+        "replaced": 0,
+        "timely_tenant_bytes": 374185,
+        "offered_tenant_bytes": 1094155,
+        "incumbent_failures": 0,
+        "incumbent_items": 244598,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 0.085931640625,
+        "decision_seed_mean_ci_us": [
+          0.083238232421875,
+          0.08885566406249999
+        ],
+        "maximum_decision_us": 0.375,
+        "p95_decision_us": 0.125,
+        "original_timely_bytes": 37299048,
+        "original_offered_bytes": 37299048
+      },
+      "full_guard": {
+        "offered": 512,
+        "eligible": 512,
+        "accepted": 506,
+        "replaced": 218,
+        "timely_tenant_bytes": 1053035,
+        "offered_tenant_bytes": 1094155,
+        "incumbent_failures": 0,
+        "incumbent_items": 244598,
+        "old_tenant_failures": 0,
+        "new_tenant_failures": 0,
+        "mean_decision_us": 3.88116796875,
+        "decision_seed_mean_ci_us": [
+          3.696556494140625,
+          4.065455126953125
+        ],
+        "maximum_decision_us": 14.333,
+        "p95_decision_us": 9.375,
+        "original_timely_bytes": 37299048,
+        "original_offered_bytes": 37299048
+      }
+    }
+  },
+  "paired": {
+    "peak_reservation": {
+      "additional_commitments_per_snapshot": {
+        "mean": 0.6279296875,
+        "seed_bootstrap_ci": [
+          0.60791015625,
+          0.64794921875
+        ]
+      },
+      "additional_timely_tenant_bytes_per_snapshot": {
+        "mean": 1665.01220703125,
+        "seed_bootstrap_ci": [
+          1582.9091796875,
+          1754.3507690429688
+        ]
+      },
+      "additional_decision_us": {
+        "mean": 4.1458935546875,
+        "seed_bootstrap_ci": [
+          4.04502431640625,
+          4.2460537475585935
+        ]
+      }
+    },
+    "keep_calendar": {
+      "additional_commitments_per_snapshot": {
+        "mean": 0.578125,
+        "seed_bootstrap_ci": [
+          0.5595703125,
+          0.5971801757812499
+        ]
+      },
+      "additional_timely_tenant_bytes_per_snapshot": {
+        "mean": 1579.68994140625,
+        "seed_bootstrap_ci": [
+          1500.1307983398438,
+          1664.9664916992188
+        ]
+      },
+      "additional_decision_us": {
+        "mean": 4.20378271484375,
+        "seed_bootstrap_ci": [
+          4.1030786376953134,
+          4.3042609497070305
+        ]
+      }
+    }
+  }
+}

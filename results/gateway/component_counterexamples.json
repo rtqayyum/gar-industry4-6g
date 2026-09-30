@@ -1,0 +1,126 @@
+[
+  {
+    "component": "prefix",
+    "full_guard": {
+      "accepted": false,
+      "reason": "candidate_recheck_failed:candidate_deadline_certificate",
+      "invariant_violated": false,
+      "trace": {
+        "old_plan": {
+          "target": 8,
+          "expiry": 2,
+          "tail": 2
+        },
+        "observation_ms": 1,
+        "activation_ms": 4,
+        "critical_pending_bytes": 24,
+        "residual_deadline_ms": 3,
+        "actual_immutable_prefix": [
+          8,
+          2,
+          2
+        ],
+        "available_bytes_before_deadline": 12
+      }
+    },
+    "ablated": {
+      "accepted": true,
+      "reason": "accepted",
+      "invariant_violated": true,
+      "trace": {
+        "old_plan": {
+          "target": 8,
+          "expiry": 2,
+          "tail": 2
+        },
+        "observation_ms": 1,
+        "activation_ms": 4,
+        "critical_pending_bytes": 24,
+        "residual_deadline_ms": 3,
+        "actual_immutable_prefix": [
+          8,
+          2,
+          2
+        ],
+        "available_bytes_before_deadline": 12
+      }
+    }
+  },
+  {
+    "component": "tail",
+    "full_guard": {
+      "accepted": false,
+      "reason": "candidate_recheck_failed:candidate_deadline_certificate",
+      "invariant_violated": false,
+      "trace": {
+        "temporary_target": 3,
+        "continuing_tail": 1,
+        "arrival_rate_bytes_per_ms": 2,
+        "installed_tail_service": 2
+      }
+    },
+    "ablated": {
+      "accepted": true,
+      "reason": "accepted",
+      "invariant_violated": true,
+      "trace": {
+        "temporary_target": 3,
+        "continuing_tail": 1,
+        "arrival_rate_bytes_per_ms": 2,
+        "installed_tail_service": 1
+      }
+    }
+  },
+  {
+    "component": "older_bookings",
+    "full_guard": {
+      "accepted": false,
+      "reason": "candidate_recheck_failed:candidate_resource_conflict",
+      "invariant_violated": false,
+      "trace": {
+        "capacity_units": 10,
+        "incumbent_units": 2,
+        "older_booking_units": 4,
+        "candidate_tail": 6,
+        "committed_units_at_ms_8": 8
+      }
+    },
+    "ablated": {
+      "accepted": true,
+      "reason": "accepted",
+      "invariant_violated": true,
+      "trace": {
+        "capacity_units": 10,
+        "incumbent_units": 2,
+        "older_booking_units": 4,
+        "candidate_tail": 6,
+        "committed_units_at_ms_8": 12
+      }
+    }
+  },
+  {
+    "component": "version",
+    "full_guard": {
+      "accepted": false,
+      "reason": "ledger_changed",
+      "invariant_violated": false,
+      "trace": {
+        "certified_ledger_version": 0,
+        "live_ledger_version": 1,
+        "invariant": "ACK must refer to the certified unchanged ledger version",
+        "physical_capacity_violation_claimed": false
+      }
+    },
+    "ablated": {
+      "accepted": true,
+      "reason": "accepted",
+      "invariant_violated": true,
+      "trace": {
+        "certified_ledger_version": 0,
+        "live_ledger_version": 1,
+        "invariant": "ACK must refer to the certified unchanged ledger version",
+        "physical_capacity_violation_claimed": false
+      }
+    }
+  }
+]

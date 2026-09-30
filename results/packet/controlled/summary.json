@@ -1,0 +1,19 @@
+{
+  "planned_attempts": 60,
+  "registry_attempts": 60,
+  "analyzed_protocol_rows": 60,
+  "attempt_status_counts": {
+    "COMPLETE": 60
+  },
+  "unrecognized_registry_names": [],
+  "target0_rows": 48,
+  "target0_killed_rows": 24,
+  "eligible_target0_outage_cases": 12,
+  "eligible_target0_fallback_cases": 6,
+  "paired_rows": 24,
+  "paired_complete_rows": 24,
+  "input_hashes_all_match": true,
+  "execution_protocol_hash_matches": true,
+  "read_issues": [],
+  "scope": "Exact descriptive accounting, no packet/window independence or deterministic OS guarantee. Gamma changes tenant payload only; certificates use nominal capacity. Target0 eligibility is reported alongside all cases, never used to erase rejected or completed cases."
+}

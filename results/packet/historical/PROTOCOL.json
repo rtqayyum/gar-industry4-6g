@@ -1,0 +1,2727 @@
+{
+  "manifest_sha256": "0869b7db7d6d09cbffa69678a6ad3412285f5ded1fd195ae185bd143cf747b72",
+  "schedule": [
+    {
+      "family": "regime_shift",
+      "pair": 2,
+      "seed": 911,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0f55f81f60ba",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0f55f81f60ba_0.csv",
+      "context_sha256": "3691ca29c5a8f95920fa761f3d6d8cc87bc0e7e22773440d7f5ea16505bab64a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911.csv",
+      "trace_sha256": "372054a36eefc9dae0ef2d1ced9f27a5a2f5912ebe5d18f675f8e15cf2f5c5fa",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_requests.csv",
+      "request_sha256": "31166e397c7eedc7c3e7e1b87c19e72e1e4286664226e72686df9b726e6c4ec9",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_911_primary_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 2,
+      "seed": 911,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0f55f81f60ba",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0f55f81f60ba_0.csv",
+      "context_sha256": "3691ca29c5a8f95920fa761f3d6d8cc87bc0e7e22773440d7f5ea16505bab64a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911.csv",
+      "trace_sha256": "372054a36eefc9dae0ef2d1ced9f27a5a2f5912ebe5d18f675f8e15cf2f5c5fa",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_requests.csv",
+      "request_sha256": "31166e397c7eedc7c3e7e1b87c19e72e1e4286664226e72686df9b726e6c4ec9",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_911_primary_residual_priority_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 2,
+      "seed": 911,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0f55f81f60ba",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0f55f81f60ba_0.csv",
+      "context_sha256": "3691ca29c5a8f95920fa761f3d6d8cc87bc0e7e22773440d7f5ea16505bab64a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911.csv",
+      "trace_sha256": "372054a36eefc9dae0ef2d1ced9f27a5a2f5912ebe5d18f675f8e15cf2f5c5fa",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_requests.csv",
+      "request_sha256": "31166e397c7eedc7c3e7e1b87c19e72e1e4286664226e72686df9b726e6c4ec9",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_911_primary_gar_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 2,
+      "seed": 911,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0f55f81f60ba",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0f55f81f60ba_0.csv",
+      "context_sha256": "3691ca29c5a8f95920fa761f3d6d8cc87bc0e7e22773440d7f5ea16505bab64a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911.csv",
+      "trace_sha256": "372054a36eefc9dae0ef2d1ced9f27a5a2f5912ebe5d18f675f8e15cf2f5c5fa",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_requests.csv",
+      "request_sha256": "31166e397c7eedc7c3e7e1b87c19e72e1e4286664226e72686df9b726e6c4ec9",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_911_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_911_primary_fixed_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_907_primary_gar_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_907_primary_fixed_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_907_primary_predictive_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_907_primary_residual_priority_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 2,
+      "seed": 905,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-25cc92cffe3e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-25cc92cffe3e_0.csv",
+      "context_sha256": "ea97759f3800e46857181fc03bd94176d1c5727bc277784f4f2667b037bd5300",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905.csv",
+      "trace_sha256": "e10f2212b674a9a339d5a136605d674882c43935b2ad76bc1fd000d38c6efa03",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_requests.csv",
+      "request_sha256": "9874d96ca5aaaf38583d6c3f9db567896c6f27504f8dfec53868d8066b31d64f",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_905_primary_fixed_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 2,
+      "seed": 905,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-25cc92cffe3e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-25cc92cffe3e_0.csv",
+      "context_sha256": "ea97759f3800e46857181fc03bd94176d1c5727bc277784f4f2667b037bd5300",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905.csv",
+      "trace_sha256": "e10f2212b674a9a339d5a136605d674882c43935b2ad76bc1fd000d38c6efa03",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_requests.csv",
+      "request_sha256": "9874d96ca5aaaf38583d6c3f9db567896c6f27504f8dfec53868d8066b31d64f",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_905_primary_predictive_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 2,
+      "seed": 905,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-25cc92cffe3e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-25cc92cffe3e_0.csv",
+      "context_sha256": "ea97759f3800e46857181fc03bd94176d1c5727bc277784f4f2667b037bd5300",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905.csv",
+      "trace_sha256": "e10f2212b674a9a339d5a136605d674882c43935b2ad76bc1fd000d38c6efa03",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_requests.csv",
+      "request_sha256": "9874d96ca5aaaf38583d6c3f9db567896c6f27504f8dfec53868d8066b31d64f",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_905_primary_residual_priority_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 2,
+      "seed": 905,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-25cc92cffe3e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-25cc92cffe3e_0.csv",
+      "context_sha256": "ea97759f3800e46857181fc03bd94176d1c5727bc277784f4f2667b037bd5300",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905.csv",
+      "trace_sha256": "e10f2212b674a9a339d5a136605d674882c43935b2ad76bc1fd000d38c6efa03",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_requests.csv",
+      "request_sha256": "9874d96ca5aaaf38583d6c3f9db567896c6f27504f8dfec53868d8066b31d64f",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_905_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_905_primary_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 3,
+      "seed": 903,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "mixed",
+      "run_id": "mixed-6e7e3735cd7e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/mixed-6e7e3735cd7e_0.csv",
+      "context_sha256": "bcf30921978a9921faf3739393fe3285e8bdfd3e14cd5a07c64ef5deb3f03ede",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903.csv",
+      "trace_sha256": "39255bad192b107deaca7df7c6b0ac5cd65b61f2357a3ee6e232f5e43f766c3c",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_requests.csv",
+      "request_sha256": "6f0f5c814daa1038a89aac3b0e9b0c3f06d19f194092e9531cbab211f2ed5c37",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_903_primary_residual_priority_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 3,
+      "seed": 903,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "mixed",
+      "run_id": "mixed-6e7e3735cd7e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/mixed-6e7e3735cd7e_0.csv",
+      "context_sha256": "bcf30921978a9921faf3739393fe3285e8bdfd3e14cd5a07c64ef5deb3f03ede",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903.csv",
+      "trace_sha256": "39255bad192b107deaca7df7c6b0ac5cd65b61f2357a3ee6e232f5e43f766c3c",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_requests.csv",
+      "request_sha256": "6f0f5c814daa1038a89aac3b0e9b0c3f06d19f194092e9531cbab211f2ed5c37",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_903_primary_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 3,
+      "seed": 903,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "mixed",
+      "run_id": "mixed-6e7e3735cd7e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/mixed-6e7e3735cd7e_0.csv",
+      "context_sha256": "bcf30921978a9921faf3739393fe3285e8bdfd3e14cd5a07c64ef5deb3f03ede",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903.csv",
+      "trace_sha256": "39255bad192b107deaca7df7c6b0ac5cd65b61f2357a3ee6e232f5e43f766c3c",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_requests.csv",
+      "request_sha256": "6f0f5c814daa1038a89aac3b0e9b0c3f06d19f194092e9531cbab211f2ed5c37",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_903_primary_fixed_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 3,
+      "seed": 903,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "mixed",
+      "run_id": "mixed-6e7e3735cd7e",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/mixed-6e7e3735cd7e_0.csv",
+      "context_sha256": "bcf30921978a9921faf3739393fe3285e8bdfd3e14cd5a07c64ef5deb3f03ede",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903.csv",
+      "trace_sha256": "39255bad192b107deaca7df7c6b0ac5cd65b61f2357a3ee6e232f5e43f766c3c",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_requests.csv",
+      "request_sha256": "6f0f5c814daa1038a89aac3b0e9b0c3f06d19f194092e9531cbab211f2ed5c37",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_903_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_903_primary_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_910_primary_residual_priority_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_910_primary_gar_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_910_primary_fixed_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_910_primary_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 3,
+      "seed": 912,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-f4c8047adbf3",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-f4c8047adbf3_0.csv",
+      "context_sha256": "71de81b5a4ed2a9b03d2d6765d0c31c3f4e5cd5334bbd4a469f0c4f83f39e0ef",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912.csv",
+      "trace_sha256": "1d42ca1e0a92a1f32011d229d19350e8430fe7093216e8792a89f0f059afe49a",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_requests.csv",
+      "request_sha256": "107dc171a7f54ae8acec4e85c6621a978c83dcf2072267591e2975d425bffa2c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_912_primary_residual_priority_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 3,
+      "seed": 912,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-f4c8047adbf3",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-f4c8047adbf3_0.csv",
+      "context_sha256": "71de81b5a4ed2a9b03d2d6765d0c31c3f4e5cd5334bbd4a469f0c4f83f39e0ef",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912.csv",
+      "trace_sha256": "1d42ca1e0a92a1f32011d229d19350e8430fe7093216e8792a89f0f059afe49a",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_requests.csv",
+      "request_sha256": "107dc171a7f54ae8acec4e85c6621a978c83dcf2072267591e2975d425bffa2c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_912_primary_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 3,
+      "seed": 912,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-f4c8047adbf3",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-f4c8047adbf3_0.csv",
+      "context_sha256": "71de81b5a4ed2a9b03d2d6765d0c31c3f4e5cd5334bbd4a469f0c4f83f39e0ef",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912.csv",
+      "trace_sha256": "1d42ca1e0a92a1f32011d229d19350e8430fe7093216e8792a89f0f059afe49a",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_requests.csv",
+      "request_sha256": "107dc171a7f54ae8acec4e85c6621a978c83dcf2072267591e2975d425bffa2c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_912_primary_gar_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 3,
+      "seed": 912,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-f4c8047adbf3",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-f4c8047adbf3_0.csv",
+      "context_sha256": "71de81b5a4ed2a9b03d2d6765d0c31c3f4e5cd5334bbd4a469f0c4f83f39e0ef",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912.csv",
+      "trace_sha256": "1d42ca1e0a92a1f32011d229d19350e8430fe7093216e8792a89f0f059afe49a",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_requests.csv",
+      "request_sha256": "107dc171a7f54ae8acec4e85c6621a978c83dcf2072267591e2975d425bffa2c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_912_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "regime_shift_912_primary_fixed_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_901_primary_fixed_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_901_primary_residual_priority_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_901_primary_predictive_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_901_primary_gar_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 3,
+      "seed": 909,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-6babf83420b1",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-6babf83420b1_0.csv",
+      "context_sha256": "58b7571ef914f1b813216bc0f5b8286238d626e577ea4e7e261d416aa6d6f78a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909.csv",
+      "trace_sha256": "567b190d03076a39fd1dea35230e232dbf89490044e0ad122b5d5334311c0a30",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_requests.csv",
+      "request_sha256": "5e16717b7fec364e20e5329d7e7ba5aa7677cbde9e0ebd6d181741ae93b9e911",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_909_primary_predictive_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 3,
+      "seed": 909,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-6babf83420b1",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-6babf83420b1_0.csv",
+      "context_sha256": "58b7571ef914f1b813216bc0f5b8286238d626e577ea4e7e261d416aa6d6f78a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909.csv",
+      "trace_sha256": "567b190d03076a39fd1dea35230e232dbf89490044e0ad122b5d5334311c0a30",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_requests.csv",
+      "request_sha256": "5e16717b7fec364e20e5329d7e7ba5aa7677cbde9e0ebd6d181741ae93b9e911",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_909_primary_residual_priority_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 3,
+      "seed": 909,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-6babf83420b1",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-6babf83420b1_0.csv",
+      "context_sha256": "58b7571ef914f1b813216bc0f5b8286238d626e577ea4e7e261d416aa6d6f78a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909.csv",
+      "trace_sha256": "567b190d03076a39fd1dea35230e232dbf89490044e0ad122b5d5334311c0a30",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_requests.csv",
+      "request_sha256": "5e16717b7fec364e20e5329d7e7ba5aa7677cbde9e0ebd6d181741ae93b9e911",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_909_primary_fixed_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 3,
+      "seed": 909,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-6babf83420b1",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-6babf83420b1_0.csv",
+      "context_sha256": "58b7571ef914f1b813216bc0f5b8286238d626e577ea4e7e261d416aa6d6f78a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909.csv",
+      "trace_sha256": "567b190d03076a39fd1dea35230e232dbf89490044e0ad122b5d5334311c0a30",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_requests.csv",
+      "request_sha256": "5e16717b7fec364e20e5329d7e7ba5aa7677cbde9e0ebd6d181741ae93b9e911",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_909_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "heavy_tenants_909_primary_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 2,
+      "seed": 902,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "embb_heavy",
+      "run_id": "embb_heavy-2706169f6202",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/embb_heavy-2706169f6202_0.csv",
+      "context_sha256": "89b9c2f9c6690c5d19b4f462e16f9758f7674f842cf38d04af4b9ba455476225",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902.csv",
+      "trace_sha256": "7add42f13634f0fc46e3b1e47342219256697859f86b50ae36421c90196ba5a1",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_requests.csv",
+      "request_sha256": "ea07b7f2801e5c49a1339d9f90b2f3766287912f54898fc54d7f95027fa3a8a0",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_902_primary_predictive_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 2,
+      "seed": 902,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "embb_heavy",
+      "run_id": "embb_heavy-2706169f6202",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/embb_heavy-2706169f6202_0.csv",
+      "context_sha256": "89b9c2f9c6690c5d19b4f462e16f9758f7674f842cf38d04af4b9ba455476225",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902.csv",
+      "trace_sha256": "7add42f13634f0fc46e3b1e47342219256697859f86b50ae36421c90196ba5a1",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_requests.csv",
+      "request_sha256": "ea07b7f2801e5c49a1339d9f90b2f3766287912f54898fc54d7f95027fa3a8a0",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_902_primary_fixed_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 2,
+      "seed": 902,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "embb_heavy",
+      "run_id": "embb_heavy-2706169f6202",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/embb_heavy-2706169f6202_0.csv",
+      "context_sha256": "89b9c2f9c6690c5d19b4f462e16f9758f7674f842cf38d04af4b9ba455476225",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902.csv",
+      "trace_sha256": "7add42f13634f0fc46e3b1e47342219256697859f86b50ae36421c90196ba5a1",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_requests.csv",
+      "request_sha256": "ea07b7f2801e5c49a1339d9f90b2f3766287912f54898fc54d7f95027fa3a8a0",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_902_primary_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 2,
+      "seed": 902,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "embb_heavy",
+      "run_id": "embb_heavy-2706169f6202",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/embb_heavy-2706169f6202_0.csv",
+      "context_sha256": "89b9c2f9c6690c5d19b4f462e16f9758f7674f842cf38d04af4b9ba455476225",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902.csv",
+      "trace_sha256": "7add42f13634f0fc46e3b1e47342219256697859f86b50ae36421c90196ba5a1",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_requests.csv",
+      "request_sha256": "ea07b7f2801e5c49a1339d9f90b2f3766287912f54898fc54d7f95027fa3a8a0",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_902_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "synchronized_902_primary_residual_priority_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 3,
+      "seed": 906,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0a253edb3f05",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0a253edb3f05_0.csv",
+      "context_sha256": "178bc5756eb3e28b82e8881a43415ac1ac938312fb1ed3e308dabeffd9296f4a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906.csv",
+      "trace_sha256": "f04fd256b7bc16cf404d82e43914cbe5f827dae0f5f5df5732801aa6c20de2a8",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_requests.csv",
+      "request_sha256": "8350b5309575df088f06a19dfb0c4b1ce654a2e7e80cc2d30386bffc6fc46f86",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_906_primary_gar_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 3,
+      "seed": 906,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0a253edb3f05",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0a253edb3f05_0.csv",
+      "context_sha256": "178bc5756eb3e28b82e8881a43415ac1ac938312fb1ed3e308dabeffd9296f4a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906.csv",
+      "trace_sha256": "f04fd256b7bc16cf404d82e43914cbe5f827dae0f5f5df5732801aa6c20de2a8",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_requests.csv",
+      "request_sha256": "8350b5309575df088f06a19dfb0c4b1ce654a2e7e80cc2d30386bffc6fc46f86",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_906_primary_predictive_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 3,
+      "seed": 906,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0a253edb3f05",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0a253edb3f05_0.csv",
+      "context_sha256": "178bc5756eb3e28b82e8881a43415ac1ac938312fb1ed3e308dabeffd9296f4a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906.csv",
+      "trace_sha256": "f04fd256b7bc16cf404d82e43914cbe5f827dae0f5f5df5732801aa6c20de2a8",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_requests.csv",
+      "request_sha256": "8350b5309575df088f06a19dfb0c4b1ce654a2e7e80cc2d30386bffc6fc46f86",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_906_primary_residual_priority_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 3,
+      "seed": 906,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "peak",
+      "run_id": "peak-0a253edb3f05",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/peak-0a253edb3f05_0.csv",
+      "context_sha256": "178bc5756eb3e28b82e8881a43415ac1ac938312fb1ed3e308dabeffd9296f4a",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906.csv",
+      "trace_sha256": "f04fd256b7bc16cf404d82e43914cbe5f827dae0f5f5df5732801aa6c20de2a8",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_requests.csv",
+      "request_sha256": "8350b5309575df088f06a19dfb0c4b1ce654a2e7e80cc2d30386bffc6fc46f86",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_906_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "primary",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": null,
+      "trial_name": "deadline_mix_906_primary_fixed_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "residual_priority_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "heavy_tenants_907_outage_residual_priority_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "fixed_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "heavy_tenants_907_outage_fixed_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "gar_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "heavy_tenants_907_outage_gar_h"
+    },
+    {
+      "family": "heavy_tenants",
+      "pair": 1,
+      "seed": 907,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "prb_contention",
+      "run_id": "prb_contention-996afacaf5b4",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/prb_contention-996afacaf5b4_0.csv",
+      "context_sha256": "39cdba510aa373604f8da4b4cb8683947dd501e3a9c3e360ea5088c9ad665c62",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907.csv",
+      "trace_sha256": "c8bd8a25d66046874acc252f271e14d2973a81da53237c643bc4b1403d2e0f10",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_requests.csv",
+      "request_sha256": "fdd3790894d31bf8dbd68f9802a8c02294bac57b1a10f7dbb7afd147e7bf5e9a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/heavy_tenants_907_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.08,
+      "request_lengths_ms": [
+        20,
+        100,
+        500
+      ],
+      "policy": "predictive_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "heavy_tenants_907_outage_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "regime_shift_910_outage_predictive_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "regime_shift_910_outage_fixed_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "regime_shift_910_outage_residual_priority_h"
+    },
+    {
+      "family": "regime_shift",
+      "pair": 1,
+      "seed": 910,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "off_peak",
+      "run_id": "off_peak-f25bde96e786",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/off_peak-f25bde96e786_0.csv",
+      "context_sha256": "1d5efce3506eec4a732d895f82bdc90126ac2be5585522522e3676cc3b293890",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910.csv",
+      "trace_sha256": "ecbc4d375292b93f0fcaa890a35366ca16fde5ea514f8d55beef35f23e901f66",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_requests.csv",
+      "request_sha256": "4e472a3892da4bffc0bda8b69cf1eeb77b8169173e5187215cac25250b10d58c",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_gar_h.json",
+          "sha256": "6baaf75f6165b966b020f8fa4e6573ed46ea4b03f9001d7640cbae10c2d516c7"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_predictive_h.json",
+          "sha256": "0e4afe073b5834fd998f3a5db96405450211dfb6061fdffa83fe1707f480c9d7"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_fixed_h.json",
+          "sha256": "4f494097cfdb73072744d2a4cf7e8eb498c47042c2cff61c84c3897f6bf0752e"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/regime_shift_910_residual_priority_h.json",
+          "sha256": "85068f871659f0324b75da1fdf7bb2c0014d6141a6eea1a71ed016409b278956"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "regime_shift_910_outage_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "synchronized_901_outage_fixed_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "synchronized_901_outage_predictive_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "synchronized_901_outage_residual_priority_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "synchronized_901_outage_gar_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 1,
+      "seed": 904,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-178f560127d8",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-178f560127d8_0.csv",
+      "context_sha256": "a99e1a10c0c640c70f6ae710961e872d0aee7c2ba4a1c53f1244bc482acc9f22",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904.csv",
+      "trace_sha256": "333e30bd493bbde7b26cf4ca5483cbb5cadfe597a8742f5ad17fa377525508e6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_requests.csv",
+      "request_sha256": "d6d4877a3c0c802fbd1ea4fdbdb2d09afacd536d09795c098c8c45edbaf8da2a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "fixed_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "deadline_mix_904_outage_fixed_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 1,
+      "seed": 904,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-178f560127d8",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-178f560127d8_0.csv",
+      "context_sha256": "a99e1a10c0c640c70f6ae710961e872d0aee7c2ba4a1c53f1244bc482acc9f22",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904.csv",
+      "trace_sha256": "333e30bd493bbde7b26cf4ca5483cbb5cadfe597a8742f5ad17fa377525508e6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_requests.csv",
+      "request_sha256": "d6d4877a3c0c802fbd1ea4fdbdb2d09afacd536d09795c098c8c45edbaf8da2a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "residual_priority_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "deadline_mix_904_outage_residual_priority_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 1,
+      "seed": 904,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-178f560127d8",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-178f560127d8_0.csv",
+      "context_sha256": "a99e1a10c0c640c70f6ae710961e872d0aee7c2ba4a1c53f1244bc482acc9f22",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904.csv",
+      "trace_sha256": "333e30bd493bbde7b26cf4ca5483cbb5cadfe597a8742f5ad17fa377525508e6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_requests.csv",
+      "request_sha256": "d6d4877a3c0c802fbd1ea4fdbdb2d09afacd536d09795c098c8c45edbaf8da2a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "predictive_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "deadline_mix_904_outage_predictive_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 1,
+      "seed": 904,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-178f560127d8",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-178f560127d8_0.csv",
+      "context_sha256": "a99e1a10c0c640c70f6ae710961e872d0aee7c2ba4a1c53f1244bc482acc9f22",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904.csv",
+      "trace_sha256": "333e30bd493bbde7b26cf4ca5483cbb5cadfe597a8742f5ad17fa377525508e6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_requests.csv",
+      "request_sha256": "d6d4877a3c0c802fbd1ea4fdbdb2d09afacd536d09795c098c8c45edbaf8da2a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "outage",
+      "heartbeat_admission_pause": true,
+      "controller_stop_ms": 15000,
+      "trial_name": "deadline_mix_904_outage_gar_h"
+    },
+    {
+      "family": "synchronized",
+      "pair": 1,
+      "seed": 901,
+      "duration_ms": 30000,
+      "load": 1.0,
+      "burst_factor": 2.5,
+      "scenario": "backhaul_delay",
+      "run_id": "backhaul_delay-720aff8d92a9",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/backhaul_delay-720aff8d92a9_0.csv",
+      "context_sha256": "f8745cb14c9561e16e55c31ab8bc0d1f63255c4e79a183f9405793534957833e",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901.csv",
+      "trace_sha256": "ab07797af1e39a25412a52101459483574c2b498ad17ba98ce6e5d2c822224a6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_requests.csv",
+      "request_sha256": "d587e8a143cdfbfcb0ea67b087c4fb039184f7b4cd0c1803cde9e1b4e4dab499",
+      "tail_units": 49,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_gar_h.json",
+          "sha256": "6ff0e2a7bde7ab6c910d1b7ae81a212b1257589d9a21571b20422fcc8c3d2585"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_predictive_h.json",
+          "sha256": "bcbcabb224b2a8028488ec6e43f83d49b3e503a133aad5f99ed22ceb56d16468"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_fixed_h.json",
+          "sha256": "e0a4c5256d6559f63617b2d72562fa940b55feb3af30afdf4c4ad2b8dac21918"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/synchronized_901_residual_priority_h.json",
+          "sha256": "a1db2f22496c1c52dd2fd427a099709319242f9836cc394f879b12a04ce4946c"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "outage_no_heartbeat_pause",
+      "heartbeat_admission_pause": false,
+      "controller_stop_ms": 15000,
+      "trial_name": "synchronized_901_outage_no_heartbeat_pause_gar_h"
+    },
+    {
+      "family": "deadline_mix",
+      "pair": 1,
+      "seed": 904,
+      "duration_ms": 30000,
+      "load": 1.4,
+      "burst_factor": 2.5,
+      "scenario": "normal",
+      "run_id": "normal-178f560127d8",
+      "context": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/deadline_borrowing_20260922/contexts/normal-178f560127d8_0.csv",
+      "context_sha256": "a99e1a10c0c640c70f6ae710961e872d0aee7c2ba4a1c53f1244bc482acc9f22",
+      "trace": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904.csv",
+      "trace_sha256": "333e30bd493bbde7b26cf4ca5483cbb5cadfe597a8742f5ad17fa377525508e6",
+      "requests": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_requests.csv",
+      "request_sha256": "d6d4877a3c0c802fbd1ea4fdbdb2d09afacd536d09795c098c8c45edbaf8da2a",
+      "tail_units": 68,
+      "configs": {
+        "gar_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_gar_h.json",
+          "sha256": "2a520149f570eb4063002239ec515fa3195f2ba7cd8b159fd56dbddf91637901"
+        },
+        "predictive_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_predictive_h.json",
+          "sha256": "ad8ef9b0a2d615e8e6e1cbe28f755f6c96be1de3934782b6cd4714b2942b3030"
+        },
+        "fixed_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_fixed_h.json",
+          "sha256": "12b5128c44b4fa21775737dfbfcbbdbe4c87c75fd8216b15d657a0097b9f2a63"
+        },
+        "residual_priority_h": {
+          "path": "/Users/rana/Documents/6g_v2_CODEX/deeporan-agent/reports/guarded_release_confirmation_20260923/runtime/final_inputs/deadline_mix_904_residual_priority_h.json",
+          "sha256": "550cd152abd108671d7dd452e055e5de4fb1a87b938744b4fcbf2573dd5ec30f"
+        }
+      },
+      "request_probability_per_ms": 0.1,
+      "request_lengths_ms": [
+        5,
+        20,
+        100
+      ],
+      "policy": "gar_h",
+      "arm": "outage_no_heartbeat_pause",
+      "heartbeat_admission_pause": false,
+      "controller_stop_ms": 15000,
+      "trial_name": "deadline_mix_904_outage_no_heartbeat_pause_gar_h"
+    }
+  ],
+  "policies": [
+    "fixed_h",
+    "predictive_h",
+    "gar_h",
+    "residual_priority_h"
+  ],
+  "matrix": "48 primary trials=4families\u00d73independent source/context pairs\u00d74policies;16outage trials=firstpair\u00d74families\u00d74policies;2predeclaredGAR-H no-heartbeat-pause outage controls on first2families",
+  "source_context_scope": "Four declared synthetic application families modulated by12 distinct existing dataset test contexts; run IDs exclude the3 prior runtime runs. These contexts may have been used in earlier simulation; they are new runtime workloads, not untouched dataset evidence.",
+  "transfer_settings": {
+    "gar_h": {
+      "policy": "joint_guarded",
+      "term": 40,
+      "gate_eta": 1.25,
+      "step": 10,
+      "price": 64
+    },
+    "predictive_h": {
+      "policy": "predictive",
+      "term": 40,
+      "gate_eta": 1.25,
+      "step": 2,
+      "price": 0
+    },
+    "fixed_h": {
+      "policy": "fixed_soft",
+      "term": 40,
+      "gate_eta": 1.25,
+      "fixed": -1
+    },
+    "residual_priority_h": {
+      "policy": "residual_priority",
+      "term": 40,
+      "gate_eta": 1.5
+    }
+  },
+  "primary_gamma": "Selected by independently frozen calibration_v2 grid rule",
+  "theta_selection": "Separate fresh16-run MAXIMUM observed service-deficit calibration over5/20/100/500ms; gamma selected from fixedgrid.4/.5/.6/.7/.8 by mean advertised/nominal work over fixed16-cellq8/16/24/32\u00d7L5/20/100/500; tieslowergamma thenlowertheta; no final trace/outcome used; same contract for every policy",
+  "prior_protocol_deviation": "Original16calibration and3startedfinaltrials preserved without outcome-based selection;500ms jobs had exceeded100ms calibration scope",
+  "fixed_nominal_denominator": "Sum L*floor(C_line*q/106) over ALL offered requests, including unsupported and rejected",
+  "primary_tenant_utility": "Sum actual contract payloadW only for accepted jobs with ALL bytes received by original end, divided by fixed nominal denominator; incomplete jobs contributezero",
+  "primary_capacity_efficiency": "Original sink-on-time packet bytes + strict completed tenant-job bytes, divided by C_line*H, whereH=max(all original packet deadlines, all original requestends)",
+  "secondary_partial_utility": "On-time tenant packet bytes / same nominal denominator, including incomplete jobs; never substitutes for strict job utility",
+  "original_deadlines": "Source request+2ms is original activation; no reset for transport/decision delay. All offers retained.",
+  "gate": "Exact shared C++100ms causal original-arrival forecast; seven source types; checks old individual tenant quotas through full horizon. Pending data includes original inflight packet conservatively.",
+  "strong_priority": "Residual critical EDF byte-service certificate after fixedBG and individually floored tenant quotas; ledgercriticalBASE21; no sustainableB reserve, no floorsearch, no ordinary-fit bypass.",
+  "execution_fix": "Dedicated compiled pacer with at mostone outstanding packet; actual serialization start and egress; no catch-up credit or privilege changes. Gateway remains a Python dispatcher.",
+  "heartbeat": "Controller10ms heartbeat,25ms silence pauses NEW admissions only; accepted leases and timers remain. Controller terminated at nominal15s; actual kill timestamp recorded. Two predeclaredGAR-H outage arms disable only this pause.",
+  "outage_job_groups": "Accepted before actual kill, accepted before and straddling actual kill, accepted after actual kill; disjoint start/end requestphase groups also reported",
+  "trial_order": "Deterministic shuffled blocks and within-block policies seed20260927; primaryfirst thenoutage; sequentialsamehost. No rerun based on outcome.",
+  "inference": "Empirical managed edge gateway only; no hardOS/5G/URLLC guarantee.12unique original source runs, pairedacrosspolicies; no packet-independent inference.",
+  "prior_negative_controls": "Earlier35industrial outage failures and all prior frozen pilots retained in originalartifact plus newperjobforensics.",
+  "required_execution_condition": "Explicit idle-hostGO from parent after tracked simulation/plot/audit processes exit.",
+  "runner_sha256": "a4493cd445676a474f467e3273901bde4c36aa987734d99010f2c78d0cc56915",
+  "_analysis_scope": "Primary common completed ORIGINAL context blocks plus all original completed outage arms. Conditional complete-case comparison; failed executions can cause selection bias and are separately reported."
+}

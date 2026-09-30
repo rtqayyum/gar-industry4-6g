@@ -1,0 +1,3369 @@
+[
+  {
+    "case": "booking_valley",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 196,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 108,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 50,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 16,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_valley",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      6,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 343,
+    "maximal_cost": 20,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      5,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 216,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 125,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 64,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 27,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 5,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 8,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "flat_calendar",
+    "request_units": 6,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 1,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 196,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 108,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 50,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 16,
+    "maximal_cost": 8,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "early_urgent_pending",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 196,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 108,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 50,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 16,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "immutable_prefix_failure",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 0,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 1,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 2,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 3,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "booking_after_request",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 196,
+    "maximal_cost": 19,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 108,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 50,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 16,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "integer_service_rounding",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 120,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 60,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 24,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 6,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_00",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      3,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 140,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      2,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 72,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      1,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 30,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 8,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_01",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -3,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 384,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 135,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 12
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 32,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 3,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -2,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_02",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -3,
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      5
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 30,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 20,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 6,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 2,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_03",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      5,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 576,
+    "maximal_cost": 19,
+    "minimum_calendar_cost": 12
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      4,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 225,
+    "maximal_cost": 15,
+    "minimum_calendar_cost": 12
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      3,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 64,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      2,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 9,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      0,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_04",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -1,
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      6,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 245,
+    "maximal_cost": 20,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      5,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 144,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      4,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 75,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      3,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 32,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      2,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 9,
+    "maximal_cost": 8,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_05",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      0,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 49,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 36,
+    "maximal_cost": 15,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 25,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 16,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 9,
+    "maximal_cost": 9,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 5,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 4,
+    "maximal_cost": 7,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_06",
+    "request_units": 6,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 1,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 30,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 20,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 6,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 2,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_07",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      6,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 840,
+    "maximal_cost": 20,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      5,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 360,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      4,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 120,
+    "maximal_cost": 12,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 24,
+    "maximal_cost": 8,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      2,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      1,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_08",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      0,
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 175,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 96,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 45,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 16,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 3,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_09",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      3,
+      6
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 168,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 12
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      2,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 90,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 12
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      1,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 40,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      0,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_10",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      5,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 144,
+    "maximal_cost": 15,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      4,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 75,
+    "maximal_cost": 12,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      3,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 32,
+    "maximal_cost": 9,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      2,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 9,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      0,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_11",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -1,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 96,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 45,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 16,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 3,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_12",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      6,
+      5,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 1260,
+    "maximal_cost": 22,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      5,
+      4,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 600,
+    "maximal_cost": 18,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4,
+      3,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 240,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 9
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3,
+      2,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 72,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2,
+      1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1,
+      0,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_13",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0,
+      -1,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      3,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 80,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      2,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 36,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      1,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 12,
+    "maximal_cost": 7,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      0,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 2,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -1,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -2,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_14",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -3,
+      -3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 20,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 6,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 2,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_15",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 144,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 75,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      1,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 32,
+    "maximal_cost": 11,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      0,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 9,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_16",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      4,
+      6,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 840,
+    "maximal_cost": 21,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      3,
+      5,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 360,
+    "maximal_cost": 17,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      2,
+      4,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 120,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 24,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      0,
+      2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -1,
+      1,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_17",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -2,
+      0,
+      -3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      5,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 180,
+    "maximal_cost": 19,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 100,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 48,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 18,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 4,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_18",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -1,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      5,
+      4,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 720,
+    "maximal_cost": 18,
+    "minimum_calendar_cost": 7
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4,
+      3,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 300,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      2,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 96,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 18,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      0,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      -1,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_19",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -1,
+      -2,
+      -3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 30,
+    "maximal_cost": 12,
+    "minimum_calendar_cost": 11
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      4
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 20,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      3
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 6,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 2,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_20",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      6,
+      6,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 245,
+    "maximal_cost": 19,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      5,
+      5,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 144,
+    "maximal_cost": 16,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      4,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 75,
+    "maximal_cost": 13,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      3,
+      1
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 32,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 10
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 4,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 9,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      1,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_21",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      0,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      5
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 24,
+    "maximal_cost": 12,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 15,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 8,
+    "maximal_cost": 8,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 3,
+    "maximal_cost": 6,
+    "minimum_calendar_cost": 6
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_22",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -3,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 0,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      4,
+      3,
+      5,
+      4
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 600,
+    "maximal_cost": 18,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 1,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      3,
+      2,
+      4,
+      3
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 240,
+    "maximal_cost": 14,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 2,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      2,
+      1,
+      3,
+      2
+    ],
+    "maximal_certificate_passes": true,
+    "enumeration_has_passing_calendar": true,
+    "profiles_enumerated": 72,
+    "maximal_cost": 10,
+    "minimum_calendar_cost": 8
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 3,
+    "common_resources_valid": true,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      1,
+      0,
+      2,
+      1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 12,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 4,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      0,
+      -1,
+      1,
+      0
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 5,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -1,
+      -2,
+      0,
+      -1
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  },
+  {
+    "case": "declared_random_snapshot_23",
+    "request_units": 6,
+    "common_resources_valid": false,
+    "common_tail_valid": true,
+    "maximal_calendar": [
+      -2,
+      -3,
+      -1,
+      -2
+    ],
+    "maximal_certificate_passes": false,
+    "enumeration_has_passing_calendar": false,
+    "profiles_enumerated": 0,
+    "maximal_cost": null,
+    "minimum_calendar_cost": null
+  }
+]

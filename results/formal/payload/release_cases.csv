@@ -1,0 +1,5 @@
+case,payload_bytes,reserved_bytes,delivered_service_bytes,certificate_pass,unfinished_bytes
+available_at_start,100,100,100,True,0
+two_equal_releases,100,100,100,True,0
+all_payload_in_last_slot,100,100,100,False,99
+insufficient_delivered_service,100,100,50,False,50

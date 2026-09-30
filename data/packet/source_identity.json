@@ -1,0 +1,9 @@
+{
+  "code_changes": "Relative paths consolidated; manuscript text and LaTeX emitters removed. Numeric analyses retained.",
+  "raw_bytes": "Every raw gzip blob and decompressed record is unchanged.",
+  "raw_source_paths": "source_path values in manifest.json are archival identifiers, not required filesystem locations.",
+  "source_controlled_analysis_sha256": "e7b9c0eb1b29444695b7487880452b4eb76da0cbb4079b6e458b2b256114b8b5",
+  "source_historical_audit_sha256": "4065cd95d6ac23b10a6b0158f4e642a9b42fdf02599aba330a47f1b5825c8422",
+  "source_manifest_sha256": "ea67f7d3bad74fc1f2a34e85a95831051cef09f5d584d317725340815221ca91",
+  "source_summary_analysis_sha256": "91349cdbb76492d56f6719dcccf2a8acfbe610545e128f09b52639d0bc5b2755"
+}

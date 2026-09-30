@@ -1,0 +1,41 @@
+{
+  "capacity_bytes_per_ms": 650,
+  "static_units": 49,
+  "initial_units": 49,
+  "guardband_ms": 4,
+  "delay_ms": 2,
+  "term_ms": 40,
+  "step_ms": 2,
+  "command_price": 0,
+  "envelopes": [
+    {
+      "min_deadline": 15,
+      "sigma": 480,
+      "rho": 94
+    },
+    {
+      "min_deadline": 45,
+      "sigma": 3328,
+      "rho": 104
+    },
+    {
+      "min_deadline": 95,
+      "sigma": 2560,
+      "rho": 100
+    }
+  ],
+  "source_type_deadlines": [
+    20,
+    50,
+    100,
+    500,
+    200,
+    50,
+    100
+  ],
+  "gate_eta": 1.25,
+  "heartbeat_interval_ms": 10,
+  "heartbeat_timeout_ms": 25,
+  "heartbeat_admission_pause": true,
+  "pacer_spin_us": 100
+}
