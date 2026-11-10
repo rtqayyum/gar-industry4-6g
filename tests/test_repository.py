@@ -31,9 +31,9 @@ class RepositoryTests(unittest.TestCase):
             self.assertNotIn(path.suffix.lower(), prohibited, str(path))
             self.assertFalse(any(part.startswith(("revision_", "latex_overleaf")) for part in path.parts))
 
-    def test_one_description(self):
+    def test_documentation_inventory(self):
         descriptions = [p.relative_to(ROOT).as_posix() for p in REPO.files() if p.suffix == ".md"]
-        self.assertEqual(descriptions, ["README.md"])
+        self.assertEqual(descriptions, ["README.md", "docs/REVISION_CAMPAIGN.md", "docs/REVISION_PROOF_AND_ALGORITHM.md"])
 
 
 if __name__ == "__main__":

@@ -27751,9 +27751,9 @@
       "sha256": "918c447e950d2ee3a143662f2b6d2eec00a273691e59ad830951e19e1d8fe2ae"
     },
     {
-      "bytes": 1627,
+      "bytes": 1704,
       "path": "tests/test_repository.py",
-      "sha256": "231a0f46c676c9c45e0366a6ab04899ebd47b429f5259069e59207276dfccea4"
+      "sha256": "8a82a5978b2db2cf9f438eb443a374f54210549fa1638eaa18d8cd0121e866b9"
     },
     {
       "bytes": 7754,
