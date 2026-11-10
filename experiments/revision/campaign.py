@@ -28,6 +28,8 @@ METHODS=["peak","keep_calendar","minimum_floor","gar","gar_h"]
 ADAPTERS=["joint_guarded","luu_joint_style","luu_sequential_style","yu_gateway_style"]
 BASE=dict(duration=300000,capacity=650,units=106,delay=2,step=5,term=40,window=0,
           background_contract=1,service=1.0,actual_service=1.0,burst=1.0,eta=1.0,price=64.0,history_window=100)
+REUSE_RUNNER_SHA256="2a11b57825af8243fbdddafd267014f5a94473c654c873caa75502282e9becf0"
+REUSE_COMMITS={"cade4389fcdc2feb22cbca9df6f5f4aeb52f7dd7","0d4a00b92d6df3003ab924c7bb973a4a85b22aac"}
 OPEN_WORK={
  "gateway_restart":"Controller outages are tested. Durable gateway restart recovery remains open.",
  "industrial_data":"No independently measured industrial byte-arrival trace is claimed. Current generators are synthetic contracts.",
@@ -92,6 +94,7 @@ def scaling(seeds=30):
  unique={key(c):c for c in cases}
  return [task("benchmark","E4",dict(c,seed=s)) for c,s in itertools.product(unique.values(),range(500001,500001+seeds))]
 def context(root,c):
+ # Callers pass the task directory: different workers never publish the same CSV.
  d=root/"contexts";d.mkdir(exist_ok=True);p=d/("%s-%s-%s.csv"%(c["family"],c["seed"],c["duration"]))
  if p.exists():return p
  rng=random.Random(str((c["family"],c["seed"],"v1")));x=[1.,1.,1.];lines=["critical,video,monitoring"]
@@ -140,7 +143,7 @@ def run_one(t,root):
  try:
   c=t["config"];out=d/"result.json";kind=t["kind"]
   if kind=="online":
-   ctx=context(root,c);cmd=[root/"build/online","--context",ctx,"--output",out,"--family",c["family"],"--policy",c["policy"],
+   ctx=context(d,c);cmd=[root/"build/online","--context",ctx,"--output",out,"--family",c["family"],"--policy",c["policy"],
     "--duration",c["duration"],"--seed",c["seed"],"--load",c["load"],"--lease-rate",100,"--step",c["step"],"--delay",2,"--term",40,
     "--gate-eta",c["eta"],"--expire-background",1,"--batch-size",3,"--burst-factor",2.5,"--lease-offer-trace-export",d/"offers.csv"]
    r["context_sha256"]=sha(ctx)
@@ -172,24 +175,84 @@ def run_many(tasks,root,workers):
  bad=[r for r in rows if r["status"]=="FAILED"]
  if bad:raise RuntimeError("%s tasks failed; inspect retained receipts"%len(bad))
  return rows
-def pilot(root,workers,quick=False):
- build(root);n=1 if quick else 3;duration=1000 if quick else 10000
- tasks=[task("sustained","PILOT",dict(BASE,duration=duration,family=f,load=l,rate=r,seed=s,policy=m,trace=1))
+def pilot_tasks(quick=False):
+ n=1 if quick else 3;duration=1000 if quick else 10000
+ return [task("sustained","PILOT",dict(BASE,duration=duration,family=f,load=l,rate=r,seed=s,policy=m,trace=1))
   for f,l,r,s,m in itertools.product(["deadline_mix","synchronized"],[.4,1.0],[10,100],range(900001,900001+n),METHODS)]
+def calibration_tasks(quick=False):
+ grid=list(itertools.product([1.,1.25,1.5],[5,10]));families=FAMILIES[:1] if quick else FAMILIES;seeds=range(910001,910002 if quick else 910007)
+ return [task("online","E2_CALIBRATION",dict(policy=m,eta=e,step=step,family=f,load=l,seed=s,duration=1000 if quick else 300000))
+  for m,(e,step),f,l,s in itertools.product(ADAPTERS,grid,families,[.8,1.0],seeds)]
+def pilot_probe():
+ return task("benchmark","PILOT_BENCHMARK",dict(jobs=100,classes=3,horizon=128,floors=8,bookings=10,repeats=3,seed=800211))
+def reuse_completed(root,source):
+ """Import verified preparation receipts into a new run, leaving the source intact."""
+ root=Path(root).resolve();source=Path(source).resolve()
+ if root==source or source in root.parents or root in source.parents:raise ValueError("Recovery needs separate campaign directories")
+ identity=read(source/"source_identity.json");old_build=read(source/"build/identity.json")
+ if identity.get("commit") not in REUSE_COMMITS or old_build["sources"].get("experiments/revision/campaign.py")!=REUSE_RUNNER_SHA256:
+  raise RuntimeError("Source campaign is not a reviewed compatible revision")
+ current={str(p.relative_to(CODE)):sha(p) for p in sorted((CODE/"experiments").rglob("*")) if p.suffix in {".cpp",".hpp",".py"}}
+ previous=dict(old_build["sources"]);previous.pop("experiments/revision/campaign.py");current.pop("experiments/revision/campaign.py")
+ if previous!=current:raise RuntimeError("Simulation or workload sources changed; completed tasks cannot be reused")
+ for name,expected in old_build["binaries"].items():
+  if sha(source/"build"/name)!=expected:raise RuntimeError("Source binary identity changed: "+name)
+ if read(source/"pilot.json").get("status")!="PASS" or read(source/"pilot.json").get("quick"):
+  raise RuntimeError("A full passed pilot is required for recovery")
+ if any((source/n).exists() for n in ["manifest.json","evaluation_manifest.json","scaling_manifest.json","protocol_lock.json","calibration.json"]):
+  raise RuntimeError("This recovery is restricted to campaigns stopped before production")
+ tasks=pilot_tasks()+calibration_tasks()+[pilot_probe()]
+ if read(source/"pilot_manifest.json")!=pilot_tasks() or read(source/"calibration_manifest.json")!=calibration_tasks():
+  raise RuntimeError("Source preparation manifests differ from the unchanged protocol")
+ receipt_file=root/"reuse.json"
+ if receipt_file.exists():
+  prior=read(receipt_file)
+  if prior.get("status")=="COMPLETE" and prior.get("source_run")==str(source):return prior
+  raise RuntimeError("An interrupted import is retained; use a new campaign")
+ result=dict(status="PREPARING",source_run=str(source),source_commit=identity["commit"],source_identity_sha256=sha(source/"source_identity.json"),
+  source_build_sha256=sha(source/"build/identity.json"),started=stamp(),reused=[],failed_retained=[],missing=[],copied_by_study={},
+  scope="Unchanged pilot and development tasks only; source failures and all source files remain intact. Reproduction checks run again on the corrected source.")
+ write(receipt_file,result)
+ for t in tasks:
+  folder=source/"tasks"/t["id"];p=folder/"receipt.json"
+  if not p.exists():result["missing"].append(t["id"]);continue
+  r=read(p)
+  if r.get("task")!=t:raise RuntimeError("Source task identity differs: "+t["id"])
+  if r.get("status")=="FAILED":result["failed_retained"].append(dict(id=t["id"],receipt=str(p),error=r.get("error")));continue
+  if r.get("status") not in {"COMPLETE","PROVISIONING_REJECTION"} or sha(folder/"result.json")!=r.get("result_sha256"):
+   raise RuntimeError("Source result is not a verified completed task: "+t["id"])
+  if any(f.is_symlink() for f in folder.rglob("*")):raise RuntimeError("Linked task evidence cannot be imported")
+  dest=root/"tasks"/t["id"];dest.parent.mkdir(exist_ok=True)
+  shutil.copytree(folder,dest)
+  for f in folder.rglob("*"):
+   if f.is_file() and sha(f)!=sha(dest/f.relative_to(folder)):raise RuntimeError("Copied evidence differs: "+str(f))
+  if t["kind"]=="online":
+   if sha(context(dest,t["config"]))!=r.get("context_sha256"):raise RuntimeError("Regenerated input bytes differ: "+t["id"])
+   if r["status"]=="COMPLETE":
+    with gzip.open(dest/"offers.csv.gz","rb") as f:offered=hashlib.sha256(f.read()).hexdigest()
+    if offered!=r.get("offer_sha256"):raise RuntimeError("Retained offered inputs differ: "+t["id"])
+  result["reused"].append(dict(id=t["id"],receipt_sha256=sha(p)))
+  result["copied_by_study"][t["study"]]=result["copied_by_study"].get(t["study"],0)+1
+ result.update(status="COMPLETE",finished=stamp());write(receipt_file,result);print(json.dumps(dict(recovery=result["copied_by_study"],failed_retained=len(result["failed_retained"]),missing=len(result["missing"]))),flush=True)
+ return result
+def pilot(root,workers,quick=False,reuse_from=None):
+ if reuse_from is not None:
+  if quick:raise ValueError("Quick developer runs cannot import production preparation")
+  reuse_completed(root,reuse_from)
+ build(root);tasks=pilot_tasks(quick)
  write(root/"pilot_manifest.json",tasks);rows=run_many(tasks,root,workers);groups=defaultdict(set)
  for r in rows:
   c=dict(r["task"]["config"]);c.pop("policy");groups[key(c)].add(r["payload"]["input_fingerprint_fnv64"])
  if any(len(v)!=1 for v in groups.values()) or not any(r["status"]=="COMPLETE" for r in rows):raise ValueError("Pilot common-input validation failed")
- probe=task("benchmark","PILOT_BENCHMARK",dict(jobs=100,classes=3,horizon=128,floors=8,bookings=10,repeats=3,seed=800211))
+ probe=pilot_probe()
  run_many([probe],root,1)
  write(root/"pilot.json",dict(status="PASS",tasks=len(tasks),timestamp=stamp(),quick=quick,median_seconds=statistics.median(r["elapsed_seconds"] for r in rows)))
 def efficiency(p):return 100*(sum(x["on_time_bytes"] for x in p["classes"])+p["lease_served_bytes"])/p["capacity_bytes"]
 def bgfail(p):return 100*sum(x["failures"] for x in p["classes"][1:3])/max(1,sum(x["generated"] for x in p["classes"][1:3]))
 def calibrate(root,workers,quick=False):
  if read(root/"pilot.json")["status"]!="PASS":raise RuntimeError("Pilot required")
- grid=list(itertools.product([1.,1.25,1.5],[5,10]));families=FAMILIES[:1] if quick else FAMILIES;seeds=range(910001,910002 if quick else 910007)
- tasks=[task("online","E2_CALIBRATION",dict(policy=m,eta=e,step=step,family=f,load=l,seed=s,duration=1000 if quick else 300000))
-  for m,(e,step),f,l,s in itertools.product(ADAPTERS,grid,families,[.8,1.0],seeds)]
+ grid=list(itertools.product([1.,1.25,1.5],[5,10]))
+ tasks=calibration_tasks(quick)
  write(root/"calibration_manifest.json",tasks);rows=run_many(tasks,root,workers);selected={};unattainable=[]
  for method,target in itertools.product(ADAPTERS,[1,3,5]):
   choices=[]
@@ -255,13 +318,15 @@ def paired(rows):
  return effects
 def collect(root):
  out=root/"report";out.mkdir(exist_ok=True);tasks=[];rows=[];receipts=[];missing=[];failed=[]
- for name in ["manifest.json","evaluation_manifest.json","scaling_manifest.json"]:
+ production_files=["manifest.json","evaluation_manifest.json","scaling_manifest.json"]
+ absent_manifests=[name for name in production_files if not (root/name).exists()]
+ for name in ["pilot_manifest.json","calibration_manifest.json"]+production_files:
   if (root/name).exists():tasks+=read(root/name)
  for t in tasks:
   p=root/"tasks"/t["id"]/"receipt.json"
   if not p.exists():missing.append(t["id"]);continue
   r=read(p);receipts.append(r)
-  if r["status"]=="FAILED":failed.append(dict(id=t["id"],error=r.get("error")));continue
+  if r["status"]=="FAILED":failed.append(dict(id=t["id"],study=t["study"],error=r.get("error")));continue
   rows.append(metrics(r))
  groups=defaultdict(set)
  for r in rows:
@@ -269,7 +334,9 @@ def collect(root):
  mismatch=[str(k) for k,v in groups.items() if len(v)>1]
  reproduction=read(root/"reproduction.json") if (root/"reproduction.json").exists() else {"status":"MISSING"}
  calibration=read(root/"calibration.json") if (root/"calibration.json").exists() else {"status":"MISSING"}
- complete=bool(tasks) and not missing and not failed and not mismatch and reproduction["status"]=="COMPLETE" and calibration["status"]=="PASS"
+ pilot_status=read(root/"pilot.json") if (root/"pilot.json").exists() else {"status":"MISSING"}
+ reuse=read(root/"reuse.json") if (root/"reuse.json").exists() else None
+ complete=bool(tasks) and not absent_manifests and not missing and not failed and not mismatch and reproduction["status"]=="COMPLETE" and calibration["status"]=="PASS" and pilot_status["status"]=="PASS"
  status="NUMERICAL_CAMPAIGN_COMPLETE" if complete else "INCOMPLETE_OR_FAILED"
  table(out/"metrics.csv",rows);table(out/"paired_effects.csv",paired(rows))
  targets=[]
@@ -287,12 +354,16 @@ def collect(root):
   targets += [dict(method=x.split(":")[0],target_pct=int(x.split(":")[1]),status="UNATTAINABLE_IN_CALIBRATION") for x in sel["unattainable"]]
  table(out/"reliability_targets.csv",targets)
  coverage=dict(status=status,expected=len(tasks),received=len(receipts),missing=missing,failed=failed,input_mismatches=mismatch,
-  provisioning_rejections=sum(r["status"]=="PROVISIONING_REJECTION" for r in receipts),reproduction=reproduction,calibration=calibration,open_work=OPEN_WORK,ready_for_resubmission=False)
+  provisioning_rejections=sum(r["status"]=="PROVISIONING_REJECTION" for r in receipts),reproduction=reproduction,calibration=calibration,pilot=pilot_status,
+  missing_production_manifests=absent_manifests,reuse=reuse,open_work=OPEN_WORK,ready_for_resubmission=False)
  write(out/"coverage.json",coverage)
  lines=["# GAR revision campaign","","Status: "+status,"","Expected tasks: %s; received: %s; missing: %s; failed: %s."%(len(tasks),len(receipts),len(missing),len(failed)),
+  "","Counts include pilot and calibration manifests. Missing production manifests: "+(", ".join(absent_manifests) or "none")+".",
   "","Numerical completion does not establish that every reviewer comment is resolved. No automatic resubmission is performed.","","| Study | Received | Complete | Provisioning rejected |","|---|---:|---:|---:|"]
  for study in sorted({t["study"] for t in tasks}):
   rr=[r for r in receipts if r["task"]["study"]==study];lines.append("| %s | %s | %s | %s |"%(study,len(rr),sum(r["status"]=="COMPLETE" for r in rr),sum(r["status"]=="PROVISIONING_REJECTION" for r in rr)))
+ if failed:lines+=["","## Failed tasks",""]+["- "+r["study"]+" / "+r["id"]+": "+str(r.get("error")) for r in failed[:20]]
+ if reuse:lines+=["","Recovery source: "+reuse["source_run"]+". Imported preparation tasks: "+str(len(reuse["reused"]))+". Original failed attempts remain in the source campaign."]
  lines+=["","## Open work",""]+["- "+k+": "+v for k,v in OPEN_WORK.items()]
  lines+=["","Paired effects resample whole independent seed blocks. Missing, failed and infeasible cases remain explicit. Peak and keep-calendar decisions coincide when the installed baseline calendar is constant; this is reported as equivalence, not extra independent evidence."]
  (out/"SUMMARY.md").write_text("\n".join(lines)+"\n")
@@ -307,7 +378,7 @@ def collect(root):
  except Exception as e:write(out/"plot_error.json",{"error":str(e)})
  with zipfile.ZipFile(root/"report_bundle.zip","w",zipfile.ZIP_DEFLATED) as z:
   for p in out.iterdir():z.write(p,"report/"+p.name)
-  for name in ["protocol_lock.json","selected.json","pilot.json","source_identity.json"]:
+  for name in ["protocol_lock.json","selected.json","pilot.json","calibration.json","source_identity.json","reuse.json"]:
    if (root/name).exists():z.write(root/name,name)
  print(json.dumps(dict(status=status,summary=str(out/"SUMMARY.md"),bundle=str(root/"report_bundle.zip"))),flush=True)
  return 0 if complete else 3
@@ -327,9 +398,11 @@ def reproduce(root):
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument("command",choices=["pilot","calibrate","worker","scaling","collect","reproduce","describe"])
  p.add_argument("--root",type=Path,required=True);p.add_argument("--workers",type=int,default=4);p.add_argument("--shard",type=int,default=0);p.add_argument("--shards",type=int,default=6);p.add_argument("--quick",action="store_true")
+ p.add_argument("--reuse-from",type=Path,help="For a full pilot: import reviewed compatible preparation evidence from a stopped campaign")
  a=p.parse_args();a.root=a.root.resolve();a.root.mkdir(parents=True,exist_ok=True)
  if not 1<=a.workers<=40 or not 0<=a.shard<a.shards:p.error("Invalid workers or shard")
- if a.command=="pilot":pilot(a.root,a.workers,a.quick)
+ if a.reuse_from is not None and a.command!="pilot":p.error("--reuse-from is only valid with pilot")
+ if a.command=="pilot":pilot(a.root,a.workers,a.quick,a.reuse_from)
  elif a.command=="calibrate":calibrate(a.root,a.workers,a.quick)
  elif a.command=="worker":worker(a.root,a.shard,a.shards,a.workers)
  elif a.command=="scaling":

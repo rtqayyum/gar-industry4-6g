@@ -7021,9 +7021,9 @@
       "sha256": "e3bbf9c22ccad5d02a7346721120ae4ede95dd5a087521aa0ef5e5efe67b3db5"
     },
     {
-      "bytes": 6648,
+      "bytes": 8003,
       "path": "docs/REVISION_CAMPAIGN.md",
-      "sha256": "e0e54f03a83c5224b26828a465f79df4356c47317ebebcc71b335577426c3369"
+      "sha256": "8b52f93042e7efd54e3b950b444344aa78c79cbe5d3c163541a6939fb314a43c"
     },
     {
       "bytes": 6352,
@@ -7301,9 +7301,9 @@
       "sha256": "9a0c682b7002147c84d1c66e781a3270bb70c54373f718d067bba249d71d133c"
     },
     {
-      "bytes": 25143,
+      "bytes": 31238,
       "path": "experiments/revision/campaign.py",
-      "sha256": "2a11b57825af8243fbdddafd267014f5a94473c654c873caa75502282e9becf0"
+      "sha256": "f5ac190e12effe4143382f96e0bf7425015e958519c1b8831803f7a6d144c29c"
     },
     {
       "bytes": 18991,
@@ -7311,9 +7311,9 @@
       "sha256": "3329dfbf166c275f4d91d26b3577d51d146e52d4b5c2ffa0b470e3fedc5deea8"
     },
     {
-      "bytes": 13093,
+      "bytes": 14037,
       "path": "hpc/bootstrap_revision.py",
-      "sha256": "8ebd1b4721893e822c28b8270bf089f8c7b02fa0cbf6f247b00b9cdda61e9e2c"
+      "sha256": "e6e0ee9f2c5ba00cb82c34c68bc49521800e31521c1898ec1b62630a4fb28237"
     },
     {
       "bytes": 603,
@@ -27766,9 +27766,9 @@
       "sha256": "0999b63239e6df271de1e29062bc382898ed09f553f6a9f87a5dfb4ebf42ac0a"
     },
     {
-      "bytes": 5553,
+      "bytes": 11115,
       "path": "tests/test_revision_hpc.py",
-      "sha256": "60776efa0f8715095e86d5bab6ec0c512c5bffe546310c825695bacf14761224"
+      "sha256": "8c878b1d505e88c3a072f8d4211b7b3de77a2983314851f8d5b7a126d21fe702"
     }
   ]
 }

@@ -39,6 +39,14 @@ The dependency chain is acquire, pilot, calibrate, experiment array and collecto
 
 The command prints job IDs, logs, the report path and a Check_revision command. The final report is report/SUMMARY.md with metrics, paired effects, reliability-target results, coverage and report_bundle.zip. Keep raw tasks for audit.
 
+### Recovering interrupted calibration
+
+Online episodes now generate context CSVs inside their own task directories. The generator, seeds and CSV bytes are unchanged; workers no longer publish or replace a shared context pathname.
+
+The bootstrap accepts `--reuse-from /absolute/path/to/old/campaign`. It creates a new campaign and refuses to import from a campaign with active jobs. For the reviewed `cade4389` and `0d4a00b9` releases only, the pilot stage can import completed preparation tasks after checking the old runner identity, unchanged simulation sources, binary hashes, exact preparation manifests, result hashes, copied file hashes and regenerated online input hashes. Failed tasks are retained in the original campaign and are executed afresh in the new one. The import never changes the old campaign or skips a failed receipt as a success. Production runs that have already been frozen are outside this recovery path.
+
+`reuse.json` records the source campaign and commit, imported receipt hashes, missing tasks and retained failures. The new pilot and calibration gates still run, the corrected source undergoes reproduction again, and both production and scaling wait for calibration. The collector includes preparation tasks in its counts, reports missing production manifests explicitly and packages recovery provenance with the report.
+
 ## Completion boundary
 
 Numerical completion does not automatically resolve every review concern. The report explicitly tracks industrial data, gateway crash durability, multi-hop scope, the live packet executor, proof integration and the exact response matrix. No journal submission is performed. The full research plan also requires a revised manuscript and a point-by-point response.

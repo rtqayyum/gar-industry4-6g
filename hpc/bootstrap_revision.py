@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 from datetime import datetime,timezone
 import fcntl
+import getpass
 import hashlib
 import json
 import os
@@ -106,17 +107,23 @@ def acquire(paths):
   write(run/"acquisition.json",dict(status="COMPLETE",commit=commit))
 def render_script(command):
  return "#!/bin/bash\nset -euo pipefail\nif type module >/dev/null 2>&1; then module load gcc >/dev/null 2>&1 || true; fi\nexport PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLBACKEND=Agg\nunset PYTHONPATH\nexec "+shlex.join(list(map(str,command)))+"\n"
-def submit_workflow(project,commit,cpus=40,concurrent=4,shards=6,partition="longq",submit=False,new=False):
+def submit_workflow(project,commit,cpus=40,concurrent=4,shards=6,partition="longq",submit=False,new=False,reuse_from=None):
  project=Path(project).expanduser().resolve()
  if not re.fullmatch(r"[0-9a-f]{40}",commit):raise ValueError("A full immutable 40-character commit is required")
  if not 1<=cpus<=40 or not 1<=concurrent<=6 or not 1<=shards<=100:raise ValueError("CPU or concurrency limit")
  if not re.fullmatch(r"[A-Za-z0-9_-]+",partition):raise ValueError("Invalid partition")
+ if reuse_from is not None:
+  reuse_from=Path(reuse_from).expanduser().resolve();old=read(reuse_from/"submission.json")
+  if submit:
+   active={m.group() for row in slurm(["squeue","--noheader","--user",getpass.getuser(),"--format=%i"]).split() if (m:=re.match(r"[0-9]+",row))}
+   if active.intersection(map(str,old.get("jobs",{}).values())):raise RuntimeError("Source campaign still has active jobs; wait before importing evidence")
  project.mkdir(parents=True,exist_ok=True);(project/"work").mkdir(exist_ok=True)
  with (project/"work/submission.lock").open("a+") as lock:
   fcntl.flock(lock,fcntl.LOCK_EX);latest=project/"work/latest_revision.json"
   if latest.exists() and not new:
    old=read(latest)
    if old.get("commit")==commit and old.get("status")=="SUBMITTED":
+    if old.get("reuse_from")!=(str(reuse_from) if reuse_from else None):raise RuntimeError("Existing submission has a different recovery source; inspect it before using --new")
     print("Existing submission retained:",old["run"]);status(project);return old
   stamp=datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
   run=project/"results/revision"/(stamp+"-"+commit[:8]);run.mkdir(parents=True);logs=run/"logs";logs.mkdir();scripts=run/"slurm";scripts.mkdir()
@@ -133,7 +140,9 @@ def submit_workflow(project,commit,cpus=40,concurrent=4,shards=6,partition="long
    ("scaling",[python,runner,"scaling","--root",run,"--workers",1],1,["calibrate"],False),
    ("reproduce",[python,runner,"reproduce","--root",run,"--workers",4],4,["acquire"],False),
    ("collect",common+["--stage","collect"],2,["acquire","pilot","calibrate","experiments","scaling","reproduce"],False)]
+  if reuse_from is not None:stages[1][1].extend(["--reuse-from",reuse_from])
   receipt=dict(status="SUBMITTING" if submit else "DRY_RUN",commit=commit,run=str(run),jobs={},commands={})
+  if reuse_from is not None:receipt["reuse_from"]=str(reuse_from)
   try:
    for name,command,ncpu,parents,array in stages:
     body=render_script(command).replace("ARRAY_INDEX",'"$'+'{SLURM_ARRAY_TASK_ID}"')
@@ -185,11 +194,12 @@ def collect(paths):
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument("--project",type=Path,default=Path.home()/"gar-industry4-6g");p.add_argument("--commit");p.add_argument("--run",type=Path)
  p.add_argument("--stage",choices=["submit","acquire","collect"],default="submit");p.add_argument("--submit",action="store_true");p.add_argument("--status",action="store_true");p.add_argument("--new",action="store_true")
+ p.add_argument("--reuse-from",type=Path,help="Import compatible completed pilot/calibration tasks into a new campaign; retain the original run")
  p.add_argument("--cpus",type=int,default=40);p.add_argument("--concurrent",type=int,default=4);p.add_argument("--shards",type=int,default=6);p.add_argument("--partition",default="longq")
  a=p.parse_args();a.project=a.project.expanduser().resolve()
  if a.status:status(a.project);return
  if not a.commit or not re.fullmatch(r"[0-9a-f]{40}",a.commit):p.error("Specify a full --commit")
- if a.stage=="submit":submit_workflow(a.project,a.commit,a.cpus,a.concurrent,a.shards,a.partition,a.submit,a.new)
+ if a.stage=="submit":submit_workflow(a.project,a.commit,a.cpus,a.concurrent,a.shards,a.partition,a.submit,a.new,a.reuse_from)
  else:
   if a.run is None:p.error("--run required for internal stage")
   paths=layout(a.project,a.commit,a.run.resolve())

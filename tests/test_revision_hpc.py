@@ -1,5 +1,6 @@
 """Validate the Slurm DAG without submitting real jobs or downloading runtimes."""
 import contextlib
+import gzip
 import importlib.util
 import io
 import json
@@ -16,6 +17,80 @@ def load_module(name,path):
 BOOT=load_module("gar_bootstrap_test",ROOT/"hpc/bootstrap_revision.py")
 CAMPAIGN=load_module("gar_campaign_test",ROOT/"experiments/revision/campaign.py")
 class RevisionSubmission(unittest.TestCase):
+ def recovery_fixture(self,source):
+  source.mkdir();(source/"build").mkdir()
+  sources={str(p.relative_to(ROOT)):CAMPAIGN.sha(p) for p in (ROOT/"experiments").rglob("*") if p.suffix in {".cpp",".hpp",".py"}}
+  sources["experiments/revision/campaign.py"]=CAMPAIGN.REUSE_RUNNER_SHA256
+  binaries={}
+  for name in ["sustained","online","benchmark"]:
+   p=source/"build"/name;p.write_bytes(b"test binary identity");binaries[name]=CAMPAIGN.sha(p)
+  CAMPAIGN.write(source/"build/identity.json",dict(sources=sources,binaries=binaries))
+  CAMPAIGN.write(source/"source_identity.json",dict(commit=sorted(CAMPAIGN.REUSE_COMMITS)[0]))
+  CAMPAIGN.write(source/"submission.json",dict(jobs={"calibrate":"700001"}))
+  CAMPAIGN.write(source/"pilot.json",dict(status="PASS",quick=False))
+  CAMPAIGN.write(source/"pilot_manifest.json",CAMPAIGN.pilot_tasks())
+  CAMPAIGN.write(source/"calibration_manifest.json",CAMPAIGN.calibration_tasks())
+  tasks=[CAMPAIGN.pilot_tasks()[0],CAMPAIGN.calibration_tasks()[0]]
+  for t in tasks:
+   d=source/"tasks"/t["id"];d.mkdir(parents=True);CAMPAIGN.write(d/"result.json",dict(status="PASS"))
+   r=dict(status="COMPLETE",task=t,result_sha256=CAMPAIGN.sha(d/"result.json"))
+   if t["kind"]=="online":
+    r["context_sha256"]=CAMPAIGN.sha(CAMPAIGN.context(source,t["config"]))
+    (d/"offers.csv").write_text("offers\n")
+    r["offer_sha256"]=CAMPAIGN.sha(d/"offers.csv")
+    with gzip.open(d/"offers.csv.gz","wb") as f:f.write((d/"offers.csv").read_bytes())
+    (d/"offers.csv").unlink()
+   CAMPAIGN.write(d/"receipt.json",r)
+  failed=CAMPAIGN.calibration_tasks()[1]
+  CAMPAIGN.write(source/"tasks"/failed["id"]/"receipt.json",dict(status="FAILED",task=failed,error="input file missing"))
+  return tasks,failed
+ def test_recovery_imports_success_and_preserves_original(self):
+  with tempfile.TemporaryDirectory() as td,contextlib.redirect_stdout(io.StringIO()):
+   td=Path(td);source=td/"old";dest=td/"new";dest.mkdir();tasks,failed=self.recovery_fixture(source)
+   before={str(p.relative_to(source)):CAMPAIGN.sha(p) for p in source.rglob("*") if p.is_file()}
+   r=CAMPAIGN.reuse_completed(dest,source)
+   self.assertEqual(r["status"],"COMPLETE");self.assertEqual(len(r["reused"]),2)
+   self.assertEqual(r["failed_retained"][0]["id"],failed["id"])
+   self.assertFalse((dest/"tasks"/failed["id"]).exists())
+   for t in tasks:
+    self.assertEqual(CAMPAIGN.sha(dest/"tasks"/t["id"]/"receipt.json"),CAMPAIGN.sha(source/"tasks"/t["id"]/"receipt.json"))
+   self.assertTrue(list((dest/"tasks"/tasks[1]["id"]/"contexts").glob("*.csv")))
+   self.assertEqual(before,{str(p.relative_to(source)):CAMPAIGN.sha(p) for p in source.rglob("*") if p.is_file()})
+   self.assertEqual(CAMPAIGN.reuse_completed(dest,source),r)
+ def test_recovery_rejects_changed_simulator_or_result(self):
+  for change in ["simulator","result"]:
+   with self.subTest(change=change),tempfile.TemporaryDirectory() as td:
+    td=Path(td);source=td/"old";dest=td/"new";dest.mkdir();tasks,_=self.recovery_fixture(source)
+    if change=="simulator":
+     p=source/"build/identity.json";r=CAMPAIGN.read(p);r["sources"]["experiments/online/simulator.cpp"]="0"*64;CAMPAIGN.write(p,r)
+    else:(source/"tasks"/tasks[0]["id"]/"result.json").write_text("{}\n")
+    with self.assertRaises(RuntimeError):CAMPAIGN.reuse_completed(dest,source)
+ def test_recovery_submission_and_active_job_guard(self):
+  with tempfile.TemporaryDirectory() as td,contextlib.redirect_stdout(io.StringIO()):
+   td=Path(td);source=td/"old";self.recovery_fixture(source)
+   r=BOOT.submit_workflow(td/"project","e"*40,reuse_from=source)
+   self.assertEqual(r["reuse_from"],str(source.resolve()))
+   pilot_script=Path(r["commands"]["pilot"][-1]).read_text()
+   self.assertIn("--reuse-from",pilot_script);self.assertIn(str(source),pilot_script)
+   with patch.object(BOOT,"slurm",return_value="700001_3"):
+    with self.assertRaisesRegex(RuntimeError,"active jobs"):
+     BOOT.submit_workflow(td/"blocked","e"*40,submit=True,reuse_from=source)
+   self.assertFalse((td/"blocked/work/latest_revision.json").exists())
+ def test_context_bytes_match_original_failed_case(self):
+  with tempfile.TemporaryDirectory() as td:
+   c=dict(family="regime_shift",seed=910001,duration=300000)
+   self.assertEqual(CAMPAIGN.sha(CAMPAIGN.context(Path(td),c)),"1c0c75e9d9967aba41f9017a3665764fc9968c68957febc86509f715ccb51008")
+ def test_report_counts_failed_preparation_before_production(self):
+  with tempfile.TemporaryDirectory() as td,contextlib.redirect_stdout(io.StringIO()):
+   td=Path(td);t=CAMPAIGN.calibration_tasks()[0]
+   CAMPAIGN.write(td/"calibration_manifest.json",[t])
+   CAMPAIGN.write(td/"tasks"/t["id"]/"receipt.json",dict(task=t,status="FAILED",error="input file missing"))
+   self.assertEqual(CAMPAIGN.collect(td),3)
+   c=CAMPAIGN.read(td/"report/coverage.json")
+   self.assertEqual(c["expected"],1);self.assertEqual(c["received"],1)
+   self.assertEqual(c["failed"][0]["study"],"E2_CALIBRATION")
+   self.assertEqual(len(c["missing_production_manifests"]),3)
+   self.assertIn("input file missing",(td/"report/SUMMARY.md").read_text())
  def test_dry_run_dependencies_and_limits(self):
   with tempfile.TemporaryDirectory() as td,contextlib.redirect_stdout(io.StringIO()):
    receipt=BOOT.submit_workflow(Path(td)/"project","a"*40,submit=False)
@@ -88,6 +163,15 @@ class RevisionSubmission(unittest.TestCase):
     r=subprocess.run([sys.executable,str(ROOT/"experiments/revision/campaign.py"),cmd[0],"--root",str(td),*cmd[1:]],capture_output=True,text=True,timeout=240)
     self.assertEqual(r.returncode,0,r.stdout+"\n"+r.stderr)
    self.assertTrue(json.loads((td/"pilot.json").read_text())["quick"])
+   contexts=[];hashes=set()
+   for p in (td/"tasks").glob("*/receipt.json"):
+    receipt=CAMPAIGN.read(p)
+    if receipt["task"]["kind"]!="online":continue
+    command=receipt["command"];ctx=Path(command[command.index("--context")+1])
+    self.assertEqual(ctx.parent,p.parent/"contexts")
+    contexts.append(ctx);hashes.add(receipt["context_sha256"])
+   self.assertGreater(len(contexts),1);self.assertEqual(len(contexts),len(set(contexts)))
+   self.assertEqual(len(hashes),1)
    r=subprocess.run([sys.executable,str(ROOT/"experiments/revision/campaign.py"),"collect","--root",str(td)],capture_output=True,text=True,timeout=60)
    self.assertEqual(r.returncode,3,r.stdout+"\n"+r.stderr)
    coverage=json.loads((td/"report/coverage.json").read_text())
