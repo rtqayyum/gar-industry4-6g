@@ -16,9 +16,9 @@
       "sha256": "ac669871a731b04fca833be5fa6f6e0a84590f8eed5511b373777e25391f4893"
     },
     {
-      "bytes": 12367,
+      "bytes": 13122,
       "path": "README.md",
-      "sha256": "96450bc697a61dc0e5f5f1e937d495a3d40315e2c554f2a8d39fbc3aa8027dbc"
+      "sha256": "4b6212e38d6f9bd0386d3d8089e0211220abb21b0c17c115960a34466233c339"
     },
     {
       "bytes": 15596,
@@ -7021,6 +7021,16 @@
       "sha256": "e3bbf9c22ccad5d02a7346721120ae4ede95dd5a087521aa0ef5e5efe67b3db5"
     },
     {
+      "bytes": 6301,
+      "path": "docs/REVISION_CAMPAIGN.md",
+      "sha256": "df3dd216818bbdb67bf4057237db08af3ebcee3f49a00e8530c2fcadcf179fae"
+    },
+    {
+      "bytes": 6352,
+      "path": "docs/REVISION_PROOF_AND_ALGORITHM.md",
+      "sha256": "e297f7c51ac55aba96df2f045da887f64673c70bb4ab87ac402cadb05ecbaf3c"
+    },
+    {
       "bytes": 12858,
       "path": "experiments/formal/reference.py",
       "sha256": "75bf445efe939ee48627b8bdd271e718513c6784f99adcc0d91133c162c59dad"
@@ -7286,9 +7296,24 @@
       "sha256": "828d25dc548cc3e9bdbf3f60ceee9d84e6c265e63d3c7eaf3962005793a74cf6"
     },
     {
+      "bytes": 2864,
+      "path": "experiments/revision/benchmark.cpp",
+      "sha256": "9a0c682b7002147c84d1c66e781a3270bb70c54373f718d067bba249d71d133c"
+    },
+    {
+      "bytes": 24888,
+      "path": "experiments/revision/campaign.py",
+      "sha256": "9e68c5c8a56c609a046e90ff9503328b16acab70e26e3d31a23deb0419a82ded"
+    },
+    {
       "bytes": 18101,
       "path": "experiments/revision/sustained.cpp",
       "sha256": "205076464b6959157d67be0960d3c8c661e2124872fbe85625a7bcf47d235caa"
+    },
+    {
+      "bytes": 12895,
+      "path": "hpc/bootstrap_revision.py",
+      "sha256": "8c2bfa235a3b04a5583234f7db03e58c2057d944c474a234e6bd271672e8f441"
     },
     {
       "bytes": 603,
@@ -27739,6 +27764,11 @@
       "bytes": 4083,
       "path": "tests/test_revision.py",
       "sha256": "08007ca1a903ded7a20934c6fce544571bc6570963054dc6ba1c545de4f1754c"
+    },
+    {
+      "bytes": 5050,
+      "path": "tests/test_revision_hpc.py",
+      "sha256": "1a36289f396be2ef867def32d9887a17c5da1e8c0a319250b65f2ff7be2e841b"
     }
   ]
 }

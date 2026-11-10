@@ -1,5 +1,19 @@
 # Guarded Admission and Release
 
+## Revision campaign
+
+The [revision protocol](docs/REVISION_CAMPAIGN.md) adds sustained booking histories,
+matched reliability selection, sensitivity, scaling, controller-outage and supply-drop
+studies. The [proof and algorithm appendix](docs/REVISION_PROOF_AND_ALGORITHM.md)
+states the conditional tail argument and implementation boundary.
+
+`hpc/bootstrap_revision.py` downloads an immutable source snapshot on a CPU batch
+job and submits setup, pilot, calibration, experiment arrays, reproduction, scaling
+and a collector. It supports a Git-free Python bootstrap, at most 40 CPUs per job,
+failure reports and duplicate-submission prevention. New live packet repair,
+industrial trace validation and durable gateway recovery remain explicit open work.
+
+
 Code and data for temporary resource protection at an Industry 4.0 gateway in
 future 6G sliced networks. Guarded admission and release (GAR) checks a delayed
 resource-schedule update and a new service request together, preserving existing
