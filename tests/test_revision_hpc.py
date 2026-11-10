@@ -27,6 +27,9 @@ class RevisionSubmission(unittest.TestCase):
     elif name!="acquire":self.assertTrue(args[args.index("--dependency")+1].startswith("afterok:"))
    main=receipt["commands"]["experiments"]
    self.assertEqual(main[main.index("--array")+1],"0-5%4")
+   for phase in ["experiments","scaling"]:
+    args=receipt["commands"][phase]
+    self.assertEqual(args[args.index("--dependency")+1],"afterok:"+receipt["jobs"]["calibrate"])
    body=Path(main[-1]).read_text()
    self.assertIn("SLURM_ARRAY_TASK_ID",body);self.assertNotIn("ARRAY_INDEX",body)
    for p in Path(receipt["run"]).joinpath("slurm").glob("*.sbatch"):

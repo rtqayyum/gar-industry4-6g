@@ -130,7 +130,7 @@ def submit_workflow(project,commit,cpus=40,concurrent=4,shards=6,partition="long
    ("pilot",[python,runner,"pilot","--root",run,"--workers",min(cpus,8)],min(cpus,8),["acquire"],False),
    ("calibrate",[python,runner,"calibrate","--root",run,"--workers",cpus],cpus,["pilot"],False),
    ("experiments",[python,runner,"worker","--root",run,"--workers",cpus,"--shard","ARRAY_INDEX","--shards",shards],cpus,["calibrate"],True),
-   ("scaling",[python,runner,"scaling","--root",run,"--workers",1],1,["pilot"],False),
+   ("scaling",[python,runner,"scaling","--root",run,"--workers",1],1,["calibrate"],False),
    ("reproduce",[python,runner,"reproduce","--root",run,"--workers",4],4,["acquire"],False),
    ("collect",common+["--stage","collect"],2,["acquire","pilot","calibrate","experiments","scaling","reproduce"],False)]
   receipt=dict(status="SUBMITTING" if submit else "DRY_RUN",commit=commit,run=str(run),jobs={},commands={})
