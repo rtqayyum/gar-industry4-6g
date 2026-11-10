@@ -18,7 +18,7 @@ using namespace guarded_release;
 using I=std::int64_t;
 struct Opt {
  std::string output,policy="gar",family="deadline_mix";
- int duration=300000,seed=800001,capacity=650,units=106,delay=2,step=5,term=40,window=0,background=1,outage=-1,outage_length=0,trace=0;
+ int duration=300000,seed=800001,capacity=650,units=106,delay=2,step=5,term=40,window=0,background=1,outage=-1,outage_length=0,trace=0,history_window=100;
  double load=.8,rate=10,burst=1,service=1,actual=1,eta=1,price=64;
 };
 Opt parse(int argc,char**argv){
@@ -29,13 +29,13 @@ Opt parse(int argc,char**argv){
  else if(k=="--delay")o.delay=std::stoi(v);else if(k=="--step")o.step=std::stoi(v);else if(k=="--term")o.term=std::stoi(v);
  else if(k=="--window")o.window=std::stoi(v);else if(k=="--background-contract")o.background=std::stoi(v);
  else if(k=="--outage-start")o.outage=std::stoi(v);else if(k=="--outage-length")o.outage_length=std::stoi(v);
- else if(k=="--trace")o.trace=std::stoi(v);else if(k=="--load")o.load=std::stod(v);else if(k=="--rate")o.rate=std::stod(v);
+ else if(k=="--history-window")o.history_window=std::stoi(v);else if(k=="--trace")o.trace=std::stoi(v);else if(k=="--load")o.load=std::stod(v);else if(k=="--rate")o.rate=std::stod(v);
  else if(k=="--burst")o.burst=std::stod(v);else if(k=="--service")o.service=std::stod(v);
  else if(k=="--actual-service")o.actual=std::stod(v);else if(k=="--eta")o.eta=std::stod(v);
  else if(k=="--price")o.price=std::stod(v);else throw std::runtime_error("Unknown option: "+k);}
  if(o.output.empty()||!std::set<std::string>{"peak","keep_calendar","minimum_floor","gar","gar_h"}.count(o.policy)||
  !std::set<std::string>{"deadline_mix","heavy_tenants","regime_shift","synchronized"}.count(o.family))throw std::runtime_error("Unknown method or family");
- if(o.duration<1||o.duration>3600000||o.seed<0||o.capacity<1||o.capacity>10000000||o.units<16||o.units>1000||o.delay<0||o.delay>1000||o.step<1||o.step>1000||o.term<1||o.term>5000||o.window<0||o.window>5000||o.outage_length<0||(o.background!=0&&o.background!=1))throw std::runtime_error("Invalid integer option");
+ if(o.duration<1||o.duration>3600000||o.seed<0||o.capacity<1||o.capacity>10000000||o.units<16||o.units>1000||o.delay<0||o.delay>1000||o.step<1||o.step>1000||o.term<1||o.term>5000||o.window<0||o.window>5000||o.outage_length<0||o.history_window<1||o.history_window>5000||(o.background!=0&&o.background!=1))throw std::runtime_error("Invalid integer option");
  for(double x:{o.load,o.rate,o.burst,o.service,o.actual,o.eta,o.price})if(!std::isfinite(x))throw std::runtime_error("Nonfinite option");
  if(o.load<=0||o.load>4||o.rate<0||o.rate>1000||o.burst<=0||o.burst>4||o.service<=0||o.service>1||o.actual<=0||o.actual>1||o.eta<0||o.price<0)throw std::runtime_error("Invalid real option");
  return o;
@@ -45,15 +45,27 @@ struct Offer{int at,start,end,units;I work;int pattern;};
 struct Tenant{Offer offer;I remaining;int completion=-1;};
 struct Order{const std::vector<Job>*v=nullptr;bool operator()(int a,int b)const{return (*v)[a].deadline==(*v)[b].deadline?a>b:(*v)[a].deadline>(*v)[b].deadline;}};
 struct Stats{I offered=0,timely=0,timely_bytes=0,failed=0;};
+// Causal observed-rate input for the optional screen; not a traffic envelope.
+class CausalWindow {
+ std::vector<std::array<I,7>> ring;std::array<I,7> totals{};int last=-1;
+public:
+ explicit CausalWindow(int width):ring(width){}
+ void advance(int t){
+  if(t!=last+1)throw std::runtime_error("Nonconsecutive history");
+  auto&row=ring[t%ring.size()];for(int k=0;k<7;++k){totals[k]-=row[k];row[k]=0;}last=t;
+ }
+ void observe(int k,I amount){if(last<0||k<0||k>=7||amount<0)throw std::runtime_error("Invalid history observation");ring[last%ring.size()][k]+=amount;totals[k]+=amount;}
+ std::array<long double,7> rates(double eta)const{std::array<long double,7> r{};for(int k=0;k<7;++k)r[k]=static_cast<long double>(totals[k])*eta/ring.size();return r;}
+};
 struct Study{
  Opt o;int cap,base,maximum,tail=-1,stop,last_end=0;std::vector<Envelope> env;std::vector<Job> jobs;std::vector<Offer> offers;std::vector<Tenant> tenants;
  std::vector<int> active,ledger;std::vector<I> byte_ledger;std::array<int,2> bg{};std::array<Stats,6> stats{};
- std::array<std::priority_queue<int,std::vector<int>,Order>,6> queues;TimedPlanExecutor executor{0};OriginalArrivalWindow history;
+ std::array<std::priority_queue<int,std::vector<int>,Order>,6> queues;TimedPlanExecutor executor{0};CausalWindow history;
  std::vector<std::pair<int,int>> changes;std::map<std::string,I> rejects;std::vector<double> times;
  std::vector<I> segment_offers,segment_accepted,segment_timely;
  std::uint64_t fingerprint=14695981039346656037ULL;
  I accepted=0,tenant_done=0,tenant_bytes=0,used=0,critical_area=0,booked_area=0,capacity_violations=0,supply_shortfalls=0,envelope_violations=0;
- explicit Study(Opt x):o(x){
+ explicit Study(Opt x):o(x),history(x.history_window){
  cap=static_cast<int>(std::floor(o.capacity*o.service));base=std::max(1,static_cast<int>(std::ceil(21.0*o.units/106)));
  stop=o.duration+5001+o.delay+115;ledger.assign(stop+6000,0);byte_ledger.assign(ledger.size(),0);
  segment_offers.assign((o.duration+29999)/30000,0);segment_accepted=segment_offers;segment_timely=segment_offers;

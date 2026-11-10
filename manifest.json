@@ -7021,9 +7021,9 @@
       "sha256": "e3bbf9c22ccad5d02a7346721120ae4ede95dd5a087521aa0ef5e5efe67b3db5"
     },
     {
-      "bytes": 6301,
+      "bytes": 6648,
       "path": "docs/REVISION_CAMPAIGN.md",
-      "sha256": "df3dd216818bbdb67bf4057237db08af3ebcee3f49a00e8530c2fcadcf179fae"
+      "sha256": "e0e54f03a83c5224b26828a465f79df4356c47317ebebcc71b335577426c3369"
     },
     {
       "bytes": 6352,
@@ -7301,14 +7301,14 @@
       "sha256": "9a0c682b7002147c84d1c66e781a3270bb70c54373f718d067bba249d71d133c"
     },
     {
-      "bytes": 24888,
+      "bytes": 24994,
       "path": "experiments/revision/campaign.py",
-      "sha256": "9e68c5c8a56c609a046e90ff9503328b16acab70e26e3d31a23deb0419a82ded"
+      "sha256": "3cb7a93605038cae97cd5bb4123dea662786cd7be126ca2931332edd50ceadda"
     },
     {
-      "bytes": 18101,
+      "bytes": 18991,
       "path": "experiments/revision/sustained.cpp",
-      "sha256": "205076464b6959157d67be0960d3c8c661e2124872fbe85625a7bcf47d235caa"
+      "sha256": "3329dfbf166c275f4d91d26b3577d51d146e52d4b5c2ffa0b470e3fedc5deea8"
     },
     {
       "bytes": 12895,
@@ -27761,9 +27761,9 @@
       "sha256": "a703b1dbcc9150851643a101775d398a64c3842fa62b1b8018084a896bec6d2c"
     },
     {
-      "bytes": 4083,
+      "bytes": 4434,
       "path": "tests/test_revision.py",
-      "sha256": "08007ca1a903ded7a20934c6fce544571bc6570963054dc6ba1c545de4f1754c"
+      "sha256": "0999b63239e6df271de1e29062bc382898ed09f553f6a9f87a5dfb4ebf42ac0a"
     },
     {
       "bytes": 5050,

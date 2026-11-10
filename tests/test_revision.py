@@ -76,6 +76,14 @@ class RevisionHistories(unittest.TestCase):
  def test_unannounced_drop_is_reported_outside_assumptions(self):
   p,_=self.run_case("drop","--actual-service",".1")
   self.assertGreater(p["supply_shortfall_slots"],0)
+ def test_causal_history_widths(self):
+  fingerprints=set()
+  for width in ["50","500"]:
+   p,_=self.run_case("history"+width,"--policy","gar_h","--history-window",width)
+   fingerprints.add(p["input_fingerprint_fnv64"])
+   self.assertEqual(p["critical_failed"],0)
+   self.assertEqual(p["background_failed"],0)
+  self.assertEqual(len(fingerprints),1)
  def test_invalid_parameter_rejected(self):
   path=self.directory/"invalid.json"
   r=subprocess.run([str(self.binary),"--output",str(path),"--delay","-1"],capture_output=True,text=True)

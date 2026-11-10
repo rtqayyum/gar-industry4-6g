@@ -27,7 +27,7 @@ FAMILIES=["deadline_mix","heavy_tenants","regime_shift","synchronized"]
 METHODS=["peak","keep_calendar","minimum_floor","gar","gar_h"]
 ADAPTERS=["joint_guarded","luu_joint_style","luu_sequential_style","yu_gateway_style"]
 BASE=dict(duration=300000,capacity=650,units=106,delay=2,step=5,term=40,window=0,
-          background_contract=1,service=1.0,actual_service=1.0,burst=1.0,eta=1.0,price=64.0)
+          background_contract=1,service=1.0,actual_service=1.0,burst=1.0,eta=1.0,price=64.0,history_window=100)
 OPEN_WORK={
  "gateway_restart":"Controller outages are tested. Durable gateway restart recovery remains open.",
  "industrial_data":"No independently measured industrial byte-arrival trace is claimed. Current generators are synthetic contracts.",
@@ -69,13 +69,14 @@ def diagnostics(seeds=10,duration=60000):
  variants=[{}]
  factors={"delay":[0,2,5,10,20,50],"window":[20,100,500,2000],"load":[.4,.8,1,1.4],"burst":[.5,1,1.5,2],
  "service":[1,.95,.9,.8],"step":[5,10,20],"term":[20,40,100,500],"price":[0,16,64,256],
- "eta":[1,1.25,1.5],"capacity":[325,650,1300],"units":[53,106,212]}
+ "eta":[1,1.25,1.5],"history_window":[50,100,200,500],"capacity":[325,650,1300],"units":[53,106,212]}
  for k,values in factors.items():variants += [{k:v} for v in values]
  variants += [dict(delay=d,window=w) for d,w in itertools.product([0,2,5,10,20,50],[20,100,500,2000])]
  variants += [dict(burst=b,service=s) for b,s in itertools.product([.5,1,1.5,2],[1,.95,.9,.8])]
  configs={}
  for f,s,m,v in itertools.product(["deadline_mix","synchronized"],range(200001,200001+seeds),["minimum_floor","gar","gar_h"],variants):
   c=dict(BASE,duration=duration,family=f,seed=s,policy=m,load=.8,rate=100,trace=0);c.update(v)
+  if "service" in v:c["actual_service"]=v["service"]
   if "units" in v:c["price"]=64*v["units"]/106
   configs[key(c)]=c
  out=[task("sustained","E3",c) for c in configs.values()]
