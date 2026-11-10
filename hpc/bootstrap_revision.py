@@ -93,7 +93,7 @@ def acquire(paths):
    print("Verified source commit",commit,"files",count,flush=True)
   else:print("Verified cached source files",verify_source(source),flush=True)
   if sha(source/"hpc/bootstrap_revision.py")!=sha(Path(__file__)):raise RuntimeError("Bootstrap differs from pinned source")
-  tools=work/"bootstrap_env";tool_python=tools/"bin/python"
+  tools=work/"bootstrap_env"/commit;tool_python=tools/"bin/python"
   if not tool_python.exists():subprocess.run([sys.executable,"-m","venv",str(tools)],check=True)
   subprocess.run([str(tool_python),"-m","pip","install","uv==0.9.5"],check=True)
   uv=tools/"bin/uv"
@@ -146,8 +146,11 @@ def submit_workflow(project,commit,cpus=40,concurrent=4,shards=6,partition="long
     args.append(str(file));receipt["commands"][name]=args
     if submit:
      raw=slurm(args)
-     if not re.fullmatch(r"[0-9]+(?:;[^\s]+)?",raw):raise RuntimeError("Unrecognized sbatch response: "+raw)
-     job=raw.split(";")[0];print("SUBMITTED",job,"gar-"+name,flush=True)
+     lines=[x.strip() for x in raw.splitlines() if x.strip()]
+     answer=lines[-1] if lines else ""
+     if not re.fullmatch(r"[0-9]+(?:;[^\s]+)?",answer):raise RuntimeError("Unrecognized sbatch response: "+raw)
+     if len(lines)>1:print("Slurm message: "+" | ".join(lines[:-1]),flush=True)
+     job=answer.split(";")[0];print("SUBMITTED",job,"gar-"+name,flush=True)
     else:job="DRY"+str(len(receipt["jobs"])+1)
     receipt["jobs"][name]=job;write(run/"submission.json",receipt);write(latest,receipt)
    receipt["status"]="SUBMITTED" if submit else "DRY_RUN";write(run/"submission.json",receipt);write(latest,receipt)

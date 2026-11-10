@@ -43,6 +43,10 @@ class RevisionSubmission(unittest.TestCase):
    old=BOOT.submit_workflow(project,"b"*40,submit=True)
    self.assertEqual(old["run"],r["run"])
    self.assertEqual(len([a for a in calls if a[0]=="sbatch"]),7)
+ def test_warning_before_parsable_job_id(self):
+  with tempfile.TemporaryDirectory() as td,patch.object(BOOT,"slurm",return_value="sbatch: warning example\n820001;cluster"),contextlib.redirect_stdout(io.StringIO()):
+   r=BOOT.submit_workflow(Path(td),"d"*40,submit=True)
+   self.assertEqual(set(r["jobs"].values()),{"820001"})
  def test_partial_submission_cancels_only_owned_jobs(self):
   calls=[]
   def fake(args):

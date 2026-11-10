@@ -7311,9 +7311,9 @@
       "sha256": "3329dfbf166c275f4d91d26b3577d51d146e52d4b5c2ffa0b470e3fedc5deea8"
     },
     {
-      "bytes": 12895,
+      "bytes": 13089,
       "path": "hpc/bootstrap_revision.py",
-      "sha256": "8c2bfa235a3b04a5583234f7db03e58c2057d944c474a234e6bd271672e8f441"
+      "sha256": "b6914655650175a29a2c1c7e294af8823f3cba37f5f069e84fbc7f01aec42850"
     },
     {
       "bytes": 603,
@@ -27766,9 +27766,9 @@
       "sha256": "0999b63239e6df271de1e29062bc382898ed09f553f6a9f87a5dfb4ebf42ac0a"
     },
     {
-      "bytes": 5050,
+      "bytes": 5377,
       "path": "tests/test_revision_hpc.py",
-      "sha256": "1a36289f396be2ef867def32d9887a17c5da1e8c0a319250b65f2ff7be2e841b"
+      "sha256": "00a3f4fc7409063b6e8dfa99bb8efac956a6ca9b2a96738c683d835982cb9827"
     }
   ]
 }
