@@ -7301,9 +7301,9 @@
       "sha256": "9a0c682b7002147c84d1c66e781a3270bb70c54373f718d067bba249d71d133c"
     },
     {
-      "bytes": 24994,
+      "bytes": 25143,
       "path": "experiments/revision/campaign.py",
-      "sha256": "3cb7a93605038cae97cd5bb4123dea662786cd7be126ca2931332edd50ceadda"
+      "sha256": "2a11b57825af8243fbdddafd267014f5a94473c654c873caa75502282e9becf0"
     },
     {
       "bytes": 18991,

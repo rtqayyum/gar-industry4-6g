@@ -180,6 +180,8 @@ def pilot(root,workers,quick=False):
  for r in rows:
   c=dict(r["task"]["config"]);c.pop("policy");groups[key(c)].add(r["payload"]["input_fingerprint_fnv64"])
  if any(len(v)!=1 for v in groups.values()) or not any(r["status"]=="COMPLETE" for r in rows):raise ValueError("Pilot common-input validation failed")
+ probe=task("benchmark","PILOT_BENCHMARK",dict(jobs=100,classes=3,horizon=128,floors=8,bookings=10,repeats=3,seed=800211))
+ run_many([probe],root,1)
  write(root/"pilot.json",dict(status="PASS",tasks=len(tasks),timestamp=stamp(),quick=quick,median_seconds=statistics.median(r["elapsed_seconds"] for r in rows)))
 def efficiency(p):return 100*(sum(x["on_time_bytes"] for x in p["classes"])+p["lease_served_bytes"])/p["capacity_bytes"]
 def bgfail(p):return 100*sum(x["failures"] for x in p["classes"][1:3])/max(1,sum(x["generated"] for x in p["classes"][1:3]))
