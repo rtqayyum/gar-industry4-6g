@@ -33,7 +33,8 @@ class RepositoryTests(unittest.TestCase):
 
     def test_documentation_inventory(self):
         descriptions = [p.relative_to(ROOT).as_posix() for p in REPO.files() if p.suffix == ".md"]
-        self.assertEqual(descriptions, ["README.md", "docs/REVISION_CAMPAIGN.md", "docs/REVISION_PROOF_AND_ALGORITHM.md"])
+        self.assertEqual(descriptions, ["README.md", "docs/REVISION_CAMPAIGN.md", "docs/REVISION_PROOF_AND_ALGORITHM.md",
+                                        "docs/REVISION_RESULTS_20261111.md"])
 
 
 if __name__ == "__main__":

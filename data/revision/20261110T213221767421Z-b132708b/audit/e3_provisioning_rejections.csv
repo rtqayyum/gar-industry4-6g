@@ -1,0 +1,13 @@
+capacity,load,family,policy,rejected_cases
+325.0,0.8,deadline_mix,gar,10
+325.0,0.8,deadline_mix,gar_h,10
+325.0,0.8,deadline_mix,minimum_floor,10
+325.0,0.8,synchronized,gar,10
+325.0,0.8,synchronized,gar_h,10
+325.0,0.8,synchronized,minimum_floor,10
+650.0,1.4,deadline_mix,gar,10
+650.0,1.4,deadline_mix,gar_h,10
+650.0,1.4,deadline_mix,minimum_floor,10
+650.0,1.4,synchronized,gar,10
+650.0,1.4,synchronized,gar_h,10
+650.0,1.4,synchronized,minimum_floor,10

@@ -50,3 +50,5 @@ The bootstrap accepts `--reuse-from /absolute/path/to/old/campaign`. It creates 
 ## Completion boundary
 
 Numerical completion does not automatically resolve every review concern. The report explicitly tracks industrial data, gateway crash durability, multi-hop scope, the live packet executor, proof integration and the exact response matrix. No journal submission is performed. The full research plan also requires a revised manuscript and a point-by-point response.
+
+The completed campaign's paired comparisons, reliability results and remaining reviewer work are in the [results assessment](REVISION_RESULTS_20261111.md).

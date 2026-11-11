@@ -1,0 +1,18 @@
+{
+  "bundle_sha256": "2f1fda5c64471f37a4f3ed9e015c682badb405a4527fa013ac1136f09fbb41e6",
+  "complete": 12042,
+  "e3_numeric_duplicate_tasks": 660,
+  "expected_tasks": 12162,
+  "frozen_manifest_hashes": {
+    "evaluation_sha256": "5c7bb9e50936abb70ecc6fb9c1ab387edf1d9ca682c4ed728d8d2eabaeb434bc",
+    "manifest_sha256": "eba13e105b421afaed62fef573868fb048cce472caec584b8b21549bc0d23357",
+    "scaling_sha256": "7ea7e0a58869217878603bd633de8b87a9569b88758114215a5a5083fd0bf5fd"
+  },
+  "gar_commands_vs_minimum_floor": 30.798379200507096,
+  "primary_contrasts_reproduced": 9,
+  "provisioning_rejections": 120,
+  "reliability_points_reproduced": 7,
+  "source_commit": "b132708b398c68402b2e8135693dd8d7ea6e39c8",
+  "sustained_conforming_episodes": 8550,
+  "sustained_conforming_failures": 0
+}
