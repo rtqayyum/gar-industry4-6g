@@ -17,6 +17,7 @@ The audit matched every metrics row to its expected task ID and configuration, r
 | Verified counts and hashes | [audit.json](../data/revision/20261110T213221767421Z-b132708b/audit/audit.json) |
 | Derived result tables | [Audit outputs](../data/revision/20261110T213221767421Z-b132708b/audit) |
 | Reproduction script | [audit_revision.py](../analysis/audit_revision.py) |
+| Follow-up matched snapshot controls | [Replay results and reproduction command](../data/revision/matched_snapshot_controls/) |
 
 Recreate the audit in a new directory using the repository's Python dependencies.
 

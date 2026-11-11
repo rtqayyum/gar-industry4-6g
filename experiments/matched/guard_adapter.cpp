@@ -100,6 +100,51 @@ int main() {
                      <<",\"release_pass\":"<<releases_ok<<",\"calendar_oracle\":"<<oracle
                      <<",\"resources\":"<<admitted_resources<<"}";
         }
+#ifdef GAR_SNAPSHOT_CONTROLS
+        const int continuing_floor = minimum_tail(s);
+        const int booking_end = delay + length;
+        auto fits = [&](const std::vector<int>& units) {
+            for (int n = 0; n < H; ++n) {
+                const int new_units = (n >= delay && n < booking_end) ? q : 0;
+                if (units[n] + s.other_units[n] + new_units > s.units) return false;
+            }
+            return true;
+        };
+        auto certified = [&](const std::vector<int>& units, int final_change) {
+            std::vector<long double> values;
+            for (int x : units) values.push_back(floor_service(s, x));
+            return plan_certificate(s.envelopes, s.pending, values, final_change, values.back()).feasible;
+        };
+
+        auto constant = s.old_units;
+        std::fill(constant.begin() + delay, constant.end(), continuing_floor);
+        const bool constant_ok = eligible && continuing_floor >= 0 && fits(constant) && certified(constant, delay);
+
+        // Search as if the pulse could start immediately. The new booking keeps its actual start.
+        int zero_target = -1;
+        if (eligible && continuing_floor >= 0) {
+            for (int floor = s.base; floor <= s.maximum; ++floor) {
+                std::vector<int> hypothetical(H, continuing_floor);
+                std::fill(hypothetical.begin(), hypothetical.begin() + booking_end, floor);
+                if (fits(hypothetical) && certified(hypothetical, booking_end)) {
+                    zero_target = floor;
+                    break;
+                }
+            }
+        }
+
+        auto realized = s.old_units;
+        if (zero_target >= 0) {
+            std::fill(realized.begin() + delay, realized.begin() + booking_end, zero_target);
+            std::fill(realized.begin() + booking_end, realized.end(), continuing_floor);
+        }
+        const bool realized_safe = zero_target < 0 || certified(realized, booking_end);
+        if (zero_target >= 0 && realized_safe != dense(s, realized, booking_end)) return 3;
+        std::cout << "],\"constant_tail\":" << constant_ok << ",\"tail\":" << continuing_floor
+                  << ",\"zero_target\":" << zero_target << ",\"zero_actual_cert\":" << realized_safe
+                  << ",\"zero_actual_resources\":" << fits(realized) << "}" << std::endl;
+#else
         std::cout<<"]}"<<std::endl;
+#endif
     }
 }

@@ -58,9 +58,10 @@ def validate_protocol():
 
 
 class Adapter:
-    def __init__(self, directory):
+    def __init__(self, directory, compiler_flags=()):
         self.binary = Path(directory) / "guard_adapter"
-        command = ["c++", "-std=c++17", "-O2", "-Wall", "-Wextra", str(HERE / "guard_adapter.cpp"), "-o", str(self.binary)]
+        command = ["c++", "-std=c++17", "-O2", "-Wall", "-Wextra", *compiler_flags,
+                   str(HERE / "guard_adapter.cpp"), "-o", str(self.binary)]
         subprocess.run(command, check=True, capture_output=True, text=True)
         self.process = subprocess.Popen([str(self.binary)], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, bufsize=1)
 
